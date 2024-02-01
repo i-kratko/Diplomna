@@ -1,0 +1,70 @@
+[1/5] cmd.exe /C "cd /D C:\Users\Niki\Desktop\sensorlelel\c3wifi\build\esp-idf\esptool_py && C:\espressif2\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Niki/Desktop/sensorlelel/c3wifi/build/partition_table/partition-table.bin C:/Users/Niki/Desktop/sensorlelel/c3wifi/build/c3wifi.bin"
+c3wifi.bin binary size 0xe12d0 bytes. Smallest app partition is 0x100000 bytes. 0x1ed30 bytes (12%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\Niki\Desktop\sensorlelel\c3wifi\build\bootloader\esp-idf\esptool_py && C:\espressif2\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Niki/Desktop/sensorlelel/c3wifi/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5070 bytes. 0x2f90 bytes (37%) free.
+[2/3] cmd.exe /C "cd /D C:\espressif2\Espressif\frameworks\esp-idf-v5.1.2\components\esptool_py && C:\espressif2\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2 -D SERIAL_TOOL=C:/espressif2/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/esptool/esptool.py;--chip;esp32c3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/Niki/Desktop/sensorlelel/c3wifi/build -P C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32c3 -p COM10 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 c3wifi.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev3
+Serial port COM10
+Connecting...
+Chip is ESP32-C3 (QFN32) (revision v0.4)
+Features: WiFi, BLE, Embedded Flash 4MB (XMC)
+Crystal is 40MHz
+MAC: d4:f9:8d:04:42:c0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000f1fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20592 bytes to 12642...
+Writing at 0x00000000... (100 %)
+Wrote 20592 bytes (12642 compressed) at 0x00000000 in 0.4 seconds (effective 450.6 kbit/s)...
+Hash of data verified.
+Compressed 922320 bytes to 536437...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001b0bb... (6 %)
+Writing at 0x00025545... (9 %)
+Writing at 0x0002a337... (12 %)
+Writing at 0x00033023... (15 %)
+Writing at 0x0003ab42... (18 %)
+Writing at 0x00041827... (21 %)
+Writing at 0x00048773... (24 %)
+Writing at 0x0004fdbb... (27 %)
+Writing at 0x00056a8c... (30 %)
+Writing at 0x0005cea2... (33 %)
+Writing at 0x000635d3... (36 %)
+Writing at 0x0006923d... (39 %)
+Writing at 0x0006f38a... (42 %)
+Writing at 0x0007543c... (45 %)
+Writing at 0x0007b831... (48 %)
+Writing at 0x000819d4... (51 %)
+Writing at 0x00088334... (54 %)
+Writing at 0x0008ef19... (57 %)
+Writing at 0x00095fa2... (60 %)
+Writing at 0x0009ce91... (63 %)
+Writing at 0x000a3eae... (66 %)
+Writing at 0x000aa054... (69 %)
+Writing at 0x000b02f5... (72 %)
+Writing at 0x000b72a8... (75 %)
+Writing at 0x000bdd90... (78 %)
+Writing at 0x000c44a9... (81 %)
+Writing at 0x000cb26f... (84 %)
+Writing at 0x000d1cd6... (87 %)
+Writing at 0x000d7c0c... (90 %)
+Writing at 0x000de0b9... (93 %)
+Writing at 0x000e610d... (96 %)
+Writing at 0x000ec90c... (100 %)
+Wrote 922320 bytes (536437 compressed) at 0x00010000 in 6.9 seconds (effective 1066.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 456.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

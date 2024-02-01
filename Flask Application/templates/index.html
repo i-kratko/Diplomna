@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sensor Data Visualization</title>
-    <!-- Add any additional CSS styles or links to external stylesheets here -->
+    <title>IoT Sensor Data</title>
 </head>
 <body>
-
-    <h1>Sensor Data Visualization</h1>
-
-    <div id="sensor-data">
-        <h2>Sensor Node 1</h2>
-        <p>Temperature: <span id="temperature-placeholder">-</span> °C</p>
-        <p>Humidity: <span id="humidity-placeholder">-</span>%</p>
-    </div>
-
-    <div id="sensor-data">
-        <h2>Sensor Node 2</h2>
-        <p>Temperature: <span id="temperature-placeholder">-</span> °C</p>
-        <p>Light: <span id="light-placeholder">-</span>%</p>
-    </div>
-
-    <!-- Add any additional HTML elements or structure for your visualization here -->
-    <!-- You may use JavaScript and visualization libraries like Chart.js, Plotly, etc. -->
-
+    <h1>Latest Sensor Readings</h1>
+    <table>
+        <tr>
+            <th>Sensor ID</th>
+            <th>Temperature</th>
+            <th>Humidity</th>
+            <th>Pressure</th>
+            <th>VOC Gas</th>
+            <th>Light (lux)</th>
+            <th>Movement Counter</th>
+        </tr>
+        {% for data in sensor_data %}
+            <tr>
+                <td>{{ data.sensor_id }}</td>
+                <td>{{ data.temperature }}</td>
+                <td>{{ data.humidity }}</td>
+                <td>{{ data.pressure }}</td>
+                <td>{{ data.voc_gas }}</td>
+                <td>{{ data.light }}</td>
+                <td>{{ data.movement_counter }}</td>
+            </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>

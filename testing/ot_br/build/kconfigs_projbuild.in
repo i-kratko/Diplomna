@@ -1,0 +1,8 @@
+source "C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader/Kconfig.projbuild"
+source "C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_app_format/Kconfig.projbuild"
+source "C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/Kconfig.projbuild"
+source "C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/Kconfig.projbuild"
+source "C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/Kconfig.projbuild"
+source "C:/Users/Niki/Desktop/sensorlelel/ot_br/main/Kconfig.projbuild"
+source "C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/examples/common_components/iperf/Kconfig.projbuild"
+source "C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/examples/common_components/protocol_examples_common/Kconfig.projbuild"

@@ -1,0 +1,80 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\Niki\Desktop\sensorlelel\c3wifi\build\bootloader\esp-idf\esptool_py && C:\espressif2\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Niki/Desktop/sensorlelel/c3wifi/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5070 bytes. 0x2f90 bytes (37%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/c3wifi.c.obj
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable c3wifi.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32c3 image...
+Merged 2 ELF sections
+Successfully created esp32c3 image.
+Generated C:/Users/Niki/Desktop/sensorlelel/c3wifi/build/c3wifi.bin
+[7/8] cmd.exe /C "cd /D C:\Users\Niki\Desktop\sensorlelel\c3wifi\build\esp-idf\esptool_py && C:\espressif2\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Niki/Desktop/sensorlelel/c3wifi/build/partition_table/partition-table.bin C:/Users/Niki/Desktop/sensorlelel/c3wifi/build/c3wifi.bin"
+c3wifi.bin binary size 0xe05d0 bytes. Smallest app partition is 0x100000 bytes. 0x1fa30 bytes (12%) free.
+[7/8] cmd.exe /C "cd /D C:\espressif2\Espressif\frameworks\esp-idf-v5.1.2\components\esptool_py && C:\espressif2\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2 -D SERIAL_TOOL=C:/espressif2/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/esptool/esptool.py;--chip;esp32c3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/Niki/Desktop/sensorlelel/c3wifi/build -P C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32c3 -p COM10 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 c3wifi.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev3
+Serial port COM10
+Connecting...
+Chip is ESP32-C3 (QFN32) (revision v0.4)
+Features: WiFi, BLE, Embedded Flash 4MB (XMC)
+Crystal is 40MHz
+MAC: d4:f9:8d:04:42:c0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000f0fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20592 bytes to 12642...
+Writing at 0x00000000... (100 %)
+Wrote 20592 bytes (12642 compressed) at 0x00000000 in 0.4 seconds (effective 451.6 kbit/s)...
+Hash of data verified.
+Compressed 918992 bytes to 534619...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001b10e... (6 %)
+Writing at 0x0002558b... (9 %)
+Writing at 0x0002a384... (12 %)
+Writing at 0x00032f72... (15 %)
+Writing at 0x0003aad1... (18 %)
+Writing at 0x000417ac... (21 %)
+Writing at 0x000486fb... (24 %)
+Writing at 0x0004fcde... (27 %)
+Writing at 0x000569d4... (30 %)
+Writing at 0x0005cdf0... (33 %)
+Writing at 0x000634ee... (36 %)
+Writing at 0x0006917c... (39 %)
+Writing at 0x0006f2e4... (42 %)
+Writing at 0x0007539a... (45 %)
+Writing at 0x0007b7a1... (48 %)
+Writing at 0x00081923... (51 %)
+Writing at 0x00088287... (54 %)
+Writing at 0x0008ee6a... (57 %)
+Writing at 0x00095e69... (60 %)
+Writing at 0x0009cd35... (63 %)
+Writing at 0x000a3de1... (66 %)
+Writing at 0x000a9f80... (69 %)
+Writing at 0x000b0225... (72 %)
+Writing at 0x000b715e... (75 %)
+Writing at 0x000bdc78... (78 %)
+Writing at 0x000c4407... (81 %)
+Writing at 0x000cb173... (84 %)
+Writing at 0x000d1b44... (87 %)
+Writing at 0x000d7940... (90 %)
+Writing at 0x000de4f7... (93 %)
+Writing at 0x000e5de9... (96 %)
+Writing at 0x000ec75e... (100 %)
+Wrote 918992 bytes (534619 compressed) at 0x00010000 in 6.9 seconds (effective 1072.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 459.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

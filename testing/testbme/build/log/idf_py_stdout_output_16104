@@ -1,0 +1,619 @@
+[0;32mI (107) esp_image: segment 2: paddr=00020020 vaddr=420000ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x1c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40803c0a
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (23) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jan 18 2024 15:07:05[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=09c70h ( 40048) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=00019c98 vaddr=40800000 size=06380h ( 25472) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=153a4h ( 86948) map[0m
+[0;32mI (127) esp_image: segment 3: paddr=000353cc vaddr=40806380 size=05138h ( 20792) load[0m
+[0;32mI (133) esp_image: segment 4: paddr=0003a50c vaddr=4080b4c0 size=010f4h (  4340) load[0m
+[0;32mI (137) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (155) cpu_start: Unicore app[0m
+[0;32mI (156) cpu_start: Pro cpu up.[0m
+[0;33mW (164) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (171) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (171) cpu_start: Application information:[0m
+[0;32mI (174) cpu_start: Project name:     testbme[0m
+[0;32mI (179) cpu_start: App version:      1[0m
+[0;32mI (183) cpu_start: Compile time:     Jan 18 2024 15:04:52[0m
+[0;32mI (189) cpu_start: ELF file SHA256:  995c50f4d99c67a9...[0m
+[0;32mI (195) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (201) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (205) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (210) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (215) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (222) heap_init: At 4080D5A0 len 0006F070 (444 KiB): D/IRAM[0m
+[0;32mI (229) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (235) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (243) spi_flash: detected chip: generic[0m
+[0;32mI (246) spi_flash: flash io: dio[0m
+[0;33mW (250) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (264) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (270) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (277) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (283) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (288) app_start: Starting scheduler on CPU0[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+BMP280: found BME280
+BMP280 Sensor: Pressure: 93226.07 Pa, Temperature: 26.03 C, Humidity: 39.16
+BME680 Sensor: 27.04 °C, 45.38 %, 932.61 hPa, 63381.00 KOhm
+[0;33mW (1323) bme680: No new data[0m
+[0;31mE (1323) bme680: Measurement is already running[0m
+[0;31mE (1333) bme680: Measurement is already running[0m
+[0;31mE (1333) bme680: Measurement is already running[0m
+[0;31mE (1343) bme680: Measurement is already running[0m
+[0;31mE (1343) bme680: Measurement is already running[0m
+[0;31mE (1353) bme680: Measurement is already running[0m
+[0;31mE (1353) bme680: Measurement is already running[0m
+[0;31mE (1363) bme680: Measurement is already running[0m
+[0;31mE (1363) bme680: Measurement is already running[0m
+[0;31mE (1373) bme680: Measurement is already running[0m
+[0;31mE (1373) bme680: Measurement is already running[0m
+[0;31mE (1383) bme680: Measurement is already running[0m
+[0;31mE (1383) bme680: Measurement is already running[0m
+[0;31mE (1393) bme680: Measurement is already running[0m
+[0;31mE (1393) bme680: Measurement is already running[0m
+[0;31mE (1403) bme680: Measurement is already running[0m
+[0;31mE (1403) bme680: Measurement is already running[0m
+[0;31mE (1413) bme680: Measurement is already running[0m
+[0;31mE (1413) bme680: Measurement is already running[0m
+[0;31mE (1423) bme680: Measurement is already running[0m
+[0;31mE (1423) bme680: Measurement is already running[0m
+[0;31mE (1433) bme680: Measurement is already running[0m
+[0;31mE (1433) bme680: Measurement is already running[0m
+[0;31mE (1443) bme680: Measurement is already running[0m
+[0;31mE (1453) bme680: Measurement is already running[0m
+[0;31mE (1453) bme680: Measurement is already running[0m
+[0;31mE (1463) bme680: Measurement is already running[0m
+[0;31mE (1463) bme680: Measurement is already running[0m
+[0;31mE (1473) bme680: Measurement is already running[0m
+[0;31mE (1473) bme680: Measurement is already running[0m
+[0;31mE (1483) bme680: Measurement is already running[0m
+[0;31mE (1483) bme680: Measurement is already running[0m
+[0;31mE (1493) bme680: Measurement is already running[0m
+[0;31mE (1493) bme680: Measurement is already running[0m
+[0;31mE (1503) bme680: Measurement is already running[0m
+[0;31mE (1503) bme680: Measurement is already running[0m
+[0;31mE (1513) bme680: Measurement is already running[0m
+[0;31mE (1513) bme680: Measurement is already running[0m
+[0;31mE (1523) bme680: Measurement is already running[0m
+[0;31mE (1523) bme680: Measurement is already running[0m
+[0;31mE (1533) bme680: Measurement is already running[0m
+[0;31mE (1533) bme680: Measurement is already running[0m
+[0;31mE (1543) bme680: Measurement is already running[0m
+[0;31mE (1543) bme680: Measurement is already running[0m
+[0;31mE (1553) bme680: Measurement is already running[0m
+[0;31mE (1553) bme680: Measurement is already running[0m
+[0;31mE (1563) bme680: Measurement is already running[0m
+[0;31mE (1563) bme680: Measurement is already running[0m
+[0;31mE (1573) bme680: Measurement is already running[0m
+[0;31mE (1583) bme680: Measurement is already running[0m
+[0;31mE (1583) bme680: Measurement is already running[0m
+[0;31mE (1593) bme680: Measurement is already running[0m
+[0;31mE (1593) bme680: Measurement is already running[0m
+[0;31mE (1603) bme680: Measurement is already running[0m
+[0;31mE (1603) bme680: Measurement is already running[0m
+[0;31mE (1613) bme680: Measurement is already running[0m
+[0;31mE (1613) bme680: Measurement is already running[0m
+[0;31mE (1623) bme680: Measurement is already running[0m
+[0;31mE (1623) bme680: Measurement is already running[0m
+[0;31mE (1633) bme680: Measurement is already running[0m
+[0;31mE (1633) bme680: Measurement is already running[0m
+[0;31mE (1643) bme680: Measurement is already running[0m
+[0;31mE (1643) bme680: Measurement is already running[0m
+[0;31mE (1653) bme680: Measurement is already running[0m
+[0;31mE (1653) bme680: Measurement is already running[0m
+[0;31mE (1663) bme680: Measurement is already running[0m
+[0;31mE (1663) bme680: Measurement is already running[0m
+[0;31mE (1673) bme680: Measurement is already running[0m
+[0;31mE (1673) bme680: Measurement is already running[0m
+[0;31mE (1683) bme680: Measurement is already running[0m
+[0;31mE (1683) bme680: Measurement is already running[0m
+[0;31mE (1693) bme680: Measurement is already running[0m
+[0;31mE (1703) bme680: Measurement is already running[0m
+[0;31mE (1703) bme680: Measurement is already running[0m
+[0;31mE (1713) bme680: Measurement is already running[0m
+[0;31mE (1713) bme680: Measurement is already running[0m
+[0;31mE (1723) bme680: Measurement is already running[0m
+[0;31mE (1723) bme680: Measurement is already running[0m
+[0;31mE (1733) bme680: Measurement is already running[0m
+[0;31mE (1733) bme680: Measurement is already running[0m
+[0;31mE (1743) bme680: Measurement is already running[0m
+[0;31mE (1743) bme680: Measurement is already running[0m
+[0;31mE (1753) bme680: Measurement is already running[0m
+[0;31mE (1753) bme680: Measurement is already running[0m
+[0;31mE (1763) bme680: Measurement is already running[0m
+[0;31mE (1763) bme680: Measurement is already running[0m
+[0;31mE (1773) bme680: Measurement is already running[0m
+[0;31mE (1773) bme680: Measurement is already running[0m
+[0;31mE (1783) bme680: Measurement is already running[0m
+[0;31mE (1783) bme680: Measurement is already running[0m
+[0;31mE (1793) bme680: Measurement is already running[0m
+[0;31mE (1793) bme680: Measurement is already running[0m
+[0;31mE (1803) bme680: Measurement is already running[0m
+[0;31mE (1803) bme680: Measurement is already running[0m
+[0;31mE (1813) bme680: Measurement is already running[0m
+[0;31mE (1813) bme680: Measurement is already running[0m
+[0;31mE (1823) bme680: Measurement is already running[0m
+[0;31mE (1833) bme680: Measurement is already running[0m
+[0;31mE (1833) bme680: Measurement is already running[0m
+[0;31mE (1843) bme680: Measurement is already running[0m
+[0;31mE (1843) bme680: Measurement is already running[0m
+[0;31mE (1853) bme680: Measurement is already running[0m
+[0;31mE (1853) bme680: Measurement is already running[0m
+[0;31mE (1863) bme680: Measurement is already running[0m
+[0;31mE (1863) bme680: Measurement is already running[0m
+[0;31mE (1873) bme680: Measurement is already running[0m
+[0;31mE (1873) bme680: Measurement is already running[0m
+[0;31mE (1883) bme680: Measurement is already running[0m
+[0;31mE (1883) bme680: Measurement is already running[0m
+[0;31mE (1893) bme680: Measurement is already running[0m
+[0;31mE (1893) bme680: Measurement is already running[0m
+[0;31mE (1903) bme680: Measurement is already running[0m
+[0;31mE (1903) bme680: Measurement is already running[0m
+[0;31mE (1913) bme680: Measurement is already running[0m
+[0;31mE (1913) bme680: Measurement is already running[0m
+[0;31mE (1923) bme680: Measurement is already running[0m
+[0;31mE (1923) bme680: Measurement is already running[0m
+[0;31mE (1933) bme680: Measurement is already running[0m
+[0;31mE (1933) bme680: Measurement is already running[0m
+[0;31mE (1943) bme680: Measurement is already running[0m
+[0;31mE (1953) bme680: Measurement is already running[0m
+[0;31mE (1953) bme680: Measurement is already running[0m
+[0;31mE (1963) bme680: Measurement is already running[0m
+[0;31mE (1963) bme680: Measurement is already running[0m
+[0;31mE (1973) bme680: Measurement is already running[0m
+[0;31mE (1973) bme680: Measurement is already running[0m
+[0;31mE (1983) bme680: Measurement is already running[0m
+[0;31mE (1983) bme680: Measurement is already running[0m
+[0;31mE (1993) bme680: Measurement is already running[0m
+[0;31mE (1993) bme680: Measurement is already running[0m
+[0;31mE (2003) bme680: Measurement is already running[0m
+[0;31mE (2003) bme680: Measurement is already running[0m
+[0;31mE (2013) bme680: Measurement is already running[0m
+[0;31mE (2013) bme680: Measurement is already running[0m
+[0;31mE (2023) bme680: Measurement is already running[0m
+[0;31mE (2023) bme680: Measurement is already running[0m
+[0;31mE (2033) bme680: Measurement is already running[0m
+[0;31mE (2033) bme680: Measurement is already running[0m
+[0;31mE (2043) bme680: Measurement is already running[0m
+[0;31mE (2043) bme680: Measurement is already running[0m
+[0;31mE (2053) bme680: Measurement is already running[0m
+[0;31mE (2053) bme680: Measurement is already running[0m
+[0;31mE (2063) bme680: Measurement is already running[0m
+[0;31mE (2063) bme680: Measurement is already running[0m
+[0;31mE (2073) bme680: Measurement is already running[0m
+[0;31mE (2083) bme680: Measurement is already running[0m
+[0;31mE (2083) bme680: Measurement is already running[0m
+[0;31mE (2093) bme680: Measurement is already running[0m
+[0;31mE (2093) bme680: Measurement is already running[0m
+[0;31mE (2103) bme680: Measurement is already running[0m
+[0;31mE (2103) bme680: Measurement is already running[0m
+[0;31mE (2113) bme680: Measurement is already running[0m
+[0;31mE (2113) bme680: Measurement is already running[0m
+[0;31mE (2123) bme680: Measurement is already running[0m
+[0;31mE (2123) bme680: Measurement is already running[0m
+[0;31mE (2133) bme680: Measurement is already running[0m
+[0;31mE (2133) bme680: Measurement is already running[0m
+[0;31mE (2143) bme680: Measurement is already running[0m
+[0;31mE (2143) bme680: Measurement is already running[0m
+[0;31mE (2153) bme680: Measurement is already running[0m
+[0;31mE (2153) bme680: Measurement is already running[0m
+[0;31mE (2163) bme680: Measurement is already running[0m
+[0;31mE (2163) bme680: Measurement is already running[0m
+[0;31mE (2173) bme680: Measurement is already running[0m
+[0;31mE (2173) bme680: Measurement is already running[0m
+[0;31mE (2183) bme680: Measurement is already running[0m
+[0;31mE (2183) bme680: Measurement is already running[0m
+[0;31mE (2193) bme680: Measurement is already running[0m
+[0;31mE (2203) bme680: Measurement is already running[0m
+[0;31mE (2203) bme680: Measurement is already running[0m
+[0;31mE (2213) bme680: Measurement is already running[0m
+[0;31mE (2213) bme680: Measurement is already running[0m
+[0;31mE (2223) bme680: Measurement is already running[0m
+[0;31mE (2223) bme680: Measurement is already running[0m
+[0;31mE (2233) bme680: Measurement is already running[0m
+[0;31mE (2233) bme680: Measurement is already running[0m
+[0;31mE (2243) bme680: Measurement is already running[0m
+[0;31mE (2243) bme680: Measurement is already running[0m
+[0;31mE (2253) bme680: Measurement is already running[0m
+[0;31mE (2253) bme680: Measurement is already running[0m
+[0;31mE (2263) bme680: Measurement is already running[0m
+[0;31mE (2263) bme680: Measurement is already running[0m
+[0;31mE (2273) bme680: Measurement is already running[0m
+[0;31mE (2273) bme680: Measurement is already running[0m
+[0;31mE (2283) bme680: Measurement is already running[0m
+[0;31mE (2283) bme680: Measurement is already running[0m
+[0;31mE (2293) bme680: Measurement is already running[0m
+[0;31mE (2293) bme680: Measurement is already running[0m
+[0;31mE (2303) bme680: Measurement is already running[0m
+[0;31mE (2303) bme680: Measurement is already running[0m
+[0;31mE (2313) bme680: Measurement is already running[0m
+[0;31mE (2313) bme680: Measurement is already running[0m
+BMP280 Sensor: Pressure: 93227.47 Pa, Temperature: 26.04 C, Humidity: 39.23
+BME680 Sensor: 27.04 °C, 45.26 %, 932.61 hPa, 59632.00 KOhm
+BMP280 Sensor: Pressure: 93220.81 Pa, Temperature: 26.03 C, Humidity: 39.23
+BME680 Sensor: 27.09 °C, 45.18 %, 932.59 hPa, 59091.00 KOhm
+[0;33mW (3333) bme680: No new data[0m
+[0;31mE (3333) bme680: Measurement is already running[0m
+[0;31mE (3343) bme680: Measurement is already running[0m
+[0;31mE (3343) bme680: Measurement is already running[0m
+[0;31mE (3353) bme680: Measurement is already running[0m
+[0;31mE (3353) bme680: Measurement is already running[0m
+[0;31mE (3363) bme680: Measurement is already running[0m
+[0;31mE (3363) bme680: Measurement is already running[0m
+[0;31mE (3373) bme680: Measurement is already running[0m
+[0;31mE (3373) bme680: Measurement is already running[0m
+[0;31mE (3383) bme680: Measurement is already running[0m
+[0;31mE (3383) bme680: Measurement is already running[0m
+[0;31mE (3393) bme680: Measurement is already running[0m
+[0;31mE (3393) bme680: Measurement is already running[0m
+[0;31mE (3403) bme680: Measurement is already running[0m
+[0;31mE (3403) bme680: Measurement is already running[0m
+[0;31mE (3413) bme680: Measurement is already running[0m
+[0;31mE (3413) bme680: Measurement is already running[0m
+[0;31mE (3423) bme680: Measurement is already running[0m
+[0;31mE (3423) bme680: Measurement is already running[0m
+[0;31mE (3433) bme680: Measurement is already running[0m
+[0;31mE (3433) bme680: Measurement is already running[0m
+[0;31mE (3443) bme680: Measurement is already running[0m
+[0;31mE (3443) bme680: Measurement is already running[0m
+[0;31mE (3453) bme680: Measurement is already running[0m
+[0;31mE (3463) bme680: Measurement is already running[0m
+[0;31mE (3463) bme680: Measurement is already running[0m
+[0;31mE (3473) bme680: Measurement is already running[0m
+[0;31mE (3473) bme680: Measurement is already running[0m
+[0;31mE (3483) bme680: Measurement is already running[0m
+[0;31mE (3483) bme680: Measurement is already running[0m
+[0;31mE (3493) bme680: Measurement is already running[0m
+[0;31mE (3493) bme680: Measurement is already running[0m
+[0;31mE (3503) bme680: Measurement is already running[0m
+[0;31mE (3503) bme680: Measurement is already running[0m
+[0;31mE (3513) bme680: Measurement is already running[0m
+[0;31mE (3513) bme680: Measurement is already running[0m
+[0;31mE (3523) bme680: Measurement is already running[0m
+[0;31mE (3523) bme680: Measurement is already running[0m
+[0;31mE (3533) bme680: Measurement is already running[0m
+[0;31mE (3533) bme680: Measurement is already running[0m
+[0;31mE (3543) bme680: Measurement is already running[0m
+[0;31mE (3543) bme680: Measurement is already running[0m
+[0;31mE (3553) bme680: Measurement is already running[0m
+[0;31mE (3553) bme680: Measurement is already running[0m
+[0;31mE (3563) bme680: Measurement is already running[0m
+[0;31mE (3563) bme680: Measurement is already running[0m
+[0;31mE (3573) bme680: Measurement is already running[0m
+[0;31mE (3573) bme680: Measurement is already running[0m
+[0;31mE (3583) bme680: Measurement is already running[0m
+[0;31mE (3593) bme680: Measurement is already running[0m
+[0;31mE (3593) bme680: Measurement is already running[0m
+[0;31mE (3603) bme680: Measurement is already running[0m
+[0;31mE (3603) bme680: Measurement is already running[0m
+[0;31mE (3613) bme680: Measurement is already running[0m
+[0;31mE (3613) bme680: Measurement is already running[0m
+[0;31mE (3623) bme680: Measurement is already running[0m
+[0;31mE (3623) bme680: Measurement is already running[0m
+[0;31mE (3633) bme680: Measurement is already running[0m
+[0;31mE (3633) bme680: Measurement is already running[0m
+[0;31mE (3643) bme680: Measurement is already running[0m
+[0;31mE (3643) bme680: Measurement is already running[0m
+[0;31mE (3653) bme680: Measurement is already running[0m
+[0;31mE (3653) bme680: Measurement is already running[0m
+[0;31mE (3663) bme680: Measurement is already running[0m
+[0;31mE (3663) bme680: Measurement is already running[0m
+[0;31mE (3673) bme680: Measurement is already running[0m
+[0;31mE (3673) bme680: Measurement is already running[0m
+[0;31mE (3683) bme680: Measurement is already running[0m
+[0;31mE (3683) bme680: Measurement is already running[0m
+[0;31mE (3693) bme680: Measurement is already running[0m
+[0;31mE (3693) bme680: Measurement is already running[0m
+[0;31mE (3703) bme680: Measurement is already running[0m
+[0;31mE (3703) bme680: Measurement is already running[0m
+[0;31mE (3713) bme680: Measurement is already running[0m
+[0;31mE (3723) bme680: Measurement is already running[0m
+[0;31mE (3723) bme680: Measurement is already running[0m
+[0;31mE (3733) bme680: Measurement is already running[0m
+[0;31mE (3733) bme680: Measurement is already running[0m
+[0;31mE (3743) bme680: Measurement is already running[0m
+[0;31mE (3743) bme680: Measurement is already running[0m
+[0;31mE (3753) bme680: Measurement is already running[0m
+[0;31mE (3753) bme680: Measurement is already running[0m
+[0;31mE (3763) bme680: Measurement is already running[0m
+[0;31mE (3763) bme680: Measurement is already running[0m
+[0;31mE (3773) bme680: Measurement is already running[0m
+[0;31mE (3773) bme680: Measurement is already running[0m
+[0;31mE (3783) bme680: Measurement is already running[0m
+[0;31mE (3783) bme680: Measurement is already running[0m
+[0;31mE (3793) bme680: Measurement is already running[0m
+[0;31mE (3793) bme680: Measurement is already running[0m
+[0;31mE (3803) bme680: Measurement is already running[0m
+[0;31mE (3803) bme680: Measurement is already running[0m
+[0;31mE (3813) bme680: Measurement is already running[0m
+[0;31mE (3813) bme680: Measurement is already running[0m
+[0;31mE (3823) bme680: Measurement is already running[0m
+[0;31mE (3823) bme680: Measurement is already running[0m
+[0;31mE (3833) bme680: Measurement is already running[0m
+[0;31mE (3843) bme680: Measurement is already running[0m
+[0;31mE (3843) bme680: Measurement is already running[0m
+[0;31mE (3853) bme680: Measurement is already running[0m
+[0;31mE (3853) bme680: Measurement is already running[0m
+[0;31mE (3863) bme680: Measurement is already running[0m
+[0;31mE (3863) bme680: Measurement is already running[0m
+[0;31mE (3873) bme680: Measurement is already running[0m
+[0;31mE (3873) bme680: Measurement is already running[0m
+[0;31mE (3883) bme680: Measurement is already running[0m
+[0;31mE (3883) bme680: Measurement is already running[0m
+[0;31mE (3893) bme680: Measurement is already running[0m
+[0;31mE (3893) bme680: Measurement is already running[0m
+[0;31mE (3903) bme680: Measurement is already running[0m
+[0;31mE (3903) bme680: Measurement is already running[0m
+[0;31mE (3913) bme680: Measurement is already running[0m
+[0;31mE (3913) bme680: Measurement is already running[0m
+[0;31mE (3923) bme680: Measurement is already running[0m
+[0;31mE (3923) bme680: Measurement is already running[0m
+[0;31mE (3933) bme680: Measurement is already running[0m
+[0;31mE (3933) bme680: Measurement is already running[0m
+[0;31mE (3943) bme680: Measurement is already running[0m
+[0;31mE (3943) bme680: Measurement is already running[0m
+[0;31mE (3953) bme680: Measurement is already running[0m
+[0;31mE (3953) bme680: Measurement is already running[0m
+[0;31mE (3963) bme680: Measurement is already running[0m
+[0;31mE (3973) bme680: Measurement is already running[0m
+[0;31mE (3973) bme680: Measurement is already running[0m
+[0;31mE (3983) bme680: Measurement is already running[0m
+[0;31mE (3983) bme680: Measurement is already running[0m
+[0;31mE (3993) bme680: Measurement is already running[0m
+[0;31mE (3993) bme680: Measurement is already running[0m
+[0;31mE (4003) bme680: Measurement is already running[0m
+[0;31mE (4003) bme680: Measurement is already running[0m
+[0;31mE (4013) bme680: Measurement is already running[0m
+[0;31mE (4013) bme680: Measurement is already running[0m
+[0;31mE (4023) bme680: Measurement is already running[0m
+[0;31mE (4023) bme680: Measurement is already running[0m
+[0;31mE (4033) bme680: Measurement is already running[0m
+[0;31mE (4033) bme680: Measurement is already running[0m
+[0;31mE (4043) bme680: Measurement is already running[0m
+[0;31mE (4043) bme680: Measurement is already running[0m
+[0;31mE (4053) bme680: Measurement is already running[0m
+[0;31mE (4053) bme680: Measurement is already running[0m
+[0;31mE (4063) bme680: Measurement is already running[0m
+[0;31mE (4063) bme680: Measurement is already running[0m
+[0;31mE (4073) bme680: Measurement is already running[0m
+[0;31mE (4073) bme680: Measurement is already running[0m
+[0;31mE (4083) bme680: Measurement is already running[0m
+[0;31mE (4093) bme680: Measurement is already running[0m
+[0;31mE (4093) bme680: Measurement is already running[0m
+[0;31mE (4103) bme680: Measurement is already running[0m
+[0;31mE (4103) bme680: Measurement is already running[0m
+[0;31mE (4113) bme680: Measurement is already running[0m
+[0;31mE (4113) bme680: Measurement is already running[0m
+[0;31mE (4123) bme680: Measurement is already running[0m
+[0;31mE (4123) bme680: Measurement is already running[0m
+[0;31mE (4133) bme680: Measurement is already running[0m
+[0;31mE (4133) bme680: Measurement is already running[0m
+[0;31mE (4143) bme680: Measurement is already running[0m
+[0;31mE (4143) bme680: Measurement is already running[0m
+[0;31mE (4153) bme680: Measurement is already running[0m
+[0;31mE (4153) bme680: Measurement is already running[0m
+[0;31mE (4163) bme680: Measurement is already running[0m
+[0;31mE (4163) bme680: Measurement is already running[0m
+[0;31mE (4173) bme680: Measurement is already running[0m
+[0;31mE (4173) bme680: Measurement is already running[0m
+[0;31mE (4183) bme680: Measurement is already running[0m
+[0;31mE (4183) bme680: Measurement is already running[0m
+[0;31mE (4193) bme680: Measurement is already running[0m
+[0;31mE (4193) bme680: Measurement is already running[0m
+[0;31mE (4203) bme680: Measurement is already running[0m
+[0;31mE (4203) bme680: Measurement is already running[0m
+[0;31mE (4213) bme680: Measurement is already running[0m
+[0;31mE (4223) bme680: Measurement is already running[0m
+[0;31mE (4223) bme680: Measurement is already running[0m
+[0;31mE (4233) bme680: Measurement is already running[0m
+[0;31mE (4233) bme680: Measurement is already running[0m
+[0;31mE (4243) bme680: Measurement is already running[0m
+[0;31mE (4243) bme680: Measurement is already running[0m
+[0;31mE (4253) bme680: Measurement is already running[0m
+[0;31mE (4253) bme680: Measurement is already running[0m
+[0;31mE (4263) bme680: Measurement is already running[0m
+[0;31mE (4263) bme680: Measurement is already running[0m
+[0;31mE (4273) bme680: Measurement is already running[0m
+[0;31mE (4273) bme680: Measurement is already running[0m
+[0;31mE (4283) bme680: Measurement is already running[0m
+[0;31mE (4283) bme680: Measurement is already running[0m
+[0;31mE (4293) bme680: Measurement is already running[0m
+[0;31mE (4293) bme680: Measurement is already running[0m
+[0;31mE (4303) bme680: Measurement is already running[0m
+[0;31mE (4303) bme680: Measurement is already running[0m
+[0;31mE (4313) bme680: Measurement is already running[0m
+[0;31mE (4313) bme680: Measurement is already running[0m
+[0;31mE (4323) bme680: Measurement is already running[0m
+[0;31mE (4323) bme680: Measurement is already running[0m
+BMP280 Sensor: Pressure: 93221.84 Pa, Temperature: 26.04 C, Humidity: 39.27
+BME680 Sensor: 27.09 °C, 45.06 %, 932.57 hPa, 58886.00 KOhm
+BMP280 Sensor: Pressure: 93224.09 Pa, Temperature: 26.03 C, Humidity: 39.29
+BME680 Sensor: 27.14 °C, 44.99 %, 932.61 hPa, 58886.00 KOhm
+[0;33mW (5343) bme680: No new data[0m
+[0;31mE (5343) bme680: Measurement is already running[0m
+[0;31mE (5353) bme680: Measurement is already running[0m
+[0;31mE (5353) bme680: Measurement is already running[0m
+[0;31mE (5363) bme680: Measurement is already running[0m
+[0;31mE (5363) bme680: Measurement is already running[0m
+[0;31mE (5373) bme680: Measurement is already running[0m
+[0;31mE (5373) bme680: Measurement is already running[0m
+[0;31mE (5383) bme680: Measurement is already running[0m
+[0;31mE (5383) bme680: Measurement is already running[0m
+[0;31mE (5393) bme680: Measurement is already running[0m
+[0;31mE (5393) bme680: Measurement is already running[0m
+[0;31mE (5403) bme680: Measurement is already running[0m
+[0;31mE (5403) bme680: Measurement is already running[0m
+[0;31mE (5413) bme680: Measurement is already running[0m
+[0;31mE (5413) bme680: Measurement is already running[0m
+[0;31mE (5423) bme680: Measurement is already running[0m
+[0;31mE (5423) bme680: Measurement is already running[0m
+[0;31mE (5433) bme680: Measurement is already running[0m
+[0;31mE (5433) bme680: Measurement is already running[0m
+[0;31mE (5443) bme680: Measurement is already running[0m
+[0;31mE (5443) bme680: Measurement is already running[0m
+[0;31mE (5453) bme680: Measurement is already running[0m
+[0;31mE (5453) bme680: Measurement is already running[0m
+[0;31mE (5463) bme680: Measurement is already running[0m
+[0;31mE (5463) bme680: Measurement is already running[0m
+[0;31mE (5473) bme680: Measurement is already running[0m
+[0;31mE (5483) bme680: Measurement is already running[0m
+[0;31mE (5483) bme680: Measurement is already running[0m
+[0;31mE (5493) bme680: Measurement is already running[0m
+[0;31mE (5493) bme680: Measurement is already running[0m
+[0;31mE (5503) bme680: Measurement is already running[0m
+[0;31mE (5503) bme680: Measurement is already running[0m
+[0;31mE (5513) bme680: Measurement is already running[0m
+[0;31mE (5513) bme680: Measurement is already running[0m
+[0;31mE (5523) bme680: Measurement is already running[0m
+[0;31mE (5523) bme680: Measurement is already running[0m
+[0;31mE (5533) bme680: Measurement is already running[0m
+[0;31mE (5533) bme680: Measurement is already running[0m
+[0;31mE (5543) bme680: Measurement is already running[0m
+[0;31mE (5543) bme680: Measurement is already running[0m
+[0;31mE (5553) bme680: Measurement is already running[0m
+[0;31mE (5553) bme680: Measurement is already running[0m
+[0;31mE (5563) bme680: Measurement is already running[0m
+[0;31mE (5563) bme680: Measurement is already running[0m
+[0;31mE (5573) bme680: Measurement is already running[0m
+[0;31mE (5573) bme680: Measurement is already running[0m
+[0;31mE (5583) bme680: Measurement is already running[0m
+[0;31mE (5583) bme680: Measurement is already running[0m
+[0;31mE (5593) bme680: Measurement is already running[0m
+[0;31mE (5603) bme680: Measurement is already running[0m
+[0;31mE (5603) bme680: Measurement is already running[0m
+[0;31mE (5613) bme680: Measurement is already running[0m
+[0;31mE (5613) bme680: Measurement is already running[0m
+[0;31mE (5623) bme680: Measurement is already running[0m
+[0;31mE (5623) bme680: Measurement is already running[0m
+[0;31mE (5633) bme680: Measurement is already running[0m
+[0;31mE (5633) bme680: Measurement is already running[0m
+[0;31mE (5643) bme680: Measurement is already running[0m
+[0;31mE (5643) bme680: Measurement is already running[0m
+[0;31mE (5653) bme680: Measurement is already running[0m
+[0;31mE (5653) bme680: Measurement is already running[0m
+[0;31mE (5663) bme680: Measurement is already running[0m
+[0;31mE (5663) bme680: Measurement is already running[0m
+[0;31mE (5673) bme680: Measurement is already running[0m
+[0;31mE (5673) bme680: Measurement is already running[0m
+[0;31mE (5683) bme680: Measurement is already running[0m
+[0;31mE (5683) bme680: Measurement is already running[0m
+[0;31mE (5693) bme680: Measurement is already running[0m
+[0;31mE (5693) bme680: Measurement is already running[0m
+[0;31mE (5703) bme680: Measurement is already running[0m
+[0;31mE (5703) bme680: Measurement is already running[0m
+[0;31mE (5713) bme680: Measurement is already running[0m
+[0;31mE (5713) bme680: Measurement is already running[0m
+[0;31mE (5723) bme680: Measurement is already running[0m
+[0;31mE (5733) bme680: Measurement is already running[0m
+[0;31mE (5733) bme680: Measurement is already running[0m
+[0;31mE (5743) bme680: Measurement is already running[0m
+[0;31mE (5743) bme680: Measurement is already running[0m
+[0;31mE (5753) bme680: Measurement is already running[0m
+[0;31mE (5753) bme680: Measurement is already running[0m
+[0;31mE (5763) bme680: Measurement is already running[0m
+[0;31mE (5763) bme680: Measurement is already running[0m
+[0;31mE (5773) bme680: Measurement is already running[0m
+[0;31mE (5773) bme680: Measurement is already running[0m
+[0;31mE (5783) bme680: Measurement is already running[0m
+[0;31mE (5783) bme680: Measurement is already running[0m
+[0;31mE (5793) bme680: Measurement is already running[0m
+[0;31mE (5793) bme680: Measurement is already running[0m
+[0;31mE (5803) bme680: Measurement is already running[0m
+[0;31mE (5803) bme680: Measurement is already running[0m
+[0;31mE (5813) bme680: Measurement is already running[0m
+[0;31mE (5813) bme680: Measurement is already running[0m
+[0;31mE (5823) bme680: Measurement is already running[0m
+[0;31mE (5823) bme680: Measurement is already running[0m
+[0;31mE (5833) bme680: Measurement is already running[0m
+[0;31mE (5833) bme680: Measurement is already running[0m
+[0;31mE (5843) bme680: Measurement is already running[0m
+[0;31mE (5853) bme680: Measurement is already running[0m
+[0;31mE (5853) bme680: Measurement is already running[0m
+[0;31mE (5863) bme680: Measurement is already running[0m
+[0;31mE (5863) bme680: Measurement is already running[0m
+[0;31mE (5873) bme680: Measurement is already running[0m
+[0;31mE (5873) bme680: Measurement is already running[0m
+[0;31mE (5883) bme680: Measurement is already running[0m
+[0;31mE (5883) bme680: Measurement is already running[0m
+[0;31mE (5893) bme680: Measurement is already running[0m
+[0;31mE (5893) bme680: Measurement is already running[0m
+[0;31mE (5903) bme680: Measurement is already running[0m
+[0;31mE (5903) bme680: Measurement is already running[0m
+[0;31mE (5913) bme680: Measurement is already running[0m
+[0;31mE (5913) bme680: Measurement is already running[0m
+[0;31mE (5923) bme680: Measurement is already running[0m
+[0;31mE (5923) bme680: Measurement is already running[0m
+[0;31mE (5933) bme680: Measurement is already running[0m
+[0;31mE (5933) bme680: Measurement is already running[0m
+[0;31mE (5943) bme680: Measurement is already running[0m
+[0;31mE (5943) bme680: Measurement is already running[0m
+[0;31mE (5953) bme680: Measurement is already running[0m
+[0;31mE (5953) bme680: Measurement is already running[0m
+[0;31mE (5963) bme680: Measurement is already running[0m
+[0;31mE (5963) bme680: Measurement is already running[0m
+[0;31mE (5973) bme680: Measurement is already running[0m
+[0;31mE (5983) bme680: Measurement is already running[0m
+[0;31mE (5983) bme680: Measurement is already running[0m
+[0;31mE (5993) bme680: Measurement is already running[0m
+[0;31mE (5993) bme680: Measurement is already running[0m
+[0;31mE (6003) bme680: Measurement is already running[0m
+[0;31mE (6003) bme680: Measurement is already running[0m
+[0;31mE (6013) bme680: Measurement is already running[0m
+[0;31mE (6013) bme680: Measurement is already running[0m
+[0;31mE (6023) bme680: Measurement is already running[0m
+[0;31mE (6023) bme680: Measurement is already running[0m
+[0;31mE (6033) bme680: Measurement is already running[0m
+[0;31mE (6033) bme680: Measurement is already running[0m
+[0;31mE (6043) bme680: Measurement is already running[0m
+[0;31mE (6043) bme680: Measurement is already running[0m
+[0;31mE (6053) bme680: Measurement is already running[0m
+[0;31mE (6053) bme680: Measurement is already running[0m
+[0;31mE (6063) bme680: Measurement is already running[0m
+[0;31mE (6063) bme680: Measurement is already running[0m
+[0;31mE (6073) bme680: Measurement is already running[0m
+[0;31mE (6073) bme680: Measurement is already running[0m
+[0;31mE (6083) bme680: Measurement is already running[0m
+[0;31mE (6083) bme680: Measurement is already running[0m
+[0;31mE (6093) bme680: Measurement is already running[0m
+[0;31mE (6103) bme680: Measurement is already running[0m
+[0;31mE (6103) bme680: Measurement is already running[0m
+[0;31mE (6113) bme680: Measurement is already running[0m
+[0;31mE (6113) bme680: Measurement is already running[0m
+[0;31mE (6123) bme680: Measurement is already running[0m
+[0;31mE (6123) bme680: Measurement is already running[0m
+[0;31mE (6133) bme680: Measurement is already running[0m
+[0;31mE (6133) bme680: Measurement is already running[0m
+[0;31mE (6143) bme680: Measurement is already running[0m
+[0;31mE (6143) bme680: Measurement is already running[0m
+[0;31mE (6153) bme680: Measurement is already running[0m
+[0;31mE (6153) bme680: Measurement is already running[0m
+[0;31mE (6163) bme680: Measurement is already running[0m
+[0;31mE (6163) bme680: Measurement is already running[0m
+[0;31mE (6173) bme680: Measurement is already running[0m
+[0;31mE (6173) bme680: Measurement is already running[0m
+[0;31mE (6183) bme680: Measurement is already running[0m
+[0;31mE (6183) bme680: Measurement is already running[0m

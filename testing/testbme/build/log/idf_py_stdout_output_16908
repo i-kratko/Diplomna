@@ -1,0 +1,27 @@
+[0/1] Re-running CMake...
+-- Component directory C:/Users/Niki/Desktop/sensorlelel/testbme/components/snconf does not contain a CMakeLists.txt file. No component will be added
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32c6
+-- Project sdkconfig file C:/Users/Niki/Desktop/sensorlelel/testbme/sdkconfig
+-- App "testbme" version: 1
+-- Adding linker script C:/Users/Niki/Desktop/sensorlelel/testbme/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/ld/esp32c6/sections.ld.in
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32c6/ld/esp32c6.rom.ld
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32c6/ld/esp32c6.rom.api.ld
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32c6/ld/esp32c6.rom.rvfp.ld
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32c6/ld/esp32c6.rom.newlib.ld
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32c6/ld/esp32c6.rom.version.ld
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32c6/ld/esp32c6.rom.phy.ld
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32c6/ld/esp32c6.rom.coexist.ld
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32c6/ld/esp32c6.rom.net80211.ld
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32c6/ld/esp32c6.rom.pp.ld
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32c6/ld/esp32c6.rom.wdt.ld
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32c6/ld/esp32c6.rom.newlib-normal.ld
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32c6/ld/esp32c6.rom.heap.ld
+-- Adding linker script C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/soc/esp32c6/ld/esp32c6.peripherals.ld
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Niki/Desktop/sensorlelel/testbme/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+C:\espressif2\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\Users\Niki\Desktop\sensorlelel\testbme -BC:\Users\Niki\Desktop\sensorlelel\testbme\build

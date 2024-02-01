@@ -1,10 +1,20 @@
 version: '3'
+
 services:
   flask-app:
     build: .
     ports:
       - "5000:5000"
+    depends_on:
+      - db
     environment:
-      - FLASK_ENV=development
+      SQLALCHEMY_DATABASE_URI: "sqlite:///site.db"
     volumes:
       - .:/app
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: your_database
+      POSTGRES_USER: your_user
+      POSTGRES_PASSWORD: your_password

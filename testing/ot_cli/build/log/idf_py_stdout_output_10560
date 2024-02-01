@@ -1,0 +1,69 @@
+e122�ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (23) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Feb  1 2024 01:29:59[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00120000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=420d0020 size=2d260h (184928) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=0003d288 vaddr=40800000 size=02d90h ( 11664) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=c8f40h (823104) map[0m
+[0;32mI (306) esp_image: segment 3: paddr=00108f68 vaddr=40802d90 size=0cbd8h ( 52184) load[0m
+[0;32mI (319) esp_image: segment 4: paddr=00115b48 vaddr=4080f970 size=01fc4h (  8132) load[0m
+[0;32mI (325) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (325) boot: Disabling RNG early entropy source...[0m
+[0;32mI (339) cpu_start: Unicore app[0m
+[0;32mI (340) cpu_start: Pro cpu up.[0m
+[0;33mW (348) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (355) cpu_start: Pro cpu start user code[0m
+[0;32mI (355) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (355) cpu_start: Application information:[0m
+[0;32mI (358) cpu_start: Project name:     esp_ot_cli[0m
+[0;32mI (363) cpu_start: App version:      1[0m
+[0;32mI (368) cpu_start: Compile time:     Feb  1 2024 01:27:52[0m
+[0;32mI (374) cpu_start: ELF file SHA256:  28c64997acab8c0f...[0m
+[0;32mI (380) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (385) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (390) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (395) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (399) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (406) heap_init: At 4081DC10 len 0005EA00 (378 KiB): D/IRAM[0m
+[0;32mI (413) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (420) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (427) spi_flash: detected chip: generic[0m
+[0;32mI (431) spi_flash: flash io: dio[0m
+[0;33mW (435) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (448) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (455) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (462) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (467) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (472) app_start: Starting scheduler on CPU0[0m
+[0;32mI (477) main_task: Started on CPU0[0m
+[0;32mI (477�j�[0;32mI (487) phy_init: phy_version 230,c773401,Oct 30 2023,15:07:16[0m
+[0;32mI (527) phy: libbtbb version: 7243671, Oct 30 2023, 15:07:30[0m
+[0;32mI(537) OPENTHREAD:[I] ChildSupervsn-: Timeout: 0 -> 190[0m
+[0;32mI(537) OPENTHREAD:[I] Settings------: Read NetworkInfo {rloc:0x7400, extaddr:1ee1220c292083b6, role:router, mode:0x0f, version:4, keyseq:0x0, ...[0m
+[0;32mI(547) OPENTHREAD:[I] Settings------: ... pid:0x2c4d0f87, mlecntr:0x1791, maccntr:0x1774, mliid:99e5a038bcfbd6ec}[0m
+> cuckwo[0;32mI (557) OPENTHREAD: OpenThread attached to netif[0m
+mmm[0;32mI(567) OPENTHREAD:[N] Mle-----------: Role disabled -> detached[0m
+[5n[0;32mI (577) OT_STATE: netif up[0m
+[0;32mI (537) main_task: Returned from app_main()[0m
+[0;32mI(767) OPENTHREAD:[N] Mle-----------: Role detached -> router[0m
+[0;32mI(767) OPENTHREAD:[N] Mle-----------: Partition ID 0x2c4d0f87[0m
+[0;32mI (837) OT_STATE: Set dns server address: FD5D:B7CA:A5FE:2::808:808[0m
+> 

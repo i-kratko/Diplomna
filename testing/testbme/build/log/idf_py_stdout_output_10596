@@ -1,0 +1,68 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (23) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jan 18 2024 15:07:05[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=09c28h ( 39976) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019c50 vaddr=40800000 size=063c8h ( 25544) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1523ch ( 86588) map[0m
+[0;32mI (127) esp_image: segment 3: paddr=00035264 vaddr=408063c8 size=050f0h ( 20720) load[0m
+[0;32mI (133) esp_image: segment 4: paddr=0003a35c vaddr=4080b4c0 size=010f4h (  4340) load[0m
+[0;32mI (137) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (156) cpu_start: Unicore app[0m
+[0;32mI (156) cpu_start: Pro cpu up.[0m
+[0;33mW (165) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) cpu_start: Application information:[0m
+[0;32mI (174) cpu_start: Project name:     testbme[0m
+[0;32mI (179) cpu_start: App version:      1[0m
+[0;32mI (184) cpu_start: Compile time:     Jan 25 2024 12:13:25[0m
+[0;32mI (190) cpu_start: ELF file SHA256:  55cfcc8f30770ec7...[0m
+[0;32mI (196) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (201) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (206) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (211) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (216) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (223) heap_init: At 4080D5A0 len 0006F070 (444 KiB): D/IRAM[0m
+[0;32mI (229) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (236) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (243) spi_flash: detected chip: generic[0m
+[0;32mI (247) spi_flash: flash io: dio[0m
+[0;33mW (251) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (264) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (271) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (278) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (283) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (288) app_start: Starting scheduler on CPU0[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[0;32mI (313) main_task: Returned from app_main()[0m
+BMP280: found BME280
+[0;33mW (1313) bme680: Heater is not stable[0m
+BME680 Sensor: 25.97 °C, 38.13 %, 948.46 hPa, 0.00 KOhm
+BMP280 Sensor: 24.96 °C, 32.56 %, 94833.23 Pa 
+BME680 Sensor: 25.95 °C, 38.16 %, 948.42 hPa, 28853.00 KOhm
+BMP280 Sensor: 24.95 °C, 32.55 %, 94827.60 Pa 
+BME680 Sensor: 25.95 °C, 38.18 %, 948.42 hPa, 27487.00 KOhm
+BMP280 Sensor: 24.96 °C, 32.56 %, 94832.02 Pa 
+BME680 Sensor: 25.95 °C, 38.19 %, 948.42 hPa, 27293.00 KOhm
+BMP280 Sensor: 24.96 °C, 32.56 %, 94826.77 Pa 

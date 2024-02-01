@@ -1,0 +1,126 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x1c (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (23) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jan 18 2024 15:07:05[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=09c28h ( 39976) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019c50 vaddr=40800000 size=063c8h ( 25544) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1523ch ( 86588) map[0m
+[0;32mI (127) esp_image: segment 3: paddr=00035264 vaddr=408063c8 size=050f0h ( 20720) load[0m
+[0;32mI (133) esp_image: segment 4: paddr=0003a35c vaddr=4080b4c0 size=010f4h (  4340) load[0m
+[0;32mI (137) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (156) cpu_start: Unicore app[0m
+[0;32mI (156) cpu_start: Pro cpu up.[0m
+[0;33mW (165) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) cpu_start: Application information:[0m
+[0;32mI (175) cpu_start: Project name:     testbme[0m
+[0;32mI (180) cpu_start: App version:      1[0m
+[0;32mI (184) cpu_start: Compile time:     Jan 25 2024 12:13:25[0m
+[0;32mI (190) cpu_start: ELF file SHA256:  24acf0064fec70d9...[0m
+[0;32mI (196) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (201) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (206) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (211) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (216) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (223) heap_init: At 4080D5A0 len 0006F070 (444 KiB): D/IRAM[0m
+[0;32mI (229) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (236) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (243) spi_flash: detected chip: generic[0m
+[0;32mI (247) spi_flash: flash io: dio[0m
+[0;33mW (251) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (264) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (271) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (278) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (283) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (288) app_start: Starting scheduler on CPU0[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[0;32mI (313) main_task: Returned from app_main()[0m
+BMP280: found BME280
+[0;33mW (1313) bme680: Heater is not stable[0m
+BME680 Sensor: 25.93 °C, 38.32 %, 948.44 hPa, 0.00 KOhm
+BMP280 Sensor: 24.83 °C, 32.77 %, 94828.03 Pa 
+BME680 Sensor: 25.91 °C, 38.35 %, 948.44 hPa, 26003.00 KOhm
+BMP280 Sensor: 24.83 °C, 32.69 %, 94832.06 Pa 
+BME680 Sensor: 25.90 °C, 38.37 %, 948.44 hPa, 24643.00 KOhm
+BMP280 Sensor: 24.83 °C, 32.75 %, 94830.76 Pa 
+BME680 Sensor: 25.90 °C, 38.37 %, 948.42 hPa, 24486.00 KOhm
+BMP280 Sensor: 24.83 °C, 32.75 %, 94827.48 Pa 
+BME680 Sensor: 25.90 °C, 38.35 %, 948.42 hPa, 24373.00 KOhm
+BMP280 Sensor: 24.83 °C, 32.74 %, 94831.14 Pa 
+BME680 Sensor: 25.90 °C, 38.31 %, 948.44 hPa, 24430.00 KOhm
+BMP280 Sensor: 24.84 °C, 32.73 %, 94830.28 Pa 
+BME680 Sensor: 25.90 °C, 38.29 %, 948.44 hPa, 24401.00 KOhm
+BMP280 Sensor: 24.84 °C, 32.74 %, 94830.94 Pa 
+BME680 Sensor: 25.90 °C, 38.25 %, 948.42 hPa, 24500.00 KOhm
+BMP280 Sensor: 24.84 °C, 32.72 %, 94833.20 Pa 
+BME680 Sensor: 25.91 °C, 38.24 %, 948.42 hPa, 24486.00 KOhm
+BMP280 Sensor: 24.85 °C, 32.74 %, 94823.83 Pa 
+BME680 Sensor: 25.91 °C, 38.21 %, 948.42 hPa, 24514.00 KOhm
+BMP280 Sensor: 24.85 °C, 32.73 %, 94825.62 Pa 
+BME680 Sensor: 25.92 °C, 38.17 %, 948.41 hPa, 24585.00 KOhm
+BMP280 Sensor: 24.86 °C, 32.70 %, 94827.42 Pa 
+BME680 Sensor: 25.92 °C, 38.16 %, 948.42 hPa, 24643.00 KOhm
+BMP280 Sensor: 24.86 °C, 32.73 %, 94828.08 Pa 
+BME680 Sensor: 25.93 °C, 38.12 %, 948.41 hPa, 24643.00 KOhm
+BMP280 Sensor: 24.86 °C, 32.72 %, 94824.14 Pa 
+BME680 Sensor: 25.93 °C, 38.10 %, 948.39 hPa, 24671.00 KOhm
+BMP280 Sensor: 24.86 °C, 32.70 %, 94824.80 Pa 
+BME680 Sensor: 25.94 °C, 38.09 %, 948.41 hPa, 24787.00 KOhm
+BMP280 Sensor: 24.86 °C, 32.70 %, 94823.48 Pa 
+BME680 Sensor: 25.95 °C, 38.08 %, 948.39 hPa, 24830.00 KOhm
+BMP280 Sensor: 24.87 °C, 32.69 %, 94824.59 Pa 
+BME680 Sensor: 25.95 °C, 38.06 %, 948.37 hPa, 24933.00 KOhm
+BMP280 Sensor: 24.87 °C, 32.67 %, 94824.98 Pa 
+BME680 Sensor: 25.96 °C, 38.04 %, 948.41 hPa, 24874.00 KOhm
+BMP280 Sensor: 24.87 °C, 32.66 %, 94822.36 Pa 
+BME680 Sensor: 25.96 °C, 38.03 %, 948.41 hPa, 24947.00 KOhm
+BMP280 Sensor: 24.88 °C, 32.67 %, 94824.42 Pa 
+BME680 Sensor: 25.96 °C, 38.01 %, 948.39 hPa, 25036.00 KOhm
+BMP280 Sensor: 24.88 °C, 32.67 %, 94824.42 Pa 
+BME680 Sensor: 25.97 °C, 37.98 %, 948.39 hPa, 25229.00 KOhm
+BMP280 Sensor: 24.87 °C, 32.67 %, 94822.08 Pa 
+BME680 Sensor: 25.98 °C, 37.99 %, 948.41 hPa, 25169.00 KOhm
+BMP280 Sensor: 24.88 °C, 32.67 %, 94825.56 Pa 
+BME680 Sensor: 25.98 °C, 37.97 %, 948.39 hPa, 25229.00 KOhm
+BMP280 Sensor: 24.88 °C, 32.67 %, 94822.56 Pa 
+BME680 Sensor: 25.99 °C, 37.97 %, 948.39 hPa, 25380.00 KOhm
+BMP280 Sensor: 24.88 °C, 32.66 %, 94820.59 Pa 
+BME680 Sensor: 25.99 °C, 37.96 %, 948.37 hPa, 25503.00 KOhm
+BMP280 Sensor: 24.89 °C, 32.68 %, 94822.39 Pa 
+BME680 Sensor: 26.00 °C, 37.95 %, 948.39 hPa, 25564.00 KOhm
+BMP280 Sensor: 24.89 °C, 32.68 %, 94824.05 Pa 
+BME680 Sensor: 26.01 °C, 37.96 %, 948.37 hPa, 25533.00 KOhm
+BMP280 Sensor: 24.90 °C, 32.67 %, 94821.91 Pa 
+BME680 Sensor: 26.01 °C, 37.94 %, 948.35 hPa, 25673.00 KOhm
+BMP280 Sensor: 24.90 °C, 32.65 %, 94822.20 Pa 
+BME680 Sensor: 26.02 °C, 37.92 %, 948.37 hPa, 25657.00 KOhm
+BMP280 Sensor: 24.90 °C, 32.64 %, 94823.23 Pa 
+BME680 Sensor: 26.03 °C, 37.92 %, 948.35 hPa, 25673.00 KOhm
+BMP280 Sensor: 24.90 °C, 32.64 %, 94822.95 Pa 
+BME680 Sensor: 26.04 °C, 37.91 %, 948.37 hPa, 25845.00 KOhm
+BMP280 Sensor: 24.91 °C, 32.66 %, 94824.75 Pa 
+BME680 Sensor: 26.04 °C, 37.88 %, 948.37 hPa, 25798.00 KOhm
+BMP280 Sensor: 24.91 °C, 32.66 %, 94827.38 Pa 
+BME680 Sensor: 26.05 °C, 37.88 %, 948.35 hPa, 26051.00 KOhm
+BMP280 Sensor: 24.91 °C, 32.66 %, 94822.51 Pa 

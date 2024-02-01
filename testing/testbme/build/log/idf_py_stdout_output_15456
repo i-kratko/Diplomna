@@ -1,0 +1,338 @@
+[0;32mI (100) esp_image: segment 1: paddr=00019d70 vaddr=408000ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40803c0a
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (23) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jan 18 2024 15:07:05[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=09d48h ( 40264) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=00019d70 vaddr=40800000 size=062a8h ( 25256) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1548ch ( 87180) map[0m
+[0;32mI (127) esp_image: segment 3: paddr=000354b4 vaddr=408062a8 size=05210h ( 21008) load[0m
+[0;32mI (132) esp_image: segment 4: paddr=0003a6cc vaddr=4080b4c0 size=010f4h (  4340) load[0m
+[0;32mI (137) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (138) boot: Disabling RNG early entropy source...[0m
+[0;32mI (155) cpu_start: Unicore app[0m
+[0;32mI (156) cpu_start: Pro cpu up.[0m
+[0;33mW (164) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (171) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (171) cpu_start: Application information:[0m
+[0;32mI (174) cpu_start: Project name:     testbme[0m
+[0;32mI (179) cpu_start: App version:      1[0m
+[0;32mI (183) cpu_start: Compile time:     Jan 18 2024 15:04:52[0m
+[0;32mI (189) cpu_start: ELF file SHA256:  edc8985673dadd80...[0m
+[0;32mI (195) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (201) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (205) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (210) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (215) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (222) heap_init: At 4080D5A0 len 0006F070 (444 KiB): D/IRAM[0m
+[0;32mI (229) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (235) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (242) spi_flash: detected chip: generic[0m
+[0;32mI (246) spi_flash: flash io: dio[0m
+[0;33mW (250) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (264) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (270) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (277) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (283) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (288) app_start: Starting scheduler on CPU0[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+BMP280: found BME280
+[0;32mI (323) main_task: Returned from app_main()[0m
+BH1750 Sensor: 79 Lux
+BMP280 Sensor: 24.68 °C, 42.28 %, Pressure: 93202.73 Pa 
+[0;33mW (1323) bme680: Heater is not stable[0m
+BME680 Sensor: 25.66 °C, 47.28 %, 932.41 hPa, 0.00 KOhm
+BH1750 Sensor: 78 Lux
+BMP280 Sensor: 24.67 °C, 42.30 %, Pressure: 93200.95 Pa 
+BME680 Sensor: 25.65 °C, 47.33 %, 932.41 hPa, 59590.00 KOhm
+BH1750 Sensor: 76 Lux
+BMP280 Sensor: 24.68 °C, 42.31 %, Pressure: 93201.51 Pa 
+BME680 Sensor: 25.65 °C, 47.37 %, 932.41 hPa, 57099.00 KOhm
+BH1750 Sensor: 75 Lux
+BMP280 Sensor: 24.68 °C, 42.33 %, Pressure: 93201.79 Pa 
+BME680 Sensor: 25.66 °C, 47.39 %, 932.43 hPa, 56831.00 KOhm
+BH1750 Sensor: 72 Lux
+BMP280 Sensor: 24.68 °C, 42.32 %, Pressure: 93203.10 Pa 
+BME680 Sensor: 25.67 °C, 47.38 %, 932.41 hPa, 56716.00 KOhm
+BH1750 Sensor: 69 Lux
+BMP280 Sensor: 24.68 °C, 42.33 %, Pressure: 93202.82 Pa 
+BME680 Sensor: 25.68 °C, 47.35 %, 932.41 hPa, 56716.00 KOhm
+BH1750 Sensor: 68 Lux
+BMP280 Sensor: 24.68 °C, 42.32 %, Pressure: 93203.19 Pa 
+BME680 Sensor: 25.69 °C, 47.35 %, 932.39 hPa, 56869.00 KOhm
+BH1750 Sensor: 69 Lux
+BMP280 Sensor: 24.68 °C, 42.32 %, Pressure: 93202.16 Pa 
+BME680 Sensor: 25.70 °C, 47.32 %, 932.41 hPa, 57022.00 KOhm
+BH1750 Sensor: 72 Lux
+BMP280 Sensor: 24.68 °C, 42.29 %, Pressure: 93202.82 Pa 
+BME680 Sensor: 25.71 °C, 47.28 %, 932.39 hPa, 56869.00 KOhm
+BH1750 Sensor: 74 Lux
+BMP280 Sensor: 24.68 °C, 42.33 %, Pressure: 93206.38 Pa 
+BME680 Sensor: 25.72 °C, 47.27 %, 932.41 hPa, 56869.00 KOhm
+BH1750 Sensor: 74 Lux
+BMP280 Sensor: 24.67 °C, 42.34 %, Pressure: 93202.63 Pa 
+BME680 Sensor: 25.73 °C, 47.25 %, 932.41 hPa, 57176.00 KOhm
+BH1750 Sensor: 73 Lux
+BMP280 Sensor: 24.68 °C, 42.33 %, Pressure: 93205.06 Pa 
+BME680 Sensor: 25.73 °C, 47.22 %, 932.39 hPa, 57022.00 KOhm
+BH1750 Sensor: 75 Lux
+BMP280 Sensor: 24.68 °C, 42.34 %, Pressure: 93200.85 Pa 
+BME680 Sensor: 25.74 °C, 47.22 %, 932.41 hPa, 57060.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.68 °C, 42.35 %, Pressure: 93203.75 Pa 
+BME680 Sensor: 25.75 °C, 47.21 %, 932.41 hPa, 57486.00 KOhm
+BH1750 Sensor: 68 Lux
+BMP280 Sensor: 24.67 °C, 42.37 %, Pressure: 93200.30 Pa 
+BME680 Sensor: 25.75 °C, 47.19 %, 932.41 hPa, 57409.00 KOhm
+BH1750 Sensor: 68 Lux
+BMP280 Sensor: 24.67 °C, 42.37 %, Pressure: 93201.61 Pa 
+BME680 Sensor: 25.76 °C, 47.19 %, 932.41 hPa, 57292.00 KOhm
+BH1750 Sensor: 69 Lux
+BMP280 Sensor: 24.66 °C, 42.38 %, Pressure: 93206.76 Pa 
+BME680 Sensor: 25.76 °C, 47.18 %, 932.43 hPa, 57370.00 KOhm
+BH1750 Sensor: 71 Lux
+BMP280 Sensor: 24.67 °C, 42.36 %, Pressure: 93201.89 Pa 
+BME680 Sensor: 25.76 °C, 47.18 %, 932.43 hPa, 57215.00 KOhm
+BH1750 Sensor: 74 Lux
+BMP280 Sensor: 24.67 °C, 42.33 %, Pressure: 93202.35 Pa 
+BME680 Sensor: 25.76 °C, 47.17 %, 932.43 hPa, 57447.00 KOhm
+BH1750 Sensor: 75 Lux
+BMP280 Sensor: 24.67 °C, 42.32 %, Pressure: 93201.33 Pa 
+BME680 Sensor: 25.76 °C, 47.19 %, 932.41 hPa, 57643.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.67 °C, 42.30 %, Pressure: 93204.60 Pa 
+BME680 Sensor: 25.77 °C, 47.15 %, 932.41 hPa, 57682.00 KOhm
+BH1750 Sensor: 71 Lux
+BMP280 Sensor: 24.68 °C, 42.33 %, Pressure: 93204.41 Pa 
+BME680 Sensor: 25.77 °C, 47.15 %, 932.39 hPa, 57643.00 KOhm
+BH1750 Sensor: 73 Lux
+BMP280 Sensor: 24.67 °C, 42.36 %, Pressure: 93201.70 Pa 
+BME680 Sensor: 25.78 °C, 47.15 %, 932.45 hPa, 57722.00 KOhm
+BH1750 Sensor: 1581 Lux
+BMP280 Sensor: 24.68 °C, 42.36 %, Pressure: 93201.42 Pa 
+BME680 Sensor: 25.78 °C, 47.14 %, 932.43 hPa, 58118.00 KOhm
+BH1750 Sensor: 2104 Lux
+BMP280 Sensor: 24.65 °C, 42.37 %, Pressure: 93197.42 Pa 
+BME680 Sensor: 25.79 °C, 47.12 %, 932.43 hPa, 57370.00 KOhm
+BH1750 Sensor: 4105 Lux
+BMP280 Sensor: 24.68 °C, 42.34 %, Pressure: 93204.12 Pa 
+BME680 Sensor: 25.79 °C, 47.12 %, 932.43 hPa, 57879.00 KOhm
+BH1750 Sensor: 9658 Lux
+BMP280 Sensor: 24.67 °C, 42.34 %, Pressure: 93202.35 Pa 
+BME680 Sensor: 25.79 °C, 47.12 %, 932.43 hPa, 57879.00 KOhm
+BH1750 Sensor: 16190 Lux
+BMP280 Sensor: 24.68 °C, 42.30 %, Pressure: 93205.06 Pa 
+BME680 Sensor: 25.80 °C, 47.12 %, 932.43 hPa, 58158.00 KOhm
+BH1750 Sensor: 1458 Lux
+BMP280 Sensor: 24.67 °C, 42.28 %, Pressure: 93203.01 Pa 
+BME680 Sensor: 25.80 °C, 47.11 %, 932.41 hPa, 58318.00 KOhm
+BH1750 Sensor: 255 Lux
+BMP280 Sensor: 24.67 °C, 42.27 %, Pressure: 93206.57 Pa 
+BME680 Sensor: 25.80 °C, 47.11 %, 932.43 hPa, 58118.00 KOhm
+BH1750 Sensor: 91 Lux
+BMP280 Sensor: 24.67 °C, 42.29 %, Pressure: 93204.23 Pa 
+BME680 Sensor: 25.80 °C, 47.08 %, 932.43 hPa, 58398.00 KOhm
+BH1750 Sensor: 69 Lux
+BMP280 Sensor: 24.67 °C, 42.30 %, Pressure: 93200.95 Pa 
+BME680 Sensor: 25.79 °C, 47.09 %, 932.41 hPa, 58198.00 KOhm
+BH1750 Sensor: 66 Lux
+BMP280 Sensor: 24.67 °C, 42.30 %, Pressure: 93203.85 Pa 
+BME680 Sensor: 25.79 °C, 47.06 %, 932.41 hPa, 58318.00 KOhm
+BH1750 Sensor: 75 Lux
+BMP280 Sensor: 24.67 °C, 42.24 %, Pressure: 93203.95 Pa 
+BME680 Sensor: 25.79 °C, 47.08 %, 932.41 hPa, 58358.00 KOhm
+BH1750 Sensor: 73 Lux
+BMP280 Sensor: 24.68 °C, 42.16 %, Pressure: 93207.03 Pa 
+BME680 Sensor: 25.79 °C, 47.07 %, 932.41 hPa, 58358.00 KOhm
+BH1750 Sensor: 72 Lux
+BMP280 Sensor: 24.68 °C, 42.13 %, Pressure: 93205.06 Pa 
+BME680 Sensor: 25.79 °C, 47.08 %, 932.43 hPa, 58641.00 KOhm
+BH1750 Sensor: 74 Lux
+BMP280 Sensor: 24.67 °C, 42.10 %, Pressure: 93204.60 Pa 
+BME680 Sensor: 25.79 °C, 47.04 %, 932.43 hPa, 58560.00 KOhm
+BH1750 Sensor: 75 Lux
+BMP280 Sensor: 24.67 °C, 42.10 %, Pressure: 93204.51 Pa 
+BME680 Sensor: 25.79 °C, 47.02 %, 932.43 hPa, 58398.00 KOhm
+BH1750 Sensor: 75 Lux
+BMP280 Sensor: 24.69 °C, 42.11 %, Pressure: 93202.25 Pa 
+BME680 Sensor: 25.79 °C, 47.00 %, 932.41 hPa, 58763.00 KOhm
+BH1750 Sensor: 75 Lux
+BMP280 Sensor: 24.69 °C, 42.13 %, Pressure: 93207.50 Pa 
+BME680 Sensor: 25.80 °C, 46.99 %, 932.41 hPa, 58439.00 KOhm
+BH1750 Sensor: 75 Lux
+BMP280 Sensor: 24.68 °C, 42.17 %, Pressure: 93204.12 Pa 
+BME680 Sensor: 25.80 °C, 46.97 %, 932.43 hPa, 58886.00 KOhm
+BH1750 Sensor: 75 Lux
+BMP280 Sensor: 24.68 °C, 42.24 %, Pressure: 93201.88 Pa 
+BME680 Sensor: 25.80 °C, 46.97 %, 932.41 hPa, 58968.00 KOhm
+BH1750 Sensor: 72 Lux
+BMP280 Sensor: 24.68 °C, 42.21 %, Pressure: 93200.57 Pa 
+BME680 Sensor: 25.81 °C, 46.96 %, 932.41 hPa, 58926.00 KOhm
+BH1750 Sensor: 71 Lux
+BMP280 Sensor: 24.69 °C, 42.21 %, Pressure: 93201.95 Pa 
+BME680 Sensor: 25.81 °C, 46.97 %, 932.41 hPa, 58722.00 KOhm
+BH1750 Sensor: 71 Lux
+BMP280 Sensor: 24.69 °C, 42.24 %, Pressure: 93197.36 Pa 
+BME680 Sensor: 25.81 °C, 46.97 %, 932.41 hPa, 58968.00 KOhm
+BH1750 Sensor: 71 Lux
+BMP280 Sensor: 24.70 °C, 42.23 %, Pressure: 93203.81 Pa 
+BME680 Sensor: 25.81 °C, 46.99 %, 932.39 hPa, 59215.00 KOhm
+BH1750 Sensor: 71 Lux
+BMP280 Sensor: 24.70 °C, 42.24 %, Pressure: 93199.13 Pa 
+BME680 Sensor: 25.81 °C, 46.99 %, 932.39 hPa, 59174.00 KOhm
+BH1750 Sensor: 71 Lux
+BMP280 Sensor: 24.69 °C, 42.20 %, Pressure: 93199.41 Pa 
+BME680 Sensor: 25.82 °C, 47.00 %, 932.41 hPa, 59339.00 KOhm
+BH1750 Sensor: 71 Lux
+BMP280 Sensor: 24.70 °C, 42.21 %, Pressure: 93202.12 Pa 
+BME680 Sensor: 25.82 °C, 46.98 %, 932.41 hPa, 59256.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.69 °C, 42.23 %, Pressure: 93197.73 Pa 
+BME680 Sensor: 25.82 °C, 46.99 %, 932.41 hPa, 59381.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.70 °C, 42.27 %, Pressure: 93202.12 Pa 
+BME680 Sensor: 25.82 °C, 46.98 %, 932.41 hPa, 59464.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.70 °C, 42.26 %, Pressure: 93199.22 Pa 
+BME680 Sensor: 25.83 °C, 46.99 %, 932.41 hPa, 59590.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.71 °C, 42.28 %, Pressure: 93199.69 Pa 
+BME680 Sensor: 25.83 °C, 46.99 %, 932.39 hPa, 59506.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.71 °C, 42.28 %, Pressure: 93198.09 Pa 
+BME680 Sensor: 25.84 °C, 46.98 %, 932.41 hPa, 59758.00 KOhm
+BH1750 Sensor: 71 Lux
+BMP280 Sensor: 24.71 °C, 42.30 %, Pressure: 93198.09 Pa 
+BME680 Sensor: 25.84 °C, 46.99 %, 932.41 hPa, 59590.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.72 °C, 42.30 %, Pressure: 93198.81 Pa 
+BME680 Sensor: 25.85 °C, 46.99 %, 932.39 hPa, 59632.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.71 °C, 42.30 %, Pressure: 93198.75 Pa 
+BME680 Sensor: 25.85 °C, 46.98 %, 932.39 hPa, 59758.00 KOhm
+BH1750 Sensor: 71 Lux
+BMP280 Sensor: 24.71 °C, 42.29 %, Pressure: 93199.75 Pa 
+BME680 Sensor: 25.85 °C, 46.97 %, 932.37 hPa, 59758.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.72 °C, 42.29 %, Pressure: 93203.12 Pa 
+BME680 Sensor: 25.86 °C, 46.96 %, 932.41 hPa, 59674.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.72 °C, 42.30 %, Pressure: 93203.78 Pa 
+BME680 Sensor: 25.86 °C, 46.97 %, 932.39 hPa, 60012.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.72 °C, 42.29 %, Pressure: 93199.19 Pa 
+BME680 Sensor: 25.86 °C, 46.96 %, 932.39 hPa, 59885.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.71 °C, 42.30 %, Pressure: 93200.72 Pa 
+BME680 Sensor: 25.86 °C, 46.97 %, 932.39 hPa, 59927.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.71 °C, 42.30 %, Pressure: 93203.03 Pa 
+BME680 Sensor: 25.86 °C, 46.97 %, 932.41 hPa, 60183.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.72 °C, 42.28 %, Pressure: 93198.91 Pa 
+BME680 Sensor: 25.86 °C, 46.98 %, 932.41 hPa, 60097.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.72 °C, 42.28 %, Pressure: 93197.97 Pa 
+BME680 Sensor: 25.86 °C, 46.97 %, 932.39 hPa, 59927.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.71 °C, 42.29 %, Pressure: 93197.79 Pa 
+BME680 Sensor: 25.86 °C, 46.98 %, 932.39 hPa, 60268.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.72 °C, 42.29 %, Pressure: 93195.62 Pa 
+BME680 Sensor: 25.86 °C, 46.99 %, 932.39 hPa, 60226.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.73 °C, 42.28 %, Pressure: 93191.79 Pa 
+BME680 Sensor: 25.87 °C, 46.98 %, 932.39 hPa, 60226.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.74 °C, 42.27 %, Pressure: 93198.22 Pa 
+BME680 Sensor: 25.87 °C, 46.98 %, 932.37 hPa, 60183.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.73 °C, 42.24 %, Pressure: 93197.78 Pa 
+BME680 Sensor: 25.88 °C, 46.97 %, 932.39 hPa, 60354.00 KOhm
+BH1750 Sensor: 70 Lux
+BMP280 Sensor: 24.74 °C, 42.25 %, Pressure: 93200.84 Pa 
+BME680 Sensor: 25.88 °C, 46.96 %, 932.39 hPa, 60440.00 KOhm
+BH1750 Sensor: 69 Lux
+BMP280 Sensor: 24.74 °C, 42.22 %, Pressure: 93197.94 Pa 
+BME680 Sensor: 25.88 °C, 46.96 %, 932.37 hPa, 60440.00 KOhm
+BH1750 Sensor: 67 Lux
+BMP280 Sensor: 24.74 °C, 42.21 %, Pressure: 93197.66 Pa 
+BME680 Sensor: 25.88 °C, 46.96 %, 932.37 hPa, 60614.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.74 °C, 42.21 %, Pressure: 93197.28 Pa 
+BME680 Sensor: 25.89 °C, 46.94 %, 932.37 hPa, 60614.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.74 °C, 42.19 %, Pressure: 93197.22 Pa 
+BME680 Sensor: 25.89 °C, 46.94 %, 932.35 hPa, 60570.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.74 °C, 42.16 %, Pressure: 93198.59 Pa 
+BME680 Sensor: 25.89 °C, 46.93 %, 932.35 hPa, 60614.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.74 °C, 42.14 %, Pressure: 93198.59 Pa 
+BME680 Sensor: 25.89 °C, 46.93 %, 932.37 hPa, 60570.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.74 °C, 42.13 %, Pressure: 93198.53 Pa 
+BME680 Sensor: 25.89 °C, 46.91 %, 932.35 hPa, 60919.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.73 °C, 42.13 %, Pressure: 93196.47 Pa 
+BME680 Sensor: 25.89 °C, 46.90 %, 932.35 hPa, 60919.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.73 °C, 42.13 %, Pressure: 93197.78 Pa 
+BME680 Sensor: 25.89 °C, 46.90 %, 932.35 hPa, 60875.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.73 °C, 42.15 %, Pressure: 93193.84 Pa 
+BME680 Sensor: 25.89 °C, 46.90 %, 932.35 hPa, 60963.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.73 °C, 42.16 %, Pressure: 93193.10 Pa 
+BME680 Sensor: 25.88 °C, 46.90 %, 932.37 hPa, 60919.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.73 °C, 42.13 %, Pressure: 93194.50 Pa 
+BME680 Sensor: 25.88 °C, 46.91 %, 932.37 hPa, 61007.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.73 °C, 42.13 %, Pressure: 93192.91 Pa 
+BME680 Sensor: 25.88 °C, 46.92 %, 932.37 hPa, 61227.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.72 °C, 42.18 %, Pressure: 93195.34 Pa 
+BME680 Sensor: 25.87 °C, 46.91 %, 932.35 hPa, 60875.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.72 °C, 42.20 %, Pressure: 93196.66 Pa 
+BME680 Sensor: 25.87 °C, 46.93 %, 932.35 hPa, 60963.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.73 °C, 42.22 %, Pressure: 93197.03 Pa 
+BME680 Sensor: 25.86 °C, 46.94 %, 932.37 hPa, 61050.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.72 °C, 42.24 %, Pressure: 93198.81 Pa 
+BME680 Sensor: 25.86 °C, 46.94 %, 932.37 hPa, 61183.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.72 °C, 42.28 %, Pressure: 93197.22 Pa 
+BME680 Sensor: 25.85 °C, 46.96 %, 932.35 hPa, 61139.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.72 °C, 42.29 %, Pressure: 93197.31 Pa 
+BME680 Sensor: 25.84 °C, 46.98 %, 932.37 hPa, 61095.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.73 °C, 42.24 %, Pressure: 93195.06 Pa 
+BME680 Sensor: 25.84 °C, 47.01 %, 932.37 hPa, 61360.00 KOhm
+BH1750 Sensor: 65 Lux
+BMP280 Sensor: 24.73 °C, 42.25 %, Pressure: 93195.72 Pa 
+BME680 Sensor: 25.84 °C, 47.03 %, 932.37 hPa, 61050.00 KOhm
+BH1750 Sensor: 65 Lux

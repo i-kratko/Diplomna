@@ -1,0 +1,94 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.3.3 on \\.\COM9 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x42007980: init_openthread_netif at C:/Users/Niki/Desktop/sensorlelel/testbme/main/testbme.c:173 (discriminator 1)
+[0m
+[0;33m0x408087b5: _esp_error_check_failed at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x4080063a: panic_abort at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x408087c0: __ubsan_include at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x408017d8: SysTickIsrHandler at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/port_systick.c:142
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[1;31mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Niki\\Desktop\\sensorlelel\\testbme\\build\\testbme.elf', '-ex', 'target remote | "C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c6 "C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpk_27qyhz"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpk_27qyhz': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m0x42007980: init_openthread_netif at C:/Users/Niki/Desktop/sensorlelel/testbme/main/testbme.c:173 (discriminator 1)
+[0m
+[0;33m0x408087b5: _esp_error_check_failed at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x4080063a: panic_abort at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x408087c0: __ubsan_include at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x408017d8: SysTickIsrHandler at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/port_systick.c:142
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[1;31mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Niki\\Desktop\\sensorlelel\\testbme\\build\\testbme.elf', '-ex', 'target remote | "C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c6 "C:\\Users\\Niki\\AppData\\Local\\Temp\\tmp7f2hc1ge"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\Niki\\AppData\\Local\\Temp\\tmp7f2hc1ge': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m0x42007980: init_openthread_netif at C:/Users/Niki/Desktop/sensorlelel/testbme/main/testbme.c:173 (discriminator 1)
+[0m
+[0;33m0x408087b5: _esp_error_check_failed at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x4080063a: panic_abort at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x408087c0: __ubsan_include at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x408017d8: SysTickIsrHandler at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/port_systick.c:142
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[1;31mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Niki\\Desktop\\sensorlelel\\testbme\\build\\testbme.elf', '-ex', 'target remote | "C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c6 "C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpt8yt0iv2"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpt8yt0iv2': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m0x42007980: init_openthread_netif at C:/Users/Niki/Desktop/sensorlelel/testbme/main/testbme.c:173 (discriminator 1)
+[0m
+[0;33m0x408087b5: _esp_error_check_failed at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x4080063a: panic_abort at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x408087c0: __ubsan_include at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x408017d8: SysTickIsrHandler at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/port_systick.c:142
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[1;31mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Niki\\Desktop\\sensorlelel\\testbme\\build\\testbme.elf', '-ex', 'target remote | "C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c6 "C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpvdledd7b"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpvdledd7b': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m0x42007980: init_openthread_netif at C:/Users/Niki/Desktop/sensorlelel/testbme/main/testbme.c:173 (discriminator 1)
+[0m
+[0;33m0x408087b5: _esp_error_check_failed at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x4080063a: panic_abort at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x408087c0: __ubsan_include at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/ubsan.c:313
+[0m
+[0;33m0x408017d8: SysTickIsrHandler at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/port_systick.c:142
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[0m

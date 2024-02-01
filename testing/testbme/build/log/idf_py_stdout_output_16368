@@ -1,0 +1,205 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (23) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jan 18 2024 15:07:05[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=09e98h ( 40600) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019ec0 vaddr=40800000 size=06158h ( 24920) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=15960h ( 88416) map[0m
+[0;32mI (128) esp_image: segment 3: paddr=00035988 vaddr=40806158 size=05360h ( 21344) load[0m
+[0;32mI (133) esp_image: segment 4: paddr=0003acf0 vaddr=4080b4c0 size=010f4h (  4340) load[0m
+[0;32mI (138) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (156) cpu_start: Unicore app[0m
+[0;32mI (157) cpu_start: Pro cpu up.[0m
+[0;33mW (165) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) cpu_start: Application information:[0m
+[0;32mI (175) cpu_start: Project name:     testbme[0m
+[0;32mI (180) cpu_start: App version:      1[0m
+[0;32mI (184) cpu_start: Compile time:     Jan 25 2024 12:13:25[0m
+[0;32mI (190) cpu_start: ELF file SHA256:  7b3988909a5b0f4a...[0m
+[0;32mI (196) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (202) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (206) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (211) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (216) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (223) heap_init: At 4080D5A0 len 0006F070 (444 KiB): D/IRAM[0m
+[0;32mI (230) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (236) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (243) spi_flash: detected chip: generic[0m
+[0;32mI (247) spi_flash: flash io: dio[0m
+[0;33mW (251) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (265) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (271) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (278) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (284) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (289) app_start: Starting scheduler on CPU0[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+BMP280: found BME280
+[0;32mI (323) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (1333) bme680: Heater is not stable[0m
+BME680 Sensor: 25.33 °C, 39.11 %, 947.99 hPa, 0.00 KOhm
+BMP280 Sensor: 24.49 °C, 33.24 %, 94787.24 Pa 
+BME680 Sensor: 25.31 °C, 39.16 %, 947.99 hPa, 39246.00 KOhm
+BMP280 Sensor: 24.47 °C, 33.25 %, 94786.68 Pa 
+Motion is detected 1 times[0;32mI (2723) main_task: Returned from app_main()[0m
+BME680 Sensor: 25.30 °C, 39.19 %, 947.99 hPa, 37377.00 KOhm
+BMP280 Sensor: 24.48 °C, 33.25 %, 94787.06 Pa 
+Motion is detected 2 timesBME680 Sensor: 25.30 °C, 39.19 %, 948.01 hPa, 37148.00 KOhm
+BMP280 Sensor: 24.48 °C, 33.25 %, 94785.47 Pa 
+Motion is detected 3 timesBME680 Sensor: 25.30 °C, 39.19 %, 948.03 hPa, 37050.00 KOhm
+BMP280 Sensor: 24.49 °C, 33.25 %, 94784.34 Pa 
+Motion is detected 4 timesBME680 Sensor: 25.30 °C, 39.16 %, 948.03 hPa, 37050.00 KOhm
+BMP280 Sensor: 24.49 °C, 33.28 %, 94787.24 Pa 
+BME680 Sensor: 25.30 °C, 39.15 %, 948.01 hPa, 36857.00 KOhm
+BMP280 Sensor: 24.49 °C, 33.26 %, 94789.86 Pa 
+BME680 Sensor: 25.30 °C, 39.13 %, 948.01 hPa, 37050.00 KOhm
+BMP280 Sensor: 24.49 °C, 33.25 %, 94786.59 Pa 
+BME680 Sensor: 25.30 °C, 39.11 %, 948.01 hPa, 37246.00 KOhm
+BMP280 Sensor: 24.49 °C, 33.24 %, 94785.66 Pa 
+BME680 Sensor: 25.31 °C, 39.09 %, 948.01 hPa, 37180.00 KOhm
+Motion is detected 5 timesBMP280 Sensor: 24.49 °C, 33.22 %, 94783.97 Pa 
+Motion is detected 6 timesBME680 Sensor: 25.31 °C, 39.08 %, 947.99 hPa, 37246.00 KOhm
+BMP280 Sensor: 24.49 °C, 33.24 %, 94786.31 Pa 
+Motion is detected 7 timesBME680 Sensor: 25.31 °C, 39.06 %, 947.99 hPa, 37213.00 KOhm
+BMP280 Sensor: 24.49 °C, 33.23 %, 94787.73 Pa 
+Motion is detected 8 timesBME680 Sensor: 25.32 °C, 39.04 %, 947.99 hPa, 37377.00 KOhm
+BMP280 Sensor: 24.49 °C, 33.22 %, 94786.42 Pa 
+Motion is detected 9 timesBME680 Sensor: 25.32 °C, 39.03 %, 947.99 hPa, 37278.00 KOhm
+BMP280 Sensor: 24.49 °C, 33.21 %, 94784.34 Pa 
+Motion is detected 10 timesBME680 Sensor: 25.33 °C, 39.02 %, 947.99 hPa, 37410.00 KOhm
+BMP280 Sensor: 24.49 °C, 33.18 %, 94785.93 Pa 
+BME680 Sensor: 25.33 °C, 39.01 %, 947.99 hPa, 37509.00 KOhm
+BMP280 Sensor: 24.49 °C, 33.18 %, 94786.69 Pa 
+BME680 Sensor: 25.34 °C, 38.98 %, 947.97 hPa, 37676.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.20 %, 94783.52 Pa 
+BME680 Sensor: 25.34 °C, 38.97 %, 947.99 hPa, 37710.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.20 %, 94787.45 Pa 
+BME680 Sensor: 25.34 °C, 38.96 %, 947.99 hPa, 37777.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.21 %, 94785.97 Pa 
+Motion is detected 11 timesBME680 Sensor: 25.35 °C, 38.94 %, 947.97 hPa, 37980.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.21 %, 94786.14 Pa 
+Motion is detected 12 timesBME680 Sensor: 25.35 °C, 38.94 %, 947.97 hPa, 37912.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.24 %, 94787.17 Pa 
+Motion is detected 13 timesBME680 Sensor: 25.36 °C, 38.93 %, 947.99 hPa, 37946.00 KOhm
+BMP280 Sensor: 24.51 °C, 33.25 %, 94788.31 Pa 
+Motion is detected 14 timesBME680 Sensor: 25.36 °C, 38.92 %, 947.97 hPa, 38048.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.30 %, 94784.94 Pa 
+BME680 Sensor: 25.37 °C, 38.93 %, 947.97 hPa, 38151.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.27 %, 94789.91 Pa 
+BME680 Sensor: 25.37 °C, 38.92 %, 947.97 hPa, 38254.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.24 %, 94787.83 Pa 
+Motion is detected 15 timesBME680 Sensor: 25.37 °C, 38.92 %, 947.97 hPa, 38323.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.22 %, 94790.17 Pa 
+Motion is detected 16 timesBME680 Sensor: 25.38 °C, 38.92 %, 947.97 hPa, 38497.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.21 %, 94785.97 Pa 
+Motion is detected 17 timesBME680 Sensor: 25.38 °C, 38.92 %, 948.01 hPa, 38497.00 KOhm
+BMP280 Sensor: 24.51 °C, 33.23 %, 94791.59 Pa 
+BME680 Sensor: 25.38 °C, 38.91 %, 948.01 hPa, 38567.00 KOhm
+BMP280 Sensor: 24.51 °C, 33.22 %, 94791.02 Pa 
+BME680 Sensor: 25.38 °C, 38.89 %, 948.01 hPa, 38638.00 KOhm
+BMP280 Sensor: 24.51 °C, 33.20 %, 94785.04 Pa 
+Motion is detected 18 timesBME680 Sensor: 25.38 °C, 38.89 %, 948.01 hPa, 38815.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.20 %, 94791.22 Pa 
+Motion is detected 19 timesBME680 Sensor: 25.39 °C, 38.89 %, 948.01 hPa, 38779.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.20 %, 94786.62 Pa 
+Motion is detected 20 timesBME680 Sensor: 25.39 °C, 38.89 %, 948.01 hPa, 38922.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.19 %, 94787.94 Pa 
+Motion is detected 21 timesBME680 Sensor: 25.39 °C, 38.87 %, 948.01 hPa, 39065.00 KOhm
+BMP280 Sensor: 24.50 °C, 33.20 %, 94785.97 Pa 
+BME680 Sensor: 25.39 °C, 38.87 %, 948.01 hPa, 38993.00 KOhm
+BMP280 Sensor: 24.51 °C, 33.20 %, 94788.12 Pa 
+BME680 Sensor: 25.40 °C, 38.87 %, 948.01 hPa, 39137.00 KOhm
+BMP280 Sensor: 24.51 °C, 33.20 %, 94792.70 Pa 
+BME680 Sensor: 25.40 °C, 38.86 %, 948.01 hPa, 39210.00 KOhm
+BMP280 Sensor: 24.51 °C, 33.18 %, 94788.12 Pa 
+BME680 Sensor: 25.39 °C, 38.83 %, 948.01 hPa, 39282.00 KOhm
+BMP280 Sensor: 24.51 °C, 33.19 %, 94786.42 Pa 
+BME680 Sensor: 25.39 °C, 38.85 %, 948.01 hPa, 39392.00 KOhm
+[0;31mE (40073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (40073) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (40073) task_wdt: Tasks currently running:[0m
+[0;31mE (40073) task_wdt: CPU 0: SR602[0m
+[0;31mE (40073) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x42009d9c  RA      : 0x42006ba8  SP      : 0x40818db0  GP      : 0x4080bcc0  
+TP      : 0x4080f774  T0      : 0x40028192  T1      : 0x20000000  T2      : 0x00000000  
+S0/FP   : 0x00000001  S1      : 0x00000015  A0      : 0x00000007  A1      : 0x00000001  
+A2      : 0x00000d98  A3      : 0x00000004  A4      : 0x00000001  A5      : 0x15632340  
+A6      : 0xa0000000  A7      : 0x0000000a  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00000000  MTVEC   : 0x00000000  MCAUSE  : 0x00000000  MTVAL   : 0x4080862a  
+MHARTID : 0x00000000  
+BMP280 Sensor: 24.52 °C, 33.18 %, 94783.25 Pa 
+BME680 Sensor: 25.39 °C, 38.85 %, 947.99 hPa, 39355.00 KOhm
+BMP280 Sensor: 24.51 °C, 33.17 %, 94789.70 Pa 
+BME680 Sensor: 25.39 °C, 38.83 %, 947.99 hPa, 39428.00 KOhm
+BMP280 Sensor: 24.52 °C, 33.17 %, 94785.98 Pa 
+BME680 Sensor: 25.39 °C, 38.85 %, 948.01 hPa, 39613.00 KOhm
+BMP280 Sensor: 24.52 °C, 33.17 %, 94787.57 Pa 
+BME680 Sensor: 25.39 °C, 38.83 %, 947.99 hPa, 39319.00 KOhm
+BMP280 Sensor: 24.51 °C, 33.17 %, 94789.43 Pa 
+[0;31mE (45073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (45073) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (45073) task_wdt: Tasks currently running:[0m
+[0;31mE (45073) task_wdt: CPU 0: SR602[0m
+[0;31mE (45073) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x42009d9c  RA      : 0x42006ba8  SP      : 0x40818db0  GP      : 0x4080bcc0  
+TP      : 0x4080f774  T0      : 0x40028192  T1      : 0x20000000  T2      : 0x00000000  
+S0/FP   : 0x00000523  S1      : 0x00000015  A0      : 0x00000007  A1      : 0x00000001  
+A2      : 0x00000d98  A3      : 0x00000004  A4      : 0x00000001  A5      : 0x15632360  
+A6      : 0xa0000000  A7      : 0x0000000a  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00000000  MTVEC   : 0x00000000  MCAUSE  : 0x00000000  MTVAL   : 0x4080862a  
+MHARTID : 0x00000000  
+Motion is detected 22 timesBME680 Sensor: 25.39 °C, 38.84 %, 947.99 hPa, 39761.00 KOhm
+BMP280 Sensor: 24.51 °C, 33.17 %, 94785.11 Pa 
+Motion is detected 23 timesBME680 Sensor: 25.39 °C, 38.83 %, 948.01 hPa, 39986.00 KOhm
+BMP280 Sensor: 24.52 °C, 33.18 %, 94783.91 Pa 
+BME680 Sensor: 25.39 °C, 38.85 %, 947.99 hPa, 39911.00 KOhm
+BMP280 Sensor: 24.52 °C, 33.18 %, 94787.29 Pa 
+BME680 Sensor: 25.39 °C, 38.85 %, 947.99 hPa, 39836.00 KOhm
+BMP280 Sensor: 24.52 °C, 33.17 %, 94782.59 Pa 
+BME680 Sensor: 25.39 °C, 38.83 %, 947.99 hPa, 39836.00 KOhm
+BMP280 Sensor: 24.52 °C, 33.19 %, 94785.98 Pa 
+Motion is detected 24 timesBME680 Sensor: 25.38 °C, 38.83 %, 948.01 hPa, 39986.00 KOhm
+BMP280 Sensor: 24.53 °C, 33.19 %, 94786.36 Pa 
+Motion is detected 25 timesBME680 Sensor: 25.39 °C, 38.84 %, 947.99 hPa, 40138.00 KOhm
+BMP280 Sensor: 24.53 °C, 33.19 %, 94788.05 Pa 
+Motion is detected 26 timesBME680 Sensor: 25.39 °C, 38.83 %, 947.99 hPa, 40138.00 KOhm
+BMP280 Sensor: 24.53 °C, 33.19 %, 94790.40 Pa 
+BME680 Sensor: 25.39 °C, 38.85 %, 947.99 hPa, 40329.00 KOhm
+BMP280 Sensor: 24.53 °C, 33.19 %, 94787.12 Pa 
+BME680 Sensor: 25.39 °C, 38.84 %, 947.99 hPa, 40291.00 KOhm
+BMP280 Sensor: 24.53 °C, 33.18 %, 94786.19 Pa 
+BME680 Sensor: 25.39 °C, 38.84 %, 947.99 hPa, 40444.00 KOhm
+BMP280 Sensor: 24.53 °C, 33.18 %, 94786.19 Pa 
+Motion is detected 27 timesBME680 Sensor: 25.40 °C, 38.85 %, 947.99 hPa, 40444.00 KOhm
+BMP280 Sensor: 24.53 °C, 33.17 %, 94788.51 Pa 
+Motion is detected 28 timesBME680 Sensor: 25.40 °C, 38.85 %, 947.99 hPa, 40599.00 KOhm
+BMP280 Sensor: 24.53 °C, 33.16 %, 94784.58 Pa 

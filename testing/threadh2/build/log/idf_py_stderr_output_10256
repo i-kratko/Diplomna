@@ -1,0 +1,3 @@
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository: C:/Users/Niki/Desktop/sensorlelel/threadh2/components/openthread/openthread/../../../.git/modules/components/openthread/openthread
+ninja: error: 'C:/Users/Niki/Desktop/sensorlelel/threadh2/components/openthread/lib/esp32h2/libopenthread_br.a', needed by 'threadh2.elf', missing and no known rule to make it

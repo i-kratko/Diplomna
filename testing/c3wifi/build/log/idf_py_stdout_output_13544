@@ -1,0 +1,19 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\Niki\Desktop\sensorlelel\c3wifi\build\bootloader\esp-idf\esptool_py && C:\espressif2\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Niki/Desktop/sensorlelel/c3wifi/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5070 bytes. 0x2f90 bytes (37%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/c3wifi.c.obj
+In file included from C:/Users/Niki/Desktop/sensorlelel/c3wifi/main/c3wifi.c:7:
+C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/spi_flash/include/esp_spi_flash.h:6:2: warning: #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-Wcpp]
+    6 | #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead
+      |  ^~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable c3wifi.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32c3 image...
+Merged 2 ELF sections
+Successfully created esp32c3 image.
+Generated C:/Users/Niki/Desktop/sensorlelel/c3wifi/build/c3wifi.bin
+[7/7] cmd.exe /C "cd /D C:\Users\Niki\Desktop\sensorlelel\c3wifi\build\esp-idf\esptool_py && C:\espressif2\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Niki/Desktop/sensorlelel/c3wifi/build/partition_table/partition-table.bin C:/Users/Niki/Desktop/sensorlelel/c3wifi/build/c3wifi.bin"
+c3wifi.bin binary size 0x2f970 bytes. Smallest app partition is 0x100000 bytes. 0xd0690 bytes (81%) free.

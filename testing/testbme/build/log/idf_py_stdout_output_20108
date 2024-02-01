@@ -1,0 +1,248 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (23) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jan 18 2024 15:07:05[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=09a38h ( 39480) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019a60 vaddr=40800000 size=065b8h ( 26040) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=149b4h ( 84404) map[0m
+[0;32mI (127) esp_image: segment 3: paddr=000349dc vaddr=408065b8 size=04f00h ( 20224) load[0m
+[0;32mI (132) esp_image: segment 4: paddr=000398e4 vaddr=4080b4c0 size=010f4h (  4340) load[0m
+[0;32mI (136) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (155) cpu_start: Unicore app[0m
+[0;32mI (156) cpu_start: Pro cpu up.[0m
+[0;33mW (164) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (171) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (171) cpu_start: Application information:[0m
+[0;32mI (174) cpu_start: Project name:     testbme[0m
+[0;32mI (179) cpu_start: App version:      1[0m
+[0;32mI (183) cpu_start: Compile time:     Jan 25 2024 12:13:25[0m
+[0;32mI (189) cpu_start: ELF file SHA256:  18b41b8ec57c821f...[0m
+[0;32mI (195) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (201) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (206) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (210) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (215) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (222) heap_init: At 4080D5A0 len 0006F070 (444 KiB): D/IRAM[0m
+[0;32mI (229) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (235) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (243) spi_flash: detected chip: generic[0m
+[0;32mI (247) spi_flash: flash io: dio[0m
+[0;33mW (250) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (264) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (270) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (277) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (283) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (288) app_start: Starting scheduler on CPU0[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[0;32mI (313) main_task: Returned from app_main()[0m
+BH1750 Sensor: 175 Lux
+[0;33mW (1313) bme680: Heater is not stable[0m
+BME680 Sensor: 24.91 °C, 38.11 %, 948.48 hPa, 0.00 KOhm
+BH1750 Sensor: 175 Lux
+BME680 Sensor: 24.90 °C, 38.09 %, 948.48 hPa, 13357.00 KOhm
+BH1750 Sensor: 176 Lux
+BME680 Sensor: 24.90 °C, 38.08 %, 948.48 hPa, 11948.00 KOhm
+BH1750 Sensor: 177 Lux
+BME680 Sensor: 24.90 °C, 38.05 %, 948.46 hPa, 11467.00 KOhm
+BH1750 Sensor: 178 Lux
+BME680 Sensor: 24.91 °C, 38.02 %, 948.48 hPa, 11176.00 KOhm
+BH1750 Sensor: 179 Lux
+BME680 Sensor: 24.92 °C, 37.97 %, 948.46 hPa, 10990.00 KOhm
+BH1750 Sensor: 180 Lux
+BME680 Sensor: 24.94 °C, 37.94 %, 948.46 hPa, 10877.00 KOhm
+BH1750 Sensor: 181 Lux
+BME680 Sensor: 24.95 °C, 37.91 %, 948.48 hPa, 10810.00 KOhm
+BH1750 Sensor: 183 Lux
+BME680 Sensor: 24.97 °C, 37.87 %, 948.48 hPa, 10777.00 KOhm
+BH1750 Sensor: 184 Lux
+BME680 Sensor: 24.98 °C, 37.83 %, 948.48 hPa, 10755.00 KOhm
+BH1750 Sensor: 185 Lux
+BME680 Sensor: 25.00 °C, 37.80 %, 948.46 hPa, 10755.00 KOhm
+BH1750 Sensor: 186 Lux
+BME680 Sensor: 25.02 °C, 37.72 %, 948.48 hPa, 10711.00 KOhm
+BH1750 Sensor: 187 Lux
+BME680 Sensor: 25.03 °C, 37.67 %, 948.48 hPa, 10744.00 KOhm
+BH1750 Sensor: 189 Lux
+BME680 Sensor: 25.05 °C, 37.61 %, 948.48 hPa, 10755.00 KOhm
+BH1750 Sensor: 190 Lux
+BME680 Sensor: 25.07 °C, 37.56 %, 948.48 hPa, 10766.00 KOhm
+BH1750 Sensor: 192 Lux
+BME680 Sensor: 25.08 °C, 37.52 %, 948.48 hPa, 10810.00 KOhm
+BH1750 Sensor: 195 Lux
+BME680 Sensor: 25.09 °C, 37.49 %, 948.44 hPa, 10910.00 KOhm
+BH1750 Sensor: 196 Lux
+BME680 Sensor: 25.11 °C, 37.48 %, 948.44 hPa, 10899.00 KOhm
+BH1750 Sensor: 199 Lux
+BME680 Sensor: 25.12 °C, 37.47 %, 948.44 hPa, 10978.00 KOhm
+BH1750 Sensor: 200 Lux
+BME680 Sensor: 25.14 °C, 37.45 %, 948.41 hPa, 10990.00 KOhm
+BH1750 Sensor: 203 Lux
+BME680 Sensor: 25.15 °C, 37.45 %, 948.42 hPa, 11070.00 KOhm
+BH1750 Sensor: 206 Lux
+BME680 Sensor: 25.16 °C, 37.45 %, 948.42 hPa, 11105.00 KOhm
+BH1750 Sensor: 210 Lux
+BME680 Sensor: 25.17 °C, 37.42 %, 948.41 hPa, 11176.00 KOhm
+BH1750 Sensor: 215 Lux
+BME680 Sensor: 25.18 °C, 37.39 %, 948.44 hPa, 11223.00 KOhm
+BH1750 Sensor: 224 Lux
+BME680 Sensor: 25.19 °C, 37.35 %, 948.42 hPa, 11271.00 KOhm
+BH1750 Sensor: 230 Lux
+BME680 Sensor: 25.20 °C, 37.30 %, 948.42 hPa, 11319.00 KOhm
+BH1750 Sensor: 241 Lux
+BME680 Sensor: 25.21 °C, 37.27 %, 948.41 hPa, 11405.00 KOhm
+BH1750 Sensor: 253 Lux
+BME680 Sensor: 25.22 °C, 37.26 %, 948.42 hPa, 11467.00 KOhm
+BH1750 Sensor: 269 Lux
+BME680 Sensor: 25.23 °C, 37.22 %, 948.41 hPa, 11542.00 KOhm
+BH1750 Sensor: 283 Lux
+BME680 Sensor: 25.24 °C, 37.22 %, 948.42 hPa, 11593.00 KOhm
+BH1750 Sensor: 292 Lux
+BME680 Sensor: 25.25 °C, 37.21 %, 948.41 hPa, 11657.00 KOhm
+BH1750 Sensor: 298 Lux
+BME680 Sensor: 25.26 °C, 37.19 %, 948.42 hPa, 11788.00 KOhm
+BH1750 Sensor: 300 Lux
+BME680 Sensor: 25.27 °C, 37.20 %, 948.41 hPa, 11827.00 KOhm
+BH1750 Sensor: 310 Lux
+BME680 Sensor: 25.28 °C, 37.22 %, 948.41 hPa, 11921.00 KOhm
+BH1750 Sensor: 326 Lux
+BME680 Sensor: 25.29 °C, 37.21 %, 948.41 hPa, 12009.00 KOhm
+BH1750 Sensor: 350 Lux
+BME680 Sensor: 25.30 °C, 37.21 %, 948.42 hPa, 12015.00 KOhm
+BH1750 Sensor: 408 Lux
+BME680 Sensor: 25.31 °C, 37.21 %, 948.41 hPa, 12063.00 KOhm
+BH1750 Sensor: 475 Lux
+BME680 Sensor: 25.31 °C, 37.22 %, 948.41 hPa, 12202.00 KOhm
+BH1750 Sensor: 513 Lux
+BME680 Sensor: 25.32 °C, 37.21 %, 948.42 hPa, 12245.00 KOhm
+BH1750 Sensor: 545 Lux
+BME680 Sensor: 25.33 °C, 37.21 %, 948.42 hPa, 12266.00 KOhm
+BH1750 Sensor: 570 Lux
+BME680 Sensor: 25.33 °C, 37.22 %, 948.41 hPa, 12352.00 KOhm
+BH1750 Sensor: 580 Lux
+BME680 Sensor: 25.34 °C, 37.22 %, 948.41 hPa, 12432.00 KOhm
+BH1750 Sensor: 565 Lux
+BME680 Sensor: 25.34 °C, 37.21 %, 948.42 hPa, 12490.00 KOhm
+BH1750 Sensor: 533 Lux
+BME680 Sensor: 25.35 °C, 37.21 %, 948.42 hPa, 12550.00 KOhm
+BH1750 Sensor: 510 Lux
+BME680 Sensor: 25.35 °C, 37.21 %, 948.41 hPa, 12639.00 KOhm
+BH1750 Sensor: 465 Lux
+BME680 Sensor: 25.36 °C, 37.23 %, 948.42 hPa, 12731.00 KOhm
+BH1750 Sensor: 420 Lux
+BME680 Sensor: 25.36 °C, 37.23 %, 948.42 hPa, 12746.00 KOhm
+BH1750 Sensor: 413 Lux
+BME680 Sensor: 25.37 °C, 37.23 %, 948.42 hPa, 12839.00 KOhm
+BH1750 Sensor: 383 Lux
+BME680 Sensor: 25.37 °C, 37.23 %, 948.42 hPa, 12925.00 KOhm
+BH1750 Sensor: 354 Lux
+BME680 Sensor: 25.38 °C, 37.22 %, 948.46 hPa, 13036.00 KOhm
+BH1750 Sensor: 332 Lux
+BME680 Sensor: 25.39 °C, 37.22 %, 948.46 hPa, 13044.00 KOhm
+BH1750 Sensor: 320 Lux
+BME680 Sensor: 25.39 °C, 37.22 %, 948.44 hPa, 13199.00 KOhm
+BH1750 Sensor: 314 Lux
+BME680 Sensor: 25.40 °C, 37.22 %, 948.44 hPa, 13215.00 KOhm
+BH1750 Sensor: 308 Lux
+BME680 Sensor: 25.40 °C, 37.19 %, 948.44 hPa, 13290.00 KOhm
+BH1750 Sensor: 305 Lux
+BME680 Sensor: 25.40 °C, 37.18 %, 948.46 hPa, 13357.00 KOhm
+BH1750 Sensor: 302 Lux
+BME680 Sensor: 25.40 °C, 37.15 %, 948.44 hPa, 13451.00 KOhm
+BH1750 Sensor: 300 Lux
+BME680 Sensor: 25.41 °C, 37.14 %, 948.44 hPa, 13545.00 KOhm
+BH1750 Sensor: 296 Lux
+BME680 Sensor: 25.41 °C, 37.15 %, 948.44 hPa, 13632.00 KOhm
+BH1750 Sensor: 293 Lux
+BME680 Sensor: 25.42 °C, 37.18 %, 948.44 hPa, 13676.00 KOhm
+BH1750 Sensor: 291 Lux
+BME680 Sensor: 25.42 °C, 37.23 %, 948.46 hPa, 13739.00 KOhm
+BH1750 Sensor: 290 Lux
+BME680 Sensor: 25.42 °C, 37.30 %, 948.44 hPa, 13792.00 KOhm
+BH1750 Sensor: 290 Lux
+BME680 Sensor: 25.42 °C, 37.39 %, 948.46 hPa, 13865.00 KOhm
+BH1750 Sensor: 291 Lux
+BME680 Sensor: 25.43 °C, 37.49 %, 948.46 hPa, 13865.00 KOhm
+BH1750 Sensor: 295 Lux
+BME680 Sensor: 25.43 °C, 37.59 %, 948.46 hPa, 13965.00 KOhm
+BH1750 Sensor: 304 Lux
+BME680 Sensor: 25.43 °C, 37.64 %, 948.46 hPa, 14049.00 KOhm
+BH1750 Sensor: 313 Lux
+BME680 Sensor: 25.43 °C, 37.70 %, 948.46 hPa, 14095.00 KOhm
+BH1750 Sensor: 324 Lux
+BME680 Sensor: 25.43 °C, 37.76 %, 948.46 hPa, 14218.00 KOhm
+BH1750 Sensor: 340 Lux
+BME680 Sensor: 25.44 °C, 37.82 %, 948.46 hPa, 14276.00 KOhm
+BH1750 Sensor: 396 Lux
+BME680 Sensor: 25.44 °C, 37.90 %, 948.48 hPa, 14305.00 KOhm
+BH1750 Sensor: 442 Lux
+BME680 Sensor: 25.44 °C, 37.96 %, 948.48 hPa, 14363.00 KOhm
+BH1750 Sensor: 438 Lux
+BME680 Sensor: 25.44 °C, 38.00 %, 948.48 hPa, 14461.00 KOhm
+BH1750 Sensor: 446 Lux
+BME680 Sensor: 25.45 °C, 38.03 %, 948.48 hPa, 14541.00 KOhm
+BH1750 Sensor: 457 Lux
+BME680 Sensor: 25.45 °C, 38.03 %, 948.48 hPa, 14551.00 KOhm
+BH1750 Sensor: 480 Lux
+BME680 Sensor: 25.46 °C, 38.06 %, 948.48 hPa, 14692.00 KOhm
+BH1750 Sensor: 483 Lux
+BME680 Sensor: 25.46 °C, 38.07 %, 948.50 hPa, 14692.00 KOhm
+BH1750 Sensor: 486 Lux
+BME680 Sensor: 25.46 °C, 38.09 %, 948.50 hPa, 14795.00 KOhm
+BH1750 Sensor: 488 Lux
+BME680 Sensor: 25.47 °C, 38.11 %, 948.50 hPa, 14909.00 KOhm
+BH1750 Sensor: 538 Lux
+BME680 Sensor: 25.47 °C, 38.12 %, 948.50 hPa, 14930.00 KOhm
+BH1750 Sensor: 589 Lux
+BME680 Sensor: 25.47 °C, 38.14 %, 948.50 hPa, 15036.00 KOhm
+BH1750 Sensor: 620 Lux
+BME680 Sensor: 25.48 °C, 38.16 %, 948.50 hPa, 15068.00 KOhm
+BH1750 Sensor: 654 Lux
+BME680 Sensor: 25.48 °C, 38.17 %, 948.52 hPa, 15144.00 KOhm
+BH1750 Sensor: 734 Lux
+BME680 Sensor: 25.48 °C, 38.17 %, 948.50 hPa, 15231.00 KOhm
+BH1750 Sensor: 800 Lux
+BME680 Sensor: 25.49 °C, 38.17 %, 948.50 hPa, 15253.00 KOhm
+BH1750 Sensor: 769 Lux
+BME680 Sensor: 25.49 °C, 38.15 %, 948.50 hPa, 15364.00 KOhm
+BH1750 Sensor: 734 Lux
+BME680 Sensor: 25.50 °C, 38.15 %, 948.52 hPa, 15431.00 KOhm
+BH1750 Sensor: 717 Lux
+BME680 Sensor: 25.50 °C, 38.13 %, 948.50 hPa, 15499.00 KOhm
+BH1750 Sensor: 705 Lux
+BME680 Sensor: 25.51 °C, 38.10 %, 948.50 hPa, 15590.00 KOhm
+BH1750 Sensor: 700 Lux
+BME680 Sensor: 25.52 °C, 38.10 %, 948.48 hPa, 15636.00 KOhm
+BH1750 Sensor: 707 Lux
+BME680 Sensor: 25.52 °C, 38.10 %, 948.50 hPa, 15706.00 KOhm
+BH1750 Sensor: 726 Lux
+BME680 Sensor: 25.53 °C, 38.10 %, 948.50 hPa, 15752.00 KOhm
+BH1750 Sensor: 746 Lux
+BME680 Sensor: 25.53 °C, 38.10 %, 948.48 hPa, 15859.00 KOhm
+BH1750 Sensor: 756 Lux
+BME680 Sensor: 25.54 °C, 38.09 %, 948.48 hPa, 15906.00 KOhm
+BH1750 Sensor: 755 Lux
+BME680 Sensor: 25.54 °C, 38.09 %, 948.50 hPa, 15930.00 KOhm
+BH1750 Sensor: 744 Lux
+BME680 Sensor: 25.54 °C, 38.09 %, 948.50 hPa, 16051.00 KOhm
+BH1750 Sensor: 735 Lux

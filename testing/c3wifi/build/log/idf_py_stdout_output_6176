@@ -1,0 +1,57 @@
+[0;32mI (100) esp_image: segment 1: paddr=00019ce0 vaddr=3fc8b0ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40382f84
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x170c
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f9c
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jan 25 2024 23:45:48[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=09cb8h ( 40120) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=00019ce0 vaddr=3fc8b000 size=01198h (  4504) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0001ae80 vaddr=40380000 size=05198h ( 20888) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=19c04h (105476) map[0m
+[0;32mI (136) esp_image: segment 4: paddr=00039c2c vaddr=40385198 size=05d0ch ( 23820) load[0m
+[0;32mI (144) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (144) boot: Disabling RNG early entropy source...[0m
+[0;32mI (156) cpu_start: Unicore app[0m
+[0;32mI (156) cpu_start: Pro cpu up.[0m
+[0;32mI (165) cpu_start: Pro cpu start user code[0m
+[0;32mI (165) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (165) cpu_start: Application information:[0m
+[0;32mI (168) cpu_start: Project name:     c3wifi[0m
+[0;32mI (173) cpu_start: App version:      1[0m
+[0;32mI (177) cpu_start: Compile time:     Jan 26 2024 00:17:00[0m
+[0;32mI (183) cpu_start: ELF file SHA256:  4b82c6e98be0ad05...[0m
+[0;32mI (189) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (194) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (199) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (204) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (209) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (216) heap_init: At 3FC8D070 len 00032F90 (203 KiB): DRAM[0m
+[0;32mI (222) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (229) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (237) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (244) spi_flash: detected chip: generic[0m
+[0;32mI (248) spi_flash: flash io: dio[0m
+[0;33mW (252) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (265) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (272) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (279) app_start: Starting scheduler on CPU0[0m
+[0;32mI (284) main_task: Started on CPU0[0m
+[0;32mI (284) main_task: Calling app_main()[0m
+[0;32mI (294) main_task: Returned from app_main()[0m

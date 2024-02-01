@@ -1,0 +1,596 @@
+[0;32mI (107) esp_image: segment 2: paddr=00020020 vaddr=420000ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40803c0a
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (23) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jan 18 2024 15:07:05[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=09d50h ( 40272) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=00019d78 vaddr=40800000 size=062a0h ( 25248) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=155f4h ( 87540) map[0m
+[0;32mI (127) esp_image: segment 3: paddr=0003561c vaddr=408062a0 size=05218h ( 21016) load[0m
+[0;32mI (133) esp_image: segment 4: paddr=0003a83c vaddr=4080b4c0 size=010f4h (  4340) load[0m
+[0;32mI (137) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (155) cpu_start: Unicore app[0m
+[0;32mI (156) cpu_start: Pro cpu up.[0m
+[0;33mW (164) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (171) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (171) cpu_start: Application information:[0m
+[0;32mI (174) cpu_start: Project name:     testbme[0m
+[0;32mI (179) cpu_start: App version:      1[0m
+[0;32mI (183) cpu_start: Compile time:     Jan 18 2024 15:04:52[0m
+[0;32mI (189) cpu_start: ELF file SHA256:  ec87b527665c806c...[0m
+[0;32mI (195) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (201) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (205) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (210) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (215) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (222) heap_init: At 4080D5A0 len 0006F070 (444 KiB): D/IRAM[0m
+[0;32mI (229) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (235) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (243) spi_flash: detected chip: generic[0m
+[0;32mI (246) spi_flash: flash io: dio[0m
+[0;33mW (250) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (264) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (270) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (277) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (283) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (288) app_start: Starting scheduler on CPU0[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+BMP280: found BME280
+[0;32mI (323) main_task: Returned from app_main()[0m
+Lux: 130
+BMP280 Sensor: Pressure: 93219.60 Pa, Temperature: 24.72 C, Humidity: 42.20
+[0;33mW (1323) bme680: Heater is not stable[0m
+BME680 Sensor: 25.81 °C, 47.99 %, 932.59 hPa, 0.00 KOhm
+Lux: 130
+BMP280 Sensor: Pressure: 93218.42 Pa, Temperature: 24.71 C, Humidity: 42.24
+BME680 Sensor: 25.80 °C, 47.94 %, 932.61 hPa, 36351.00 KOhm
+Lux: 130
+BMP280 Sensor: Pressure: 93219.42 Pa, Temperature: 24.71 C, Humidity: 42.28
+BME680 Sensor: 25.80 °C, 47.88 %, 932.59 hPa, 34376.00 KOhm
+Lux: 130
+BMP280 Sensor: Pressure: 93217.67 Pa, Temperature: 24.71 C, Humidity: 42.31
+BME680 Sensor: 25.80 °C, 47.80 %, 932.59 hPa, 34292.00 KOhm
+Lux: 130
+BMP280 Sensor: Pressure: 93220.20 Pa, Temperature: 24.70 C, Humidity: 42.32
+BME680 Sensor: 25.80 °C, 47.72 %, 932.61 hPa, 34045.00 KOhm
+Lux: 130
+BMP280 Sensor: Pressure: 93217.86 Pa, Temperature: 24.70 C, Humidity: 42.35
+BME680 Sensor: 25.80 °C, 47.67 %, 932.61 hPa, 34154.00 KOhm
+Lux: 130
+BMP280 Sensor: Pressure: 93220.02 Pa, Temperature: 24.69 C, Humidity: 42.35
+BME680 Sensor: 25.80 °C, 47.61 %, 932.61 hPa, 34292.00 KOhm
+Lux: 129
+BMP280 Sensor: Pressure: 93217.67 Pa, Temperature: 24.69 C, Humidity: 42.38
+BME680 Sensor: 25.80 °C, 47.58 %, 932.61 hPa, 34404.00 KOhm
+Lux: 129
+BMP280 Sensor: Pressure: 93215.05 Pa, Temperature: 24.69 C, Humidity: 42.39
+BME680 Sensor: 25.80 °C, 47.54 %, 932.61 hPa, 34348.00 KOhm
+Lux: 129
+BMP280 Sensor: Pressure: 93217.98 Pa, Temperature: 24.69 C, Humidity: 42.38
+BME680 Sensor: 25.80 °C, 47.49 %, 932.59 hPa, 34516.00 KOhm
+Lux: 129
+BMP280 Sensor: Pressure: 93215.80 Pa, Temperature: 24.69 C, Humidity: 42.38
+BME680 Sensor: 25.81 °C, 47.47 %, 932.59 hPa, 34404.00 KOhm
+Lux: 128
+BMP280 Sensor: Pressure: 93217.52 Pa, Temperature: 24.68 C, Humidity: 42.35
+BME680 Sensor: 25.81 °C, 47.45 %, 932.59 hPa, 34799.00 KOhm
+Lux: 128
+BMP280 Sensor: Pressure: 93217.80 Pa, Temperature: 24.68 C, Humidity: 42.35
+BME680 Sensor: 25.81 °C, 47.42 %, 932.59 hPa, 34714.00 KOhm
+Lux: 121
+BMP280 Sensor: Pressure: 93220.14 Pa, Temperature: 24.68 C, Humidity: 42.35
+BME680 Sensor: 25.81 °C, 47.39 %, 932.59 hPa, 34972.00 KOhm
+Lux: 125
+BMP280 Sensor: Pressure: 93219.02 Pa, Temperature: 24.67 C, Humidity: 42.36
+BME680 Sensor: 25.81 °C, 47.36 %, 932.59 hPa, 35175.00 KOhm
+Lux: 125
+BMP280 Sensor: Pressure: 93213.50 Pa, Temperature: 24.67 C, Humidity: 42.37
+BME680 Sensor: 25.81 °C, 47.35 %, 932.59 hPa, 35321.00 KOhm
+Lux: 137
+BMP280 Sensor: Pressure: 93214.99 Pa, Temperature: 24.68 C, Humidity: 42.34
+BME680 Sensor: 25.81 °C, 47.33 %, 932.59 hPa, 35439.00 KOhm
+Lux: 3190
+BMP280 Sensor: Pressure: 93214.52 Pa, Temperature: 24.68 C, Humidity: 42.33
+BME680 Sensor: 25.81 °C, 47.31 %, 932.59 hPa, 35558.00 KOhm
+Lux: 2988
+BMP280 Sensor: Pressure: 93216.87 Pa, Temperature: 24.68 C, Humidity: 42.30
+BME680 Sensor: 25.81 °C, 47.30 %, 932.57 hPa, 35799.00 KOhm
+Lux: 1955
+BMP280 Sensor: Pressure: 93220.42 Pa, Temperature: 24.68 C, Humidity: 42.29
+BME680 Sensor: 25.81 °C, 47.28 %, 932.57 hPa, 36104.00 KOhm
+Lux: 4394
+BMP280 Sensor: Pressure: 93214.90 Pa, Temperature: 24.68 C, Humidity: 42.30
+BME680 Sensor: 25.82 °C, 47.26 %, 932.59 hPa, 36042.00 KOhm
+Lux: 4586
+BMP280 Sensor: Pressure: 93214.16 Pa, Temperature: 24.67 C, Humidity: 42.34
+BME680 Sensor: 25.82 °C, 47.23 %, 932.57 hPa, 36258.00 KOhm
+Lux: 160
+BMP280 Sensor: Pressure: 93214.72 Pa, Temperature: 24.67 C, Humidity: 42.36
+BME680 Sensor: 25.82 °C, 47.20 %, 932.57 hPa, 36382.00 KOhm
+Lux: 109
+BMP280 Sensor: Pressure: 93216.58 Pa, Temperature: 24.68 C, Humidity: 42.37
+BME680 Sensor: 25.83 °C, 47.20 %, 932.57 hPa, 36539.00 KOhm
+Lux: 109
+BMP280 Sensor: Pressure: 93219.11 Pa, Temperature: 24.68 C, Humidity: 42.36
+BME680 Sensor: 25.83 °C, 47.18 %, 932.57 hPa, 36445.00 KOhm
+Lux: 108
+BMP280 Sensor: Pressure: 93218.08 Pa, Temperature: 24.67 C, Humidity: 42.37
+BME680 Sensor: 25.83 °C, 47.17 %, 932.57 hPa, 37018.00 KOhm
+Lux: 107
+BMP280 Sensor: Pressure: 93214.44 Pa, Temperature: 24.67 C, Humidity: 42.36
+BME680 Sensor: 25.83 °C, 47.17 %, 932.55 hPa, 36986.00 KOhm
+Lux: 107
+BMP280 Sensor: Pressure: 93215.18 Pa, Temperature: 24.68 C, Humidity: 42.35
+BME680 Sensor: 25.83 °C, 47.17 %, 932.55 hPa, 37180.00 KOhm
+Lux: 106
+BMP280 Sensor: Pressure: 93214.44 Pa, Temperature: 24.67 C, Humidity: 42.35
+BME680 Sensor: 25.83 °C, 47.15 %, 932.55 hPa, 37344.00 KOhm
+Lux: 106
+BMP280 Sensor: Pressure: 93214.62 Pa, Temperature: 24.66 C, Humidity: 42.35
+BME680 Sensor: 25.84 °C, 47.14 %, 932.59 hPa, 37443.00 KOhm
+Lux: 106
+BMP280 Sensor: Pressure: 93216.80 Pa, Temperature: 24.66 C, Humidity: 42.34
+BME680 Sensor: 25.84 °C, 47.13 %, 932.57 hPa, 37710.00 KOhm
+Lux: 106
+BMP280 Sensor: Pressure: 93216.96 Pa, Temperature: 24.67 C, Humidity: 42.34
+BME680 Sensor: 25.84 °C, 47.12 %, 932.57 hPa, 37743.00 KOhm
+Lux: 105
+BMP280 Sensor: Pressure: 93213.91 Pa, Temperature: 24.66 C, Humidity: 42.33
+BME680 Sensor: 25.84 °C, 47.12 %, 932.57 hPa, 37912.00 KOhm
+Lux: 104
+BMP280 Sensor: Pressure: 93215.75 Pa, Temperature: 24.67 C, Humidity: 42.30
+BME680 Sensor: 25.84 °C, 47.09 %, 932.57 hPa, 38323.00 KOhm
+Lux: 104
+BMP280 Sensor: Pressure: 93211.62 Pa, Temperature: 24.68 C, Humidity: 42.28
+BME680 Sensor: 25.84 °C, 47.08 %, 932.55 hPa, 38151.00 KOhm
+Lux: 103
+BMP280 Sensor: Pressure: 93215.05 Pa, Temperature: 24.69 C, Humidity: 42.26
+BME680 Sensor: 25.85 °C, 47.07 %, 932.55 hPa, 38462.00 KOhm
+Lux: 103
+BMP280 Sensor: Pressure: 93208.88 Pa, Temperature: 24.69 C, Humidity: 42.26
+BME680 Sensor: 25.86 °C, 47.07 %, 932.55 hPa, 38567.00 KOhm
+Lux: 102
+BMP280 Sensor: Pressure: 93210.78 Pa, Temperature: 24.69 C, Humidity: 42.27
+BME680 Sensor: 25.87 °C, 47.05 %, 932.53 hPa, 38744.00 KOhm
+Lux: 102
+BMP280 Sensor: Pressure: 93215.52 Pa, Temperature: 24.70 C, Humidity: 42.26
+BME680 Sensor: 25.87 °C, 47.03 %, 932.53 hPa, 38957.00 KOhm
+Lux: 101
+BMP280 Sensor: Pressure: 93216.64 Pa, Temperature: 24.70 C, Humidity: 42.28
+BME680 Sensor: 25.88 °C, 47.01 %, 932.55 hPa, 39319.00 KOhm
+Lux: 101
+BMP280 Sensor: Pressure: 93218.89 Pa, Temperature: 24.70 C, Humidity: 42.30
+BME680 Sensor: 25.89 °C, 46.98 %, 932.53 hPa, 39355.00 KOhm
+Lux: 101
+BMP280 Sensor: Pressure: 93215.98 Pa, Temperature: 24.70 C, Humidity: 42.28
+BME680 Sensor: 25.90 °C, 46.96 %, 932.53 hPa, 39319.00 KOhm
+Lux: 100
+BMP280 Sensor: Pressure: 93215.98 Pa, Temperature: 24.70 C, Humidity: 42.30
+BME680 Sensor: 25.91 °C, 46.95 %, 932.53 hPa, 39392.00 KOhm
+Lux: 100
+BMP280 Sensor: Pressure: 93211.50 Pa, Temperature: 24.69 C, Humidity: 42.29
+BME680 Sensor: 25.91 °C, 46.94 %, 932.53 hPa, 39836.00 KOhm
+Lux: 100
+BMP280 Sensor: Pressure: 93216.45 Pa, Temperature: 24.69 C, Humidity: 42.30
+BME680 Sensor: 25.91 °C, 46.93 %, 932.51 hPa, 39949.00 KOhm
+Lux: 100
+BMP280 Sensor: Pressure: 93214.20 Pa, Temperature: 24.70 C, Humidity: 42.27
+BME680 Sensor: 25.92 °C, 46.92 %, 932.51 hPa, 40138.00 KOhm
+Lux: 100
+BMP280 Sensor: Pressure: 93216.17 Pa, Temperature: 24.70 C, Humidity: 42.29
+BME680 Sensor: 25.92 °C, 46.92 %, 932.51 hPa, 40444.00 KOhm
+Lux: 99
+BMP280 Sensor: Pressure: 93215.80 Pa, Temperature: 24.69 C, Humidity: 42.31
+BME680 Sensor: 25.92 °C, 46.91 %, 932.53 hPa, 40560.00 KOhm
+Lux: 99
+BMP280 Sensor: Pressure: 93217.02 Pa, Temperature: 24.69 C, Humidity: 42.28
+BME680 Sensor: 25.92 °C, 46.91 %, 932.53 hPa, 40444.00 KOhm
+Lux: 99
+BMP280 Sensor: Pressure: 93215.05 Pa, Temperature: 24.69 C, Humidity: 42.31
+BME680 Sensor: 25.92 °C, 46.90 %, 932.53 hPa, 40522.00 KOhm
+Lux: 99
+BMP280 Sensor: Pressure: 93216.08 Pa, Temperature: 24.69 C, Humidity: 42.33
+BME680 Sensor: 25.92 °C, 46.90 %, 932.53 hPa, 40677.00 KOhm
+Lux: 98
+BMP280 Sensor: Pressure: 93216.67 Pa, Temperature: 24.69 C, Humidity: 42.35
+BME680 Sensor: 25.92 °C, 46.89 %, 932.53 hPa, 40834.00 KOhm
+Lux: 98
+BMP280 Sensor: Pressure: 93217.89 Pa, Temperature: 24.68 C, Humidity: 42.36
+BME680 Sensor: 25.92 °C, 46.89 %, 932.53 hPa, 40992.00 KOhm
+Lux: 98
+BMP280 Sensor: Pressure: 93213.50 Pa, Temperature: 24.67 C, Humidity: 42.37
+BME680 Sensor: 25.92 °C, 46.90 %, 932.53 hPa, 41271.00 KOhm
+Lux: 99
+BMP280 Sensor: Pressure: 93216.68 Pa, Temperature: 24.67 C, Humidity: 42.37
+BME680 Sensor: 25.92 °C, 46.91 %, 932.51 hPa, 41352.00 KOhm
+Lux: 100
+BMP280 Sensor: Pressure: 93216.40 Pa, Temperature: 24.67 C, Humidity: 42.38
+BME680 Sensor: 25.91 °C, 46.92 %, 932.51 hPa, 41392.00 KOhm
+Lux: 101
+BMP280 Sensor: Pressure: 93212.84 Pa, Temperature: 24.67 C, Humidity: 42.35
+BME680 Sensor: 25.91 °C, 46.90 %, 932.51 hPa, 41473.00 KOhm
+Lux: 100
+BMP280 Sensor: Pressure: 93214.80 Pa, Temperature: 24.67 C, Humidity: 42.35
+BME680 Sensor: 25.91 °C, 46.92 %, 932.51 hPa, 41718.00 KOhm
+Lux: 101
+BMP280 Sensor: Pressure: 93218.74 Pa, Temperature: 24.67 C, Humidity: 42.33
+BME680 Sensor: 25.90 °C, 46.93 %, 932.53 hPa, 41924.00 KOhm
+Lux: 100
+BMP280 Sensor: Pressure: 93214.44 Pa, Temperature: 24.67 C, Humidity: 42.34
+BME680 Sensor: 25.90 °C, 46.93 %, 932.53 hPa, 42008.00 KOhm
+Lux: 100
+BMP280 Sensor: Pressure: 93212.75 Pa, Temperature: 24.67 C, Humidity: 42.33
+BME680 Sensor: 25.90 °C, 46.94 %, 932.51 hPa, 42049.00 KOhm
+Lux: 100
+BMP280 Sensor: Pressure: 93210.59 Pa, Temperature: 24.68 C, Humidity: 42.32
+BME680 Sensor: 25.90 °C, 46.95 %, 932.51 hPa, 42556.00 KOhm
+Lux: 100
+BMP280 Sensor: Pressure: 93215.65 Pa, Temperature: 24.68 C, Humidity: 42.31
+BME680 Sensor: 25.90 °C, 46.95 %, 932.51 hPa, 42259.00 KOhm
+Lux: 97
+BMP280 Sensor: Pressure: 93215.27 Pa, Temperature: 24.68 C, Humidity: 42.25
+BME680 Sensor: 25.90 °C, 46.95 %, 932.53 hPa, 42641.00 KOhm
+Lux: 97
+BMP280 Sensor: Pressure: 93214.70 Pa, Temperature: 24.69 C, Humidity: 42.25
+BME680 Sensor: 25.90 °C, 46.93 %, 932.53 hPa, 42684.00 KOhm
+Lux: 97
+BMP280 Sensor: Pressure: 93216.87 Pa, Temperature: 24.68 C, Humidity: 42.22
+BME680 Sensor: 25.90 °C, 46.92 %, 932.53 hPa, 42814.00 KOhm
+Lux: 97
+BMP280 Sensor: Pressure: 93214.16 Pa, Temperature: 24.67 C, Humidity: 42.22
+BME680 Sensor: 25.90 °C, 46.92 %, 932.53 hPa, 43251.00 KOhm
+Lux: 97
+BMP280 Sensor: Pressure: 93215.37 Pa, Temperature: 24.69 C, Humidity: 42.24
+BME680 Sensor: 25.90 °C, 46.91 %, 932.53 hPa, 43163.00 KOhm
+Lux: 97
+BMP280 Sensor: Pressure: 93215.37 Pa, Temperature: 24.69 C, Humidity: 42.26
+BME680 Sensor: 25.90 °C, 46.90 %, 932.53 hPa, 43383.00 KOhm
+Lux: 96
+BMP280 Sensor: Pressure: 93216.67 Pa, Temperature: 24.69 C, Humidity: 42.31
+BME680 Sensor: 25.91 °C, 46.90 %, 932.53 hPa, 43251.00 KOhm
+Lux: 96
+BMP280 Sensor: Pressure: 93214.40 Pa, Temperature: 24.69 C, Humidity: 42.32
+BME680 Sensor: 25.91 °C, 46.89 %, 932.53 hPa, 43517.00 KOhm
+Lux: 96
+BMP280 Sensor: Pressure: 93217.02 Pa, Temperature: 24.69 C, Humidity: 42.31
+BME680 Sensor: 25.91 °C, 46.88 %, 932.53 hPa, 43562.00 KOhm
+Lux: 96
+BMP280 Sensor: Pressure: 93211.43 Pa, Temperature: 24.69 C, Humidity: 42.28
+BME680 Sensor: 25.91 °C, 46.88 %, 932.51 hPa, 43787.00 KOhm
+Lux: 96
+BMP280 Sensor: Pressure: 93213.18 Pa, Temperature: 24.69 C, Humidity: 42.24
+BME680 Sensor: 25.91 °C, 46.88 %, 932.51 hPa, 43832.00 KOhm
+Lux: 96
+BMP280 Sensor: Pressure: 93212.52 Pa, Temperature: 24.69 C, Humidity: 42.24
+BME680 Sensor: 25.92 °C, 46.88 %, 932.51 hPa, 43969.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93212.24 Pa, Temperature: 24.70 C, Humidity: 42.23
+BME680 Sensor: 25.92 °C, 46.88 %, 932.53 hPa, 44152.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93215.61 Pa, Temperature: 24.70 C, Humidity: 42.21
+BME680 Sensor: 25.92 °C, 46.87 %, 932.53 hPa, 44014.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93211.77 Pa, Temperature: 24.71 C, Humidity: 42.22
+BME680 Sensor: 25.93 °C, 46.84 %, 932.51 hPa, 44336.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93212.99 Pa, Temperature: 24.70 C, Humidity: 42.23
+BME680 Sensor: 25.93 °C, 46.82 %, 932.51 hPa, 44476.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93215.05 Pa, Temperature: 24.71 C, Humidity: 42.23
+BME680 Sensor: 25.94 °C, 46.80 %, 932.53 hPa, 44429.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93211.96 Pa, Temperature: 24.70 C, Humidity: 42.24
+BME680 Sensor: 25.95 °C, 46.80 %, 932.51 hPa, 44805.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93215.89 Pa, Temperature: 24.70 C, Humidity: 42.23
+BME680 Sensor: 25.95 °C, 46.79 %, 932.51 hPa, 44900.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93213.45 Pa, Temperature: 24.71 C, Humidity: 42.22
+BME680 Sensor: 25.96 °C, 46.78 %, 932.55 hPa, 44711.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93213.45 Pa, Temperature: 24.71 C, Humidity: 42.20
+BME680 Sensor: 25.96 °C, 46.78 %, 932.55 hPa, 45236.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93209.52 Pa, Temperature: 24.71 C, Humidity: 42.24
+BME680 Sensor: 25.96 °C, 46.75 %, 932.55 hPa, 45284.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93211.12 Pa, Temperature: 24.71 C, Humidity: 42.22
+BME680 Sensor: 25.97 °C, 46.75 %, 932.53 hPa, 45091.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93212.21 Pa, Temperature: 24.71 C, Humidity: 42.19
+BME680 Sensor: 25.97 °C, 46.75 %, 932.53 hPa, 45576.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93212.86 Pa, Temperature: 24.71 C, Humidity: 42.17
+BME680 Sensor: 25.97 °C, 46.74 %, 932.53 hPa, 45381.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93212.52 Pa, Temperature: 24.71 C, Humidity: 42.15
+BME680 Sensor: 25.98 °C, 46.72 %, 932.55 hPa, 45822.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93210.99 Pa, Temperature: 24.72 C, Humidity: 42.17
+BME680 Sensor: 25.98 °C, 46.72 %, 932.55 hPa, 45922.00 KOhm
+Lux: 95
+BMP280 Sensor: Pressure: 93210.84 Pa, Temperature: 24.71 C, Humidity: 42.17
+BME680 Sensor: 25.98 °C, 46.70 %, 932.55 hPa, 45922.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93212.80 Pa, Temperature: 24.71 C, Humidity: 42.17
+BME680 Sensor: 25.97 °C, 46.71 %, 932.53 hPa, 45773.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93212.95 Pa, Temperature: 24.72 C, Humidity: 42.13
+BME680 Sensor: 25.97 °C, 46.69 %, 932.53 hPa, 45971.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93211.55 Pa, Temperature: 24.71 C, Humidity: 42.09
+BME680 Sensor: 25.97 °C, 46.70 %, 932.53 hPa, 46122.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93209.24 Pa, Temperature: 24.71 C, Humidity: 42.07
+BME680 Sensor: 25.97 °C, 46.67 %, 932.53 hPa, 46273.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93208.22 Pa, Temperature: 24.71 C, Humidity: 42.04
+BME680 Sensor: 25.97 °C, 46.67 %, 932.53 hPa, 46273.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93211.12 Pa, Temperature: 24.71 C, Humidity: 42.03
+BME680 Sensor: 25.97 °C, 46.65 %, 932.53 hPa, 46222.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93211.30 Pa, Temperature: 24.70 C, Humidity: 42.07
+BME680 Sensor: 25.96 °C, 46.65 %, 932.53 hPa, 46527.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93210.28 Pa, Temperature: 24.70 C, Humidity: 42.08
+BME680 Sensor: 25.96 °C, 46.64 %, 932.55 hPa, 46578.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93207.66 Pa, Temperature: 24.70 C, Humidity: 42.08
+BME680 Sensor: 25.95 °C, 46.64 %, 932.49 hPa, 46680.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93212.80 Pa, Temperature: 24.69 C, Humidity: 42.13
+BME680 Sensor: 25.95 °C, 46.65 %, 932.51 hPa, 47149.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93212.16 Pa, Temperature: 24.69 C, Humidity: 42.19
+BME680 Sensor: 25.94 °C, 46.64 %, 932.51 hPa, 47149.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93211.68 Pa, Temperature: 24.70 C, Humidity: 42.22
+BME680 Sensor: 25.94 °C, 46.67 %, 932.51 hPa, 47307.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93212.90 Pa, Temperature: 24.70 C, Humidity: 42.24
+BME680 Sensor: 25.94 °C, 46.68 %, 932.49 hPa, 47466.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93211.88 Pa, Temperature: 24.69 C, Humidity: 42.27
+BME680 Sensor: 25.93 °C, 46.69 %, 932.49 hPa, 47706.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93211.22 Pa, Temperature: 24.69 C, Humidity: 42.27
+BME680 Sensor: 25.93 °C, 46.72 %, 932.49 hPa, 47599.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93211.22 Pa, Temperature: 24.69 C, Humidity: 42.29
+BME680 Sensor: 25.92 °C, 46.74 %, 932.49 hPa, 47653.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93215.61 Pa, Temperature: 24.70 C, Humidity: 42.28
+BME680 Sensor: 25.92 °C, 46.78 %, 932.49 hPa, 48086.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93212.24 Pa, Temperature: 24.70 C, Humidity: 42.27
+BME680 Sensor: 25.92 °C, 46.79 %, 932.47 hPa, 47868.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93213.47 Pa, Temperature: 24.69 C, Humidity: 42.26
+BME680 Sensor: 25.91 °C, 46.79 %, 932.47 hPa, 48113.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93213.47 Pa, Temperature: 24.69 C, Humidity: 42.23
+BME680 Sensor: 25.91 °C, 46.80 %, 932.47 hPa, 48004.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93209.47 Pa, Temperature: 24.69 C, Humidity: 42.24
+BME680 Sensor: 25.91 °C, 46.79 %, 932.49 hPa, 48250.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93210.03 Pa, Temperature: 24.68 C, Humidity: 42.22
+BME680 Sensor: 25.91 °C, 46.80 %, 932.47 hPa, 48250.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93208.34 Pa, Temperature: 24.68 C, Humidity: 42.20
+BME680 Sensor: 25.91 °C, 46.82 %, 932.49 hPa, 48360.00 KOhm
+Lux: 93
+BMP280 Sensor: Pressure: 93209.28 Pa, Temperature: 24.68 C, Humidity: 42.16
+BME680 Sensor: 25.91 °C, 46.80 %, 932.49 hPa, 48722.00 KOhm
+Lux: 93
+BMP280 Sensor: Pressure: 93213.78 Pa, Temperature: 24.67 C, Humidity: 42.15
+BME680 Sensor: 25.90 °C, 46.80 %, 932.49 hPa, 48582.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93210.78 Pa, Temperature: 24.67 C, Humidity: 42.14
+BME680 Sensor: 25.90 °C, 46.79 %, 932.49 hPa, 48694.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93212.19 Pa, Temperature: 24.67 C, Humidity: 42.14
+BME680 Sensor: 25.89 °C, 46.80 %, 932.47 hPa, 48834.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93214.94 Pa, Temperature: 24.66 C, Humidity: 42.14
+BME680 Sensor: 25.89 °C, 46.79 %, 932.49 hPa, 48976.00 KOhm
+Lux: 94
+BMP280 Sensor: Pressure: 93213.41 Pa, Temperature: 24.67 C, Humidity: 42.15
+BME680 Sensor: 25.88 °C, 46.79 %, 932.49 hPa, 48863.00 KOhm
+Lux: 93
+BMP280 Sensor: Pressure: 93211.34 Pa, Temperature: 24.66 C, Humidity: 42.22
+BME680 Sensor: 25.88 °C, 46.78 %, 932.49 hPa, 49118.00 KOhm
+Lux: 93
+BMP280 Sensor: Pressure: 93211.94 Pa, Temperature: 24.66 C, Humidity: 42.24
+BME680 Sensor: 25.87 °C, 46.78 %, 932.47 hPa, 49032.00 KOhm
+Lux: 93
+BMP280 Sensor: Pressure: 93213.91 Pa, Temperature: 24.66 C, Humidity: 42.27
+BME680 Sensor: 25.87 °C, 46.79 %, 932.49 hPa, 49232.00 KOhm
+Lux: 93
+BMP280 Sensor: Pressure: 93207.50 Pa, Temperature: 24.67 C, Humidity: 42.26
+BME680 Sensor: 25.87 °C, 46.82 %, 932.49 hPa, 49578.00 KOhm
+Lux: 92
+BMP280 Sensor: Pressure: 93212.19 Pa, Temperature: 24.67 C, Humidity: 42.27
+BME680 Sensor: 25.87 °C, 46.82 %, 932.49 hPa, 49491.00 KOhm
+Lux: 93
+BMP280 Sensor: Pressure: 93211.62 Pa, Temperature: 24.68 C, Humidity: 42.30
+BME680 Sensor: 25.87 °C, 46.82 %, 932.49 hPa, 49433.00 KOhm
+Lux: 92
+BMP280 Sensor: Pressure: 93213.75 Pa, Temperature: 24.69 C, Humidity: 42.29
+BME680 Sensor: 25.87 °C, 46.84 %, 932.47 hPa, 49549.00 KOhm
+Lux: 92
+BMP280 Sensor: Pressure: 93211.72 Pa, Temperature: 24.68 C, Humidity: 42.31
+BME680 Sensor: 25.87 °C, 46.84 %, 932.47 hPa, 49375.00 KOhm
+Lux: 92
+BMP280 Sensor: Pressure: 93210.47 Pa, Temperature: 24.69 C, Humidity: 42.31
+BME680 Sensor: 25.87 °C, 46.87 %, 932.47 hPa, 49782.00 KOhm
+Lux: 93
+BMP280 Sensor: Pressure: 93214.34 Pa, Temperature: 24.68 C, Humidity: 42.27
+BME680 Sensor: 25.87 °C, 46.87 %, 932.47 hPa, 49752.00 KOhm
+Lux: 93
+BMP280 Sensor: Pressure: 93214.99 Pa, Temperature: 24.68 C, Humidity: 42.23
+BME680 Sensor: 25.87 °C, 46.85 %, 932.47 hPa, 50225.00 KOhm
+Lux: 93
+BMP280 Sensor: Pressure: 93212.28 Pa, Temperature: 24.68 C, Humidity: 42.25
+BME680 Sensor: 25.88 °C, 46.86 %, 932.49 hPa, 49840.00 KOhm
+Lux: 93
+BMP280 Sensor: Pressure: 93213.12 Pa, Temperature: 24.67 C, Humidity: 42.25
+BME680 Sensor: 25.88 °C, 46.86 %, 932.49 hPa, 49870.00 KOhm
+Lux: 92
+BMP280 Sensor: Pressure: 93210.78 Pa, Temperature: 24.67 C, Humidity: 42.27
+BME680 Sensor: 25.88 °C, 46.86 %, 932.49 hPa, 50225.00 KOhm
+Lux: 92
+BMP280 Sensor: Pressure: 93207.22 Pa, Temperature: 24.67 C, Humidity: 42.28
+BME680 Sensor: 25.87 °C, 46.87 %, 932.47 hPa, 50254.00 KOhm
+Lux: 92
+BMP280 Sensor: Pressure: 93208.25 Pa, Temperature: 24.67 C, Humidity: 42.30
+BME680 Sensor: 25.87 °C, 46.85 %, 932.47 hPa, 50434.00 KOhm
+Lux: 92
+BMP280 Sensor: Pressure: 93210.03 Pa, Temperature: 24.66 C, Humidity: 42.32
+BME680 Sensor: 25.87 °C, 46.88 %, 932.47 hPa, 50464.00 KOhm
+Lux: 92
+BMP280 Sensor: Pressure: 93212.09 Pa, Temperature: 24.67 C, Humidity: 42.33
+BME680 Sensor: 25.87 °C, 46.87 %, 932.47 hPa, 50494.00 KOhm
+Lux: 91
+BMP280 Sensor: Pressure: 93208.72 Pa, Temperature: 24.66 C, Humidity: 42.34
+BME680 Sensor: 25.86 °C, 46.88 %, 932.47 hPa, 50736.00 KOhm
+Lux: 91
+BMP280 Sensor: Pressure: 93208.44 Pa, Temperature: 24.67 C, Humidity: 42.34
+BME680 Sensor: 25.86 °C, 46.89 %, 932.47 hPa, 50858.00 KOhm
+Lux: 91
+BMP280 Sensor: Pressure: 93208.91 Pa, Temperature: 24.67 C, Humidity: 42.34
+BME680 Sensor: 25.86 °C, 46.90 %, 932.49 hPa, 50858.00 KOhm
+Lux: 91
+BMP280 Sensor: Pressure: 93209.28 Pa, Temperature: 24.68 C, Humidity: 42.36
+BME680 Sensor: 25.86 °C, 46.91 %, 932.49 hPa, 50767.00 KOhm
+Lux: 90
+BMP280 Sensor: Pressure: 93208.81 Pa, Temperature: 24.67 C, Humidity: 42.36
+BME680 Sensor: 25.86 °C, 46.91 %, 932.49 hPa, 50950.00 KOhm
+Lux: 90
+BMP280 Sensor: Pressure: 93209.38 Pa, Temperature: 24.66 C, Humidity: 42.37
+BME680 Sensor: 25.85 °C, 46.92 %, 932.47 hPa, 51165.00 KOhm
+Lux: 90
+BMP280 Sensor: Pressure: 93208.72 Pa, Temperature: 24.66 C, Humidity: 42.37
+BME680 Sensor: 25.85 °C, 46.92 %, 932.47 hPa, 51258.00 KOhm
+Lux: 90
+BMP280 Sensor: Pressure: 93209.19 Pa, Temperature: 24.67 C, Humidity: 42.34
+BME680 Sensor: 25.85 °C, 46.94 %, 932.47 hPa, 51196.00 KOhm
+Lux: 90
+BMP280 Sensor: Pressure: 93207.12 Pa, Temperature: 24.67 C, Humidity: 42.33
+BME680 Sensor: 25.85 °C, 46.94 %, 932.47 hPa, 51227.00 KOhm
+Lux: 90
+BMP280 Sensor: Pressure: 93208.38 Pa, Temperature: 24.66 C, Humidity: 42.34
+BME680 Sensor: 25.84 °C, 46.95 %, 932.49 hPa, 51383.00 KOhm
+Lux: 90
+BMP280 Sensor: Pressure: 93209.22 Pa, Temperature: 24.65 C, Humidity: 42.35
+BME680 Sensor: 25.84 °C, 46.95 %, 932.49 hPa, 51258.00 KOhm
+Lux: 90
+BMP280 Sensor: Pressure: 93210.25 Pa, Temperature: 24.66 C, Humidity: 42.37
+BME680 Sensor: 25.83 °C, 46.95 %, 932.47 hPa, 51602.00 KOhm
+Lux: 90
+BMP280 Sensor: Pressure: 93209.31 Pa, Temperature: 24.66 C, Humidity: 42.37
+BME680 Sensor: 25.83 °C, 46.95 %, 932.47 hPa, 51633.00 KOhm
+Lux: 90
+BMP280 Sensor: Pressure: 93212.88 Pa, Temperature: 24.66 C, Humidity: 42.38
+BME680 Sensor: 25.83 °C, 46.98 %, 932.49 hPa, 51508.00 KOhm
+Lux: 89
+BMP280 Sensor: Pressure: 93211.84 Pa, Temperature: 24.65 C, Humidity: 42.36
+BME680 Sensor: 25.82 °C, 46.99 %, 932.49 hPa, 51728.00 KOhm
+Lux: 89
+BMP280 Sensor: Pressure: 93207.91 Pa, Temperature: 24.65 C, Humidity: 42.36
+BME680 Sensor: 25.82 °C, 47.01 %, 932.49 hPa, 51728.00 KOhm
+Lux: 88
+BMP280 Sensor: Pressure: 93214.19 Pa, Temperature: 24.66 C, Humidity: 42.37
+BME680 Sensor: 25.81 °C, 47.01 %, 932.47 hPa, 51918.00 KOhm
+Lux: 88
+BMP280 Sensor: Pressure: 93208.48 Pa, Temperature: 24.65 C, Humidity: 42.38
+BME680 Sensor: 25.81 °C, 47.01 %, 932.49 hPa, 52078.00 KOhm
+Lux: 88
+BMP280 Sensor: Pressure: 93208.28 Pa, Temperature: 24.66 C, Humidity: 42.36
+BME680 Sensor: 25.80 °C, 47.06 %, 932.49 hPa, 51886.00 KOhm
+Lux: 87
+BMP280 Sensor: Pressure: 93206.32 Pa, Temperature: 24.66 C, Humidity: 42.36
+BME680 Sensor: 25.81 °C, 47.04 %, 932.49 hPa, 52014.00 KOhm
+Lux: 87
+BMP280 Sensor: Pressure: 93207.62 Pa, Temperature: 24.66 C, Humidity: 42.37
+BME680 Sensor: 25.81 °C, 47.06 %, 932.49 hPa, 52142.00 KOhm
+Lux: 87
+BMP280 Sensor: Pressure: 93210.25 Pa, Temperature: 24.66 C, Humidity: 42.37
+BME680 Sensor: 25.81 °C, 47.04 %, 932.47 hPa, 52142.00 KOhm
+Lux: 88
+BMP280 Sensor: Pressure: 93207.26 Pa, Temperature: 24.65 C, Humidity: 42.37
+BME680 Sensor: 25.82 °C, 47.04 %, 932.49 hPa, 52206.00 KOhm
+Lux: 86
+BMP280 Sensor: Pressure: 93209.78 Pa, Temperature: 24.65 C, Humidity: 42.36
+BME680 Sensor: 25.82 °C, 47.03 %, 932.49 hPa, 52335.00 KOhm
+Lux: 86
+BMP280 Sensor: Pressure: 93206.79 Pa, Temperature: 24.65 C, Humidity: 42.33
+BME680 Sensor: 25.82 °C, 47.04 %, 932.47 hPa, 52432.00 KOhm
+Lux: 86
+BMP280 Sensor: Pressure: 93207.26 Pa, Temperature: 24.65 C, Humidity: 42.34
+BME680 Sensor: 25.83 °C, 47.03 %, 932.47 hPa, 52530.00 KOhm
+Lux: 85
+BMP280 Sensor: Pressure: 93206.60 Pa, Temperature: 24.65 C, Humidity: 42.34
+BME680 Sensor: 25.83 °C, 47.01 %, 932.47 hPa, 52563.00 KOhm
+Lux: 85
+BMP280 Sensor: Pressure: 93205.66 Pa, Temperature: 24.66 C, Humidity: 42.35
+BME680 Sensor: 25.83 °C, 47.00 %, 932.47 hPa, 52497.00 KOhm
+Lux: 85
+BMP280 Sensor: Pressure: 93208.44 Pa, Temperature: 24.67 C, Humidity: 42.33
+BME680 Sensor: 25.83 °C, 47.00 %, 932.47 hPa, 52595.00 KOhm
+Lux: 85
+BMP280 Sensor: Pressure: 93207.41 Pa, Temperature: 24.66 C, Humidity: 42.34
+BME680 Sensor: 25.83 °C, 46.98 %, 932.45 hPa, 52628.00 KOhm
+Lux: 85
+BMP280 Sensor: Pressure: 93209.09 Pa, Temperature: 24.67 C, Humidity: 42.32
+BME680 Sensor: 25.84 °C, 46.99 %, 932.47 hPa, 52661.00 KOhm
+Lux: 85
+BMP280 Sensor: Pressure: 93209.28 Pa, Temperature: 24.68 C, Humidity: 42.30
+BME680 Sensor: 25.84 °C, 46.97 %, 932.47 hPa, 53057.00 KOhm
+Lux: 85
+BMP280 Sensor: Pressure: 93204.56 Pa, Temperature: 24.69 C, Humidity: 42.29
+BME680 Sensor: 25.85 °C, 46.97 %, 932.45 hPa, 53156.00 KOhm
+Lux: 85
+BMP280 Sensor: Pressure: 93205.59 Pa, Temperature: 24.69 C, Humidity: 42.31
+BME680 Sensor: 25.86 °C, 46.97 %, 932.47 hPa, 53090.00 KOhm
+Lux: 85
+BMP280 Sensor: Pressure: 93204.94 Pa, Temperature: 24.69 C, Humidity: 42.29
+BME680 Sensor: 25.87 °C, 46.95 %, 932.45 hPa, 53223.00 KOhm
+Lux: 84
+BMP280 Sensor: Pressure: 93207.56 Pa, Temperature: 24.69 C, Humidity: 42.28
+BME680 Sensor: 25.88 °C, 46.94 %, 932.45 hPa, 53290.00 KOhm
+Lux: 84
+BMP280 Sensor: Pressure: 93207.75 Pa, Temperature: 24.70 C, Humidity: 42.26
+BME680 Sensor: 25.89 °C, 46.92 %, 932.45 hPa, 53156.00 KOhm
+Lux: 88
+BMP280 Sensor: Pressure: 93211.21 Pa, Temperature: 24.71 C, Humidity: 42.24
+BME680 Sensor: 25.90 °C, 46.91 %, 932.45 hPa, 53391.00 KOhm
+Lux: 89
+BMP280 Sensor: Pressure: 93206.31 Pa, Temperature: 24.71 C, Humidity: 42.24
+BME680 Sensor: 25.91 °C, 46.92 %, 932.43 hPa, 53594.00 KOhm
+Lux: 89
+BMP280 Sensor: Pressure: 93212.95 Pa, Temperature: 24.72 C, Humidity: 42.21
+BME680 Sensor: 25.92 °C, 46.91 %, 932.43 hPa, 53223.00 KOhm
+Lux: 83

@@ -1,0 +1,98 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM10 instead...[0m
+[0;33m--- esp-idf-monitor 1.3.3 on \\.\COM10 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x42007370: uart_ll_get_txfifo_len at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/hal/esp32c3/include/hal/uart_ll.h:344 (discriminator 1)
+ (inlined by) uart_tx_char at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/vfs/vfs_uart.c:168 (discriminator 1)
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x42016018: esp_http_client_set_post_field at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_client/esp_http_client.c:1591
+[0m
+[0;33m0x420085bc: post_rest_function at C:/Users/Niki/Desktop/sensorlelel/c3wifi/main/c3wifi.c:83
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[1;31mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Niki\\Desktop\\sensorlelel\\c3wifi\\build\\c3wifi.elf', '-ex', 'target remote | "C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\Niki\\AppData\\Local\\Temp\\tmp6lz8x63d"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\Niki\\AppData\\Local\\Temp\\tmp6lz8x63d': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x42016018: esp_http_client_set_post_field at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_client/esp_http_client.c:1591
+[0m
+[0;33m0x420085bc: post_rest_function at C:/Users/Niki/Desktop/sensorlelel/c3wifi/main/c3wifi.c:83
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[1;31mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Niki\\Desktop\\sensorlelel\\c3wifi\\build\\c3wifi.elf', '-ex', 'target remote | "C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpjx20orjm"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpjx20orjm': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x42016018: esp_http_client_set_post_field at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_client/esp_http_client.c:1591
+[0m
+[0;33m0x420085bc: post_rest_function at C:/Users/Niki/Desktop/sensorlelel/c3wifi/main/c3wifi.c:83
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[1;31mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Niki\\Desktop\\sensorlelel\\c3wifi\\build\\c3wifi.elf', '-ex', 'target remote | "C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpkth109y6"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpkth109y6': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x42016018: esp_http_client_set_post_field at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_client/esp_http_client.c:1591
+[0m
+[0;33m0x420085bc: post_rest_function at C:/Users/Niki/Desktop/sensorlelel/c3wifi/main/c3wifi.c:83
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[1;31mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Niki\\Desktop\\sensorlelel\\c3wifi\\build\\c3wifi.elf', '-ex', 'target remote | "C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpozh_cq5q"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpozh_cq5q': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x42016018: esp_http_client_set_post_field at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_client/esp_http_client.c:1591
+[0m
+[0;33m0x420085bc: post_rest_function at C:/Users/Niki/Desktop/sensorlelel/c3wifi/main/c3wifi.c:83
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[1;31mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Niki\\Desktop\\sensorlelel\\c3wifi\\build\\c3wifi.elf', '-ex', 'target remote | "C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpizakeb76"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpizakeb76': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x42016018: esp_http_client_set_post_field at C:/espressif2/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_client/esp_http_client.c:1591
+[0m
+[0;33m0x420085bc: post_rest_function at C:/Users/Niki/Desktop/sensorlelel/c3wifi/main/c3wifi.c:83
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[1;31mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\Niki\\Desktop\\sensorlelel\\c3wifi\\build\\c3wifi.elf', '-ex', 'target remote | "C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpqzdqycpc"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\espressif2\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\Niki\\AppData\\Local\\Temp\\tmpqzdqycpc': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[0m

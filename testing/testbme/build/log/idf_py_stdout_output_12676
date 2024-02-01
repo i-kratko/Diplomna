@@ -1,0 +1,2 @@
+-- IDF_TARGET is not set, guessed 'esp32c6' from sdkconfig 'C:/Users/Niki/Desktop/sensorlelel/testbme/sdkconfig'
+-- Found Git: C:/espressif2/Espressif/tools/idf-git/2.39.2/cmd/git.exe (found version "2.39.2.windows.1") 

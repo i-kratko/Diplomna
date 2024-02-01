@@ -1,0 +1,488 @@
+[0;32mI (143) esp_image: segment 1: paddr=0005ca38 vaddr=3fc91eESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40384d32
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x170c
+load:0x403cc710,len:0x938
+load:0x403ce710,len:0x2ee8
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Feb  1 2024 00:45:43[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 001a9000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c140020 size=4ca10h (313872) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0005ca38 vaddr=3fc91e00 size=0312ch ( 12588) load[0m
+[0;32mI (146) esp_image: segment 2: paddr=0005fb6c vaddr=40380000 size=004ach (  1196) load[0m
+[0;32mI (149) esp_image: segment 3: paddr=00060020 vaddr=42000020 size=137bdch (1276892) map[0m
+[0;32mI (361) esp_image: segment 4: paddr=00197c04 vaddr=403804ac size=1187ch ( 71804) load[0m
+[0;32mI (381) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (381) boot: Disabling RNG early entropy source...[0m
+[0;32mI (382) cpu_start: Unicore app[0m
+[0;32mI (385) cpu_start: Pro cpu up.[0m
+[0;32mI (400) cpu_start: Pro cpu start user code[0m
+[0;32mI (400) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (400) cpu_start: Application information:[0m
+[0;32mI (403) cpu_start: Project name:     esp_ot_br[0m
+[0;32mI (408) cpu_start: App version:      1[0m
+[0;32mI (413) cpu_start: Compile time:     Feb  1 2024 00:44:37[0m
+[0;32mI (419) cpu_start: ELF file SHA256:  5f4d1aaafedb8302...[0m
+[0;32mI (425) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (430) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (435) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (440) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (445) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FCA30B0 len 0001CF50 (115 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (465) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (473) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (480) spi_flash: detected chip: generic[0m
+[0;32mI (484) spi_flash: flash io: dio[0m
+[0;33mW (488) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (501) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (507) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (515) app_start: Starting scheduler on CPU0[0m
+[0;32mI (520) main_task: Started on CPU0[0m
+[0;32mI (520) main_task: Calling app_main()[0m
+[0;32mI (520) example_connect: Start example_connect.[0m
+[0;32mI (530) pp: pp rom version: 9387209[0m
+[0;32mI (530) net80211: net80211 rom version: 9387209[0m
+I (540) wifi:wifi driver task: 3fcabdd8, prio:23, stack:6656, core=0
+I (540) wifi:wifi firmware version: 91b9630
+I (540) wifi:wifi certification version: v7.0
+I (540) wifi:config NVS flash: enabled
+I (540) wifi:config nano formating: disabled
+I (540) wifi:Init data frame dynamic rx buffer num: 32
+I (540) wifi:Init static rx mgmt buffer num: 5
+I (540) wifi:Init management short buffer num: 32
+I (540) wifi:Init dynamic tx buffer num: 32
+I (540) wifi:Init static tx FG buffer num: 2
+I (540) wifi:Init static rx buffer size: 1600
+I (540) wifi:Init static rx buffer num: 10
+I (540) wifi:Init dynamic rx buffer num: 32
+[0;32mI (540) wifi_init: rx ba win: 6[0m
+[0;32mI (540) wifi_init: tcpip mbox: 32[0m
+[0;32mI (540) wifi_init: udp mbox: 6[0m
+[0;32mI (540) wifi_init: tcp mbox: 6[0m
+[0;32mI (540) wifi_init: tcp tx win: 5744[0m
+[0;32mI (540) wifi_init: tcp rx win: 5744[0m
+[0;32mI (540) wifi_init: tcp mss: 1440[0m
+[0;32mI (540) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (540) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (550) phy_init: phy_version 1130,b4e4b80,Sep  5 2023,11:09:30[0m
+I (580) wifi:mode : sta (d4:f9:8d:04:42:c0)
+I (580) wifi:enable tsf
+[0;32mI (580) example_connect: Connecting to Tenda...[0m
+[0;32mI (590) example_connect: Waiting for IP(s)[0m
+I (2990) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (3300) wifi:state: init -> auth (b0)
+I (3310) wifi:state: auth -> assoc (0)
+I (3330) wifi:state: assoc -> run (10)
+I (3340) wifi:connected with Tenda, aid = 4, channel 6, 40U, bssid = 50:0f:f5:70:33:b8
+I (3340) wifi:security: WPA2-PSK, phy: bgn, rssi: -53
+I (3340) wifi:pm start, type: 1
+
+I (3340) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (3350) wifi:<ba-add>idx:0 (ifx:0, 50:0f:f5:70:33:b8), tid:0, ssn:2, winSize:64
+I (3440) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4520) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:d6f9:8dff:fe04:42c0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6340) esp_netif_handlers: example_netif_sta ip: 192.168.0.109, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (6340) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.109[0m
+[0;32mI (6340) example_common: Connected to example_netif_sta[0m
+[0;32mI (6340) example_common: - IPv4 address: 192.168.0.109,[0m
+[0;32mI (6340) example_common: - IPv6 address: fe80:0000:0000:0000:d6f9:8dff:fe04:42c0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (6340) wifi:Set ps type: 0, coexist: 0
+
+[0;32mI (6340) OPENTHREAD: spinel UART interface initialization completed[0m
+[0;32mI (6340) main_task: Returned from app_main()[0m
+[0;32mI(6350) OPENTHREAD:[I] Platform------: RCP reset: RESET_POWER_ON[0m
+[0;32mI(6350) OPENTHREAD:[I] Platform------: Software reset RCP successfully[0m
+[0;32mI(6390) OPENTHREAD:[I] ChildSupervsn-: Timeout: 0 -> 190[0m
+[0;32mI(6400) OPENTHREAD:[I] Settings------: Read NetworkInfo {rloc:0x6400, extaddr:3e181c473fb5fc67, role:leader, mode:0x0f, version:4, keyseq:0x0, ...[0m
+[0;32mI(6400) OPENTHREAD:[I] Settings------: ... pid:0x148041ad, mlecntr:0x1fb9, maccntr:0x1f4a, mliid:5485262dbdd17ab5}[0m
+[0;32mI (6410) OPENTHREAD: OpenThread attached to netif[0m
+> [0;32mI(6420) OPENTHREAD:[N] RoutingManager: BR ULA prefix: fd5d:b7ca:a5fe::/48 (loaded)[0m
+[0;32mI(6420) OPENTHREAD:[N] RoutingManager: Local on-link prefix: fd33:3256:d779:a922::/64[0m
+[0;32mI (6440) OPENTHREAD: Platform UDP bound to port 49153[0m
+[0;32mI(6440) OPENTHREAD:[N] Mle-----------: Role disabled -> detached[0m
+[5n[0;32mI (6470) OT_STATE: netif up[0m
+[0;32mI (6470) OPENTHREAD: NAT64 ready[0m
+> [0;32mI(33390) OPENTHREAD:[N] Mle-----------: RLOC16 6400 -> fffe[0m
+[0;32mI(33550) OPENTHREAD:[N] Mle-----------: Attach attempt 1, AnyPartition reattaching with Active Dataset[0m
+[0;32mI(40120) OPENTHREAD:[N] RouterTable---: Allocate router id 25[0m
+[0;32mI(40120) OPENTHREAD:[N] Mle-----------: RLOC16 fffe -> 6400[0m
+[0;32mI(40120) OPENTHREAD:[N] Mle-----------: Role detached -> leader[0m
+[0;32mI(40130) OPENTHREAD:[N] Mle-----------: Partition ID 0x7e3dbe0c[0m
+[0;32mI (40140) OPENTHREAD: Platform UDP bound to port 49154[0m
+[0;32mI (40880) OPENTHREAD: Received PIO[0m
+[0;32mI (41690) OPENTHREAD: Platform UDP bound to port 53535[0m
+[0;32mI (42520) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fd33:3256:d779:a922:d6f9:8dff:fe04:42c0, type: ESP_IP6_ADDR_IS_UNIQUE_LOCAL[0m
+[0;32mI (44280) OPENTHREAD: Received PIO[0m
+[0;32mI (47300) OPENTHREAD: Received PIO[0m
+[0;32mI (50320) OPENTHREAD: Received PIO[0m
+dataset
+
+Done
+[0;32mI (371) esp_image: segment 4: paddr=00197c04 vaddr=403804CF50 (115 KiB): DRAM[0m
+[0;32mI (475) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (482) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (489) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (496) spi_flash: detected chip: generic[0m
+[0;32mI (500) spi_flash: flash io: dio[0m
+[0;33mW (504) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (518) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (524) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (531) app_start: Starting scheduler on CPU0[0m
+[0;32mI (536) main_task: Started on CPU0[0m
+[0;32mI (536) main_task: Calling app_main()[0m
+[0;32mI (536) example_connect: Start example_connect.[0m
+[0;32mI (536) pp: pp rom version: 9387209[0m
+[0;32mI (536) net80211: net80211 rom version: 9387209[0m
+I (556) wifi:wifi driver task: 3fcabe5c, prio:23, stack:6656, core=0
+I (556) wifi:wifi firmware version: 91b9630
+I (556) wifi:wifi certification version: v7.0
+I (556) wifi:config NVS flash: enabled
+I (556) wifi:config nano formating: disabled
+I (556) wifi:Init data frame dynamic rx buffer num: 32
+I (556) wifi:Init static rx mgmt buffer num: 5
+I (556) wifi:Init management short buffer num: 32
+I (556) wifi:Init dynamic tx buffer num: 32
+I (556) wifi:Init static tx FG buffer num: 2
+I (556) wifi:Init static rx buffer size: 1600
+I (556) wifi:Init static rx buffer num: 10
+I (556) wifi:Init dynamic rx buffer num: 32
+[0;32mI (556) wifi_init: rx ba win: 6[0m
+[0;32mI (556) wifi_init: tcpip mbox: 32[0m
+[0;32mI (556) wifi_init: udp mbox: 6[0m
+[0;32mI (556) wifi_init: tcp mbox: 6[0m
+[0;32mI (556) wifi_init: tcp tx win: 5744[0m
+[0;32mI (556) wifi_init: tcp rx win: 5744[0m
+[0;32mI (556) wifi_init: tcp mss: 1440[0m
+[0;32mI (556) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (556) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (566) phy_init: phy_version 1130,b4e4b80,Sep  5 2023,11:09:30[0m
+I (596) wifi:mode : sta (d4:f9:8d:04:42:c0)
+I (596) wifi:enable tsf
+[0;32mI (596) example_connect: Connecting to Tenda...[0m
+[0;32mI (606) example_connect: Waiting for IP(s)[0m
+I (3006) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (3316) wifi:state: init -> auth (b0)
+I (3326) wifi:state: auth -> assoc (0)
+I (3346) wifi:state: assoc -> run (10)
+I (3356) wifi:connected with Tenda, aid = 4, channel 6, 40U, bssid = 50:0f:f5:70:33:b8
+I (3356) wifi:security: WPA2-PSK, phy: bgn, rssi: -42
+I (3356) wifi:pm start, type: 1
+
+I (3356) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (3366) wifi:<ba-add>idx:0 (ifx:0, 50:0f:f5:70:33:b8), tid:0, ssn:2, winSize:64
+I (3406) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4536) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:d6f9:8dff:fe04:42c0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6356) esp_netif_handlers: example_netif_sta ip: 192.168.0.109, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (6356) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.109[0m
+[0;32mI (6356) example_common: Connected to example_netif_sta[0m
+[0;32mI (6356) example_common: - IPv4 address: 192.168.0.109,[0m
+[0;32mI (6356) example_common: - IPv6 address: fe80:0000:0000:0000:d6f9:8dff:fe04:42c0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (6356) wifi:Set ps type: 0, coexist: 0
+
+[0;32mI (6356) OPENTHREAD: spinel UART interface initialization completed[0m
+[0;32mI (6356) main_task: Returned from app_main()[0m
+[0;32mI(6366) OPENTHREAD:[I] Platform------: RCP reset: RESET_POWER_ON[0m
+[0;32mI(6366) OPENTHREAD:[I] Platform------: Software reset RCP successfully[0m
+[0;32mI(6406) OPENTHREAD:[I] ChildSupervsn-: Timeout: 0 -> 190[0m
+[0;32mI(6416) OPENTHREAD:[I] Settings------: Read NetworkInfo {rloc:0x6400, extaddr:3e181c473fb5fc67, role:leader, mode:0x0f, version:4, keyseq:0x0, ...[0m
+[0;32mI(6426) OPENTHREAD:[I] Settings------: ... pid:0x7e3dbe0c, mlecntr:0x23ae, maccntr:0x2332, mliid:5485262dbdd17ab5}[0m
+[0;32mI (6436) OPENTHREAD: OpenThread attached to netif[0m
+> [0;32mI(6436) OPENTHREAD:[N] RoutingManager: BR ULA prefix: fd5d:b7ca:a5fe::/48 (loaded)[0m
+[0;32mI(6446) OPENTHREAD:[N] RoutingManager: Local on-link prefix: fd33:3256:d779:a922::/64[0m
+[0;32mI (6456) OPENTHREAD: Platform UDP bound to port 49153[0m
+[0;32mI(6456) OPENTHREAD:[N] Mle-----------: Role disabled -> detached[0m
+[5n[0;32mI (6486) OT_STATE: netif up[0m
+[0;32mI (6486) OPENTHREAD: NAT64 ready[0m
+> [0;32mI(35176) OPENTHREAD:[N] Mle-----------: RLOC16 6400 -> fffe[0m
+[0;32mI(35806) OPENTHREAD:[N] Mle-----------: Attach attempt 1, AnyPartition reattaching with Active Dataset[0m
+help[0;32mI(42366) OPENTHREAD:[N] RouterTable---: Allocate router id 25[0m
+[0;32mI(42366) OPENTHREAD:[N] Mle-----------: RLOC16 fffe -> 6400[0m
+[0;32mI(42366) OPENTHREAD:[N] Mle-----------: Role detached -> leader[0m
+[0;32mI(42376) OPENTHREAD:[N] Mle-----------: Partition ID 0x17b95cc[0m
+[0;32mI (42386) OPENTHREAD: Platform UDP bound to port 49154[0m
+[0;32mI (42996) OPENTHREAD: Received PIO[0m
+[0;32mI (44046) OPENTHREAD: Platform UDP bound to port 53535[0m
+[0;32mI (44536) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fd33:3256:d779:a922:d6f9:8dff:fe04:42c0, type: ESP_IP6_ADDR_IS_UNIQUE_LOCAL[0m
+[0;32mI (46896) OPENTHREAD: Received PIO[0m
+dataset
+
+Error 35: InvalidCommand
+> [0;32mI (51276) OPENTHREAD: Received PIO[0m
+help
+
+ba
+bbr
+br
+bufferinfo
+ccathreshold
+ccm
+channel
+child
+childip
+childmax
+childrouterlinks
+childsupervision
+childtimeout
+coap
+contextreusedelay
+counters
+dataset
+delaytimermin
+detach
+diag
+discover
+dns
+domainname
+eidcache
+eui64
+extaddr
+extpanid
+factoryreset
+fake
+fem
+ifconfig
+instanceid
+ipaddr
+ipmaddr
+joinerport
+keysequence
+leaderdata
+leaderweight
+log
+mac
+meshdiag
+mleadvimax
+mliid
+mode
+multiradio
+nat64
+neighbor
+netdata
+netstat
+networkdiagnostic
+networkidtimeout
+networkkey
+networkname
+nexthop
+panid
+parent
+parentpriority
+partitionid
+ping
+platform
+pollperiod
+preferrouterid
+prefix
+promiscuous
+pskc
+rcp
+region
+releaserouterid
+reset
+rloc16
+route
+router
+routerdowngradethreshold
+routereligible
+routeridrange
+routerselectionjitter
+routerupgradethreshold
+scan
+service
+singleton
+srp
+state
+thread
+timeinqueue
+tvcheck
+txpower
+udp
+unsecureport
+uptime
+vendor
+version
+curl
+heapdiag
+ip
+iperf
+loglevel
+mcast
+tcpsockclient
+tcpsockserver
+udpsockclient
+udpsockserver
+wifi
+Done
+> [0;32mI (54286) OPENTHREAD: Received PIO[0m
+dataset
+
+Done
+> dataset commit active
+
+Done
+[0;31mE (68776) OPENTHREAD: esp_openthread_publish_meshcop_mdns(133): Failed to get OpenThread active dataset[0m
+> [0;32mI (71516) OPENTHREAD: Received PIO[0m
+ipaddr
+
+fdd9:403:948d:4200:0:ff:fe00:fc10
+fd5d:b7ca:a5fe:1:5f39:61d0:d92d:dfeb
+fdd9:403:948d:4200:0:ff:fe00:fc00
+fdd9:403:948d:4200:0:ff:fe00:6400
+fdd9:403:948d:4200:5485:262d:bdd1:7ab5
+fe80:0:0:0:3c18:1c47:3fb5:fc67
+Done
+> netwrokkey
+
+Error 35: InvalidCommand
+> networkkey
+
+cfdb1dfac7cc1b393a07c927e76ceeae
+Done
+[0;32mI (372) esp_image: segment 4: paddr=00197c04 vaddr=403804I (3017) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (3317) wifi:state: init -> auth (b0)
+I (3327) wifi:state: auth -> assoc (0)
+I (3347) wifi:state: assoc -> run (10)
+I (3357) wifi:connected with Tenda, aid = 4, channel 6, 40U, bssid = 50:0f:f5:70:33:b8
+I (3357) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (3357) wifi:pm start, type: 1
+
+I (3357) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (3367) wifi:<ba-add>idx:0 (ifx:0, 50:0f:f5:70:33:b8), tid:0, ssn:2, winSize:64
+I (3457) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4537) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:d6f9:8dff:fe04:42c0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5867) esp_netif_handlers: example_netif_sta ip: 192.168.0.109, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (5867) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.109[0m
+[0;32mI (5867) example_common: Connected to example_netif_sta[0m
+[0;32mI (5867) example_common: - IPv4 address: 192.168.0.109,[0m
+[0;32mI (5867) example_common: - IPv6 address: fe80:0000:0000:0000:d6f9:8dff:fe04:42c0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (5867) wifi:Set ps type: 0, coexist: 0
+
+[0;32mI (5867) OPENTHREAD: spinel UART interface initialization completed[0m
+[0;32mI (5867) main_task: Returned from app_main()[0m
+[0;32mI(5877) OPENTHREAD:[I] Platform------: RCP reset: RESET_POWER_ON[0m
+[0;32mI(5877) OPENTHREAD:[I] Platform------: Software reset RCP successfully[0m
+[0;32mI(5917) OPENTHREAD:[I] ChildSupervsn-: Timeout: 0 -> 190[0m
+[0;32mI(5927) OPENTHREAD:[I] Settings------: Read NetworkInfo {rloc:0x6400, extaddr:3e181c473fb5fc67, role:leader, mode:0x0f, version:4, keyseq:0x0, ...[0m
+[0;32mI(5927) OPENTHREAD:[I] Settings------: ... pid:0x17b95cc, mlecntr:0x27a3, maccntr:0x271a, mliid:5485262dbdd17ab5}[0m
+[0;32mI(5937) OPENTHREAD:[I] Settings------: Read ChildInfo {rloc:0x6401, extaddr:1ee1220c292083b6, timeout:240, mode:0x0f, version:4}[0m
+[0;32mI (5937) OPENTHREAD: OpenThread attached to netif[0m
+> [0;32mI(5947) OPENTHREAD:[N] RoutingManager: BR ULA prefix: fd5d:b7ca:a5fe::/48 (loaded)[0m
+[0;32mI(5947) OPENTHREAD:[N] RoutingManager: Local on-link prefix: fdde:ad00:beef:cafe::/64[0m
+[0;32mI (5967) OPENTHREAD: Platform UDP bound to port 49153[0m
+[0;32mI(5967) OPENTHREAD:[N] Mle-----------: Role disabled -> detached[0m
+[5n[0;32mI(5997) OPENTHREAD:[N] RoutingManager: Local on-link prefix: fd33:3256:d779:a922::/64[0m
+[0;32mI (5997) OT_STATE: netif up[0m
+[0;32mI (5997) OPENTHREAD: NAT64 ready[0m
+> ntwrokkey
+
+Error 35: InvalidCommand
+> networkkey
+
+cfdb1dfac7cc1b393a07c927e76ceeae
+Done
+> panid
+
+0x24a4
+Done
+> [0;32mI(32037) OPENTHREAD:[N] Mle-----------: RLOC16 6400 -> fffe[0m
+[0;32mI(32477) OPENTHREAD:[N] Mle-----------: Attach attempt 1, AnyPartition reattaching with Active Dataset[0m
+[0;32mI(36517) OPENTHREAD:[N] RouterTable---: Allocate router id 25[0m
+[0;32mI(36517) OPENTHREAD:[N] Mle-----------: RLOC16 fffe -> 6400[0m
+[0;32mI(36527) OPENTHREAD:[N] Mle-----------: Role detached -> leader[0m
+[0;32mI(36527) OPENTHREAD:[N] Mle-----------: Partition ID 0x838fa7b[0m
+[0;32mI (36537) OPENTHREAD: Platform UDP bound to port 49154[0m
+[0;32mI (36877) OPENTHREAD: Platform UDP bound to port 53535[0m
+[0;32mI (36977) OPENTHREAD: Received PIO[0m
+[0;32mI (38537) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fd33:3256:d779:a922:d6f9:8dff:fe04:42c0, type: ESP_IP6_ADDR_IS_UNIQUE_LOCAL[0m
+[0;32mI (40437) OPENTHREAD: Received PIO[0m
+[0;32mI (43457) OPENTHREAD: Received PIO[0m
+[0;32mI (46477) OPENTHREAD: Received PIO[0m
+[0;32mI(78927) OPENTHREAD:[N] RouterTable---: Allocate router id 6[0m
+[0;32mI (185707) OPENTHREAD: Received PIO[0m
+[0;32mI (189597) OPENTHREAD: Received PIO[0m
+[0;32mI (193487) OPENTHREAD: Received PIO[0m
+ipaddr
+
+fd5d:b7ca:a5fe:1:5f39:61d0:d92d:dfeb
+fdd9:403:948d:4200:0:ff:fe00:fc10
+fdd9:403:948d:4200:0:ff:fe00:fc00
+fdd9:403:948d:4200:0:ff:fe00:6400
+fdd9:403:948d:4200:5485:262d:bdd1:7ab5
+fe80:0:0:0:3c18:1c47:3fb5:fc67
+Done
+> [0;32mI (339977) OPENTHREAD: Received PIO[0m
+[0;33mW (379487) OPENTHREAD: Dropping unsupported mldv2 record of type 6[0m
+[0;33mW (379487) OPENTHREAD: Dropping unsupported mldv2 record of type 6[0m
+[0;33mW (379487) OPENTHREAD: Dropping unsupported mldv2 record of type 6[0m
+[0;33mW (379487) OPENTHREAD: Dropping unsupported mldv2 record of type 6[0m
+[0;33mW (379487) OPENTHREAD: Dropping unsupported mldv2 record of type 6[0m
+[0;33mW (379487) OPENTHREAD: Dropping unsupported mldv2 record of type 6[0m
+[0;32mI (379907) OPENTHREAD: Received PIO[0m
+[0;32mI (383747) OPENTHREAD: Received PIO[0m
+[0;32mI (388577) OPENTHREAD: Received PIO[0m
+ipaddr
+
+fd5d:b7ca:a5fe:1:5f39:61d0:d92d:dfeb
+fdd9:403:948d:4200:0:ff:fe00:fc10
+fdd9:403:948d:4200:0:ff:fe00:fc00
+fdd9:403:948d:4200:0:ff:fe00:6400
+fdd9:403:948d:4200:5485:262d:bdd1:7ab5
+fe80:0:0:0:3c18:1c47:3fb5:fc67
+Done
+> ipaddr
+
+fd5d:b7ca:a5fe:1:5f39:61d0:d92d:dfeb
+fdd9:403:948d:4200:0:ff:fe00:fc10
+fdd9:403:948d:4200:0:ff:fe00:fc00
+fdd9:403:948d:4200:0:ff:fe00:6400
+fdd9:403:948d:4200:5485:262d:bdd1:7ab5
+fe80:0:0:0:3c18:1c47:3fb5:fc67
+Done
+> [0;32mI (640477) OPENTHREAD: Received PIO[0m
+[0;32mI(645557) OPENTHREAD:[N] MeshForwarder-: Failed to send IPv6 UDP msg, len:96, chksum:f88f, ecn:no, to:1ee1220c292083b6, sec:no, error:NoAck, prio:net[0m
+[0;32mI(645557) OPENTHREAD:[N] MeshForwarder-:     src:[fe80:0:0:0:3c18:1c47:3fb5:fc67]:19788[0m
+[0;32mI(645557) OPENTHREAD:[N] MeshForwarder-:     dst:[fe80:0:0:0:1ce1:220c:2920:83b6]:19788[0m
+[0;32mI(646547) OPENTHREAD:[N] MeshForwarder-: Failed to send IPv6 UDP msg, len:96, chksum:3046, ecn:no, to:1ee1220c292083b6, sec:no, error:NoAck, prio:net[0m
+[0;32mI(646547) OPENTHREAD:[N] MeshForwarder-:     src:[fe80:0:0:0:3c18:1c47:3fb5:fc67]:19788[0m
+[0;32mI(646547) OPENTHREAD:[N] MeshForwarder-:     dst:[fe80:0:0:0:1ce1:220c:2920:83b6]:19788[0m
+[0;32mI(647567) OPENTHREAD:[N] MeshForwarder-: Failed to send IPv6 UDP msg, len:96, chksum:2b7d, ecn:no, to:1ee1220c292083b6, sec:no, error:NoAck, prio:net[0m
+[0;32mI(647567) OPENTHREAD:[N] MeshForwarder-:     src:[fe80:0:0:0:3c18:1c47:3fb5:fc67]:19788[0m
+[0;32mI(647567) OPENTHREAD:[N] MeshForwarder-:     dst:[fe80:0:0:0:1ce1:220c:2920:83b6]:19788[0m
+ipaddr
+
+fd5d:b7ca:a5fe:1:5f39:61d0:d92d:dfeb
+fdd9:403:948d:4200:0:ff:fe00:fc10
+fdd9:403:948d:4200:0:ff:fe00:fc00
+fdd9:403:948d:4200:0:ff:fe00:6400
+fdd9:403:948d:4200:5485:262d:bdd1:7ab5
+fe80:0:0:0:3c18:1c47:3fb5:fc67
+Done
+> [0;32mI(738077) OPENTHREAD:[N] RouterTable---: Release router id 6[0m
+[0;32mI(796677) OPENTHREAD:[N] RouterTable---: Allocate router id 29[0m
+[0;32mI (846297) OPENTHREAD: Received PIO[0m
+[0;32mI (939567) OPENTHREAD: Received PIO[0m
+[0;33mW (973377) OPENTHREAD: Dropping unsupported mldv2 record of type 6[0m
+[0;33mW (973377) OPENTHREAD: Dropping unsupported mldv2 record of type 6[0m
+[0;33mW (973377) OPENTHREAD: Dropping unsupported mldv2 record of type 6[0m
+[0;33mW (973377) OPENTHREAD: Dropping unsupported mldv2 record of type 6[0m
+[0;33mW (973377) OPENTHREAD: Dropping unsupported mldv2 record of type 6[0m
+[0;33mW (973377) OPENTHREAD: Dropping unsupported mldv2 record of type 6[0m
+[0;33mW (973377) OPENTHREAD: Dropping unsupported mldv2 record of type 6[0m
+[0;32mI (973777) OPENTHREAD: Received PIO[0m
+[0;32mI (978367) OPENTHREAD: Received PIO[0m
+[0;32mI (1238657) OPENTHREAD: Received PIO[0m
