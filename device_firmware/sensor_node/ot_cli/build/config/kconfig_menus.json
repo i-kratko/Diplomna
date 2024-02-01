@@ -5610,6 +5610,160 @@
     {
         "children": [
             {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": "<choice EXAMPLE_IP_MODE>",
+                        "help": null,
+                        "id": "EXAMPLE_IPV4_V6",
+                        "name": "EXAMPLE_IPV4_V6",
+                        "range": null,
+                        "title": "IPV4 & IPV6",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice EXAMPLE_IP_MODE>",
+                        "help": null,
+                        "id": "EXAMPLE_IPV4_ONLY",
+                        "name": "EXAMPLE_IPV4_ONLY",
+                        "range": null,
+                        "title": "IPV4",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice EXAMPLE_IP_MODE>",
+                        "help": null,
+                        "id": "EXAMPLE_IPV6_ONLY",
+                        "name": "EXAMPLE_IPV6_ONLY",
+                        "range": null,
+                        "title": "IPV6",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "help": "Example can multicast IPV4, IPV6, or both.",
+                "id": "example-configuration-multicast-ip-type",
+                "name": "EXAMPLE_IP_MODE",
+                "title": "Multicast IP type",
+                "type": "choice"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EXAMPLE_IPV4",
+                "name": "EXAMPLE_IPV4",
+                "range": null,
+                "title": null,
+                "type": "bool"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EXAMPLE_IPV6",
+                "name": "EXAMPLE_IPV6",
+                "range": null,
+                "title": null,
+                "type": "bool"
+            },
+            {
+                "children": [],
+                "depends_on": "EXAMPLE_IPV4",
+                "help": "IPV4 multicast address. Example will both send to and listen to this address.",
+                "id": "EXAMPLE_MULTICAST_IPV4_ADDR",
+                "name": "EXAMPLE_MULTICAST_IPV4_ADDR",
+                "range": null,
+                "title": "Multicast IPV4 Address (send & receive)",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": "EXAMPLE_IPV6",
+                "help": "IPV6 multicast address. Example will both send to and listen to this address.\n\nThe default FF02::FC address is a link-local multicast address.\nConsult IPV6 specifications or documentation for information about\nmeaning of different IPV6 multicast ranges.",
+                "id": "EXAMPLE_MULTICAST_IPV6_ADDR",
+                "name": "EXAMPLE_MULTICAST_IPV6_ADDR",
+                "range": null,
+                "title": "Multicast IPV6 Address (send & receive)",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Multicast port the example will both send & receive UDP packets on.",
+                "id": "EXAMPLE_PORT",
+                "name": "EXAMPLE_PORT",
+                "range": [
+                    0,
+                    65535
+                ],
+                "title": "Multicast port (send & receive)",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Enables IP_MULTICAST_LOOP/IPV6_MULTICAST_LOOP options, meaning\nthat packets transmitted from the device are also received by the\ndevice itself.",
+                "id": "EXAMPLE_LOOPBACK",
+                "name": "EXAMPLE_LOOPBACK",
+                "range": null,
+                "title": "Multicast loopback",
+                "type": "bool"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Sets TTL field of multicast packets. Separate from uni- & broadcast TTL.",
+                "id": "EXAMPLE_MULTICAST_TTL",
+                "name": "EXAMPLE_MULTICAST_TTL",
+                "range": [
+                    1,
+                    255
+                ],
+                "title": "Multicast packet TTL",
+                "type": "int"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": "!EXAMPLE_IPV6_ONLY && <choice EXAMPLE_MULTICAST_IF>",
+                        "help": null,
+                        "id": "EXAMPLE_MULTICAST_LISTEN_ALL_IF",
+                        "name": "EXAMPLE_MULTICAST_LISTEN_ALL_IF",
+                        "range": null,
+                        "title": "All interfaces (IPV4 only)",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice EXAMPLE_MULTICAST_IF>",
+                        "help": null,
+                        "id": "EXAMPLE_MULTICAST_LISTEN_DEFAULT_IF",
+                        "name": "EXAMPLE_MULTICAST_LISTEN_DEFAULT_IF",
+                        "range": null,
+                        "title": "Default interface",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "help": "Multicast socket can bind to default interface, or all interfaces.",
+                "id": "example-configuration-multicast-interface",
+                "name": "EXAMPLE_MULTICAST_IF",
+                "title": "Multicast Interface",
+                "type": "choice"
+            }
+        ],
+        "depends_on": null,
+        "id": "example-configuration",
+        "title": "Example Configuration",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
                 "children": [],
                 "depends_on": null,
                 "help": "The value is used for iperf socket TCP/UDP rx timeout, iperf will be aborted\nand socket will be closed and shutdown.",

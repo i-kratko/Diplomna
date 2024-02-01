@@ -1,0 +1,42 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\nikiy\Desktop\DR\Diplomna\device_firmware\sensor_node\ot_cli\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5350 bytes. 0x2cb0 bytes (35%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/esp_ot_cli.c.obj
+C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli/main/esp_ot_cli.c: In function 'mcast_example_task':
+C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli/main/esp_ot_cli.c:380:28: warning: variable 'send_count' set but not used [-Wunused-but-set-variable]
+  380 |                 static int send_count;
+      |                            ^~~~~~~~~~
+C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli/main/esp_ot_cli.c: In function 'app_main':
+C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli/main/esp_ot_cli.c:590:33: warning: passing argument 1 of 'xTaskCreatePinnedToCore' from incompatible pointer type [-Wincompatible-pointer-types]
+  590 |         xTaskCreatePinnedToCore(get_bme680_readings, "BME680", configMINIMAL_STACK_SIZE * 8, NULL, 5, NULL, APP_CPU_NUM);
+      |                                 ^~~~~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 void (*)(void)
+In file included from C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_event/include/esp_event.h:13,
+                 from C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli/main/esp_ot_cli.c:21:
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:367:56: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (*)(void)'
+  367 |     BaseType_t xTaskCreatePinnedToCore( TaskFunction_t pxTaskCode,
+      |                                         ~~~~~~~~~~~~~~~^~~~~~~~~~
+C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli/main/esp_ot_cli.c:599:33: warning: passing argument 1 of 'xTaskCreatePinnedToCore' from incompatible pointer type [-Wincompatible-pointer-types]
+  599 |         xTaskCreatePinnedToCore(sr602_func, "SR602", configMINIMAL_STACK_SIZE * 5, NULL, 5, NULL, APP_CPU_NUM);
+      |                                 ^~~~~~~~~~
+      |                                 |
+      |                                 void (*)(void)
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:367:56: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (*)(void)'
+  367 |     BaseType_t xTaskCreatePinnedToCore( TaskFunction_t pxTaskCode,
+      |                                         ~~~~~~~~~~~~~~~^~~~~~~~~~
+C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli/main/esp_ot_cli.c: At top level:
+C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli/main/esp_ot_cli.c:76:20: warning: 'STAG' defined but not used [-Wunused-variable]
+   76 | static const char *STAG = "multicast";
+      |                    ^~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable esp_ot_cli.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32c6 image...
+Merged 2 ELF sections
+Successfully created esp32c6 image.
+Generated C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli/build/esp_ot_cli.bin
+[7/7] cmd.exe /C "cd /D C:\Users\nikiy\Desktop\DR\Diplomna\device_firmware\sensor_node\ot_cli\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli/build/partition_table/partition-table.bin C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli/build/esp_ot_cli.bin"
+esp_ot_cli.bin binary size 0x10d300 bytes. Smallest app partition is 0x120000 bytes. 0x12d00 bytes (7%) free.
