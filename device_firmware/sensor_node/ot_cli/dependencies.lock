@@ -1,0 +1,21 @@
+dependencies:
+  espressif/esp_ot_cli_extension:
+    component_hash: 471c8b346cbdefde32bde48c68333ab6b3f8eb07db81afe3f16c0915012c65f0
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 0.4.7
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.1.2
+  iperf:
+    component_hash: null
+    source:
+      path: C:\Espressif\frameworks\esp-idf-v5.1.2\examples\common_components\iperf
+      type: local
+    version: '*'
+manifest_hash: e872d88177a19c67b032ffa1eb436f9692fc66899139c08466099088018be4ab
+target: esp32c6
+version: 1.0.0
