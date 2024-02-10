@@ -1,0 +1,30 @@
+-- IDF_TARGET is not set, guessed 'esp32c3' from sdkconfig 'C:/Users/nikiy/Desktop/DR/Diplomna/testing/ot_br/sdkconfig'
+-- Found Git: C:/Espressif/tools/idf-git/2.39.2/cmd/git.exe (found version "2.39.2.windows.1") 
+-- ccache will be used for faster recompilation
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32c3
+Manifest files have changed, solving dependencies.
+Using component placed at C:\Espressif\frameworks\esp-idf-v5.1.2\examples\common_components\iperf for dependency iperf(*), specified in C:/Users/nikiy/Desktop/DR/Diplomna/testing/ot_br/main\idf_component.yml
+Using component placed at C:\Espressif\frameworks\esp-idf-v5.1.2\examples\common_components\protocol_examples_common for dependency protocol_examples_common(*), specified in C:/Users/nikiy/Desktop/DR/Diplomna/testing/ot_br/main\idf_component.yml
+......Updating lock file at C:\Users\nikiy\Desktop\DR\Diplomna\testing\ot_br\dependencies.lock
+Processing 5 dependencies:
+[1/5] espressif/esp_ot_cli_extension (1.0.1)
+[2/5] espressif/mdns (1.2.3)
+[3/5] idf (5.1.2)
+[4/5] iperf (*)
+[5/5] protocol_examples_common (*)
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/nikiy/Desktop/DR/Diplomna/testing/ot_br/build/CMakeFiles/CMakeOutput.log".

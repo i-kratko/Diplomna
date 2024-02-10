@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Niki/Desktop/sensorlelel/ot_br/managed_components/espressif__mdns
+# Install script for directory: C:/Users/nikiy/Desktop/DR/Diplomna/testing/ot_br/managed_components/espressif__mdns
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/Niki/.rustup/toolchains/esp/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-objdump.exe")
 endif()
 

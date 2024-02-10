@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "esp_ot_cli",
-    "project_version":    "89a5878-dirty",
+    "project_version":    "6fcc207-dirty",
     "project_path":       "C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.1.2",
     "build_dir":          "C:/Users/nikiy/Desktop/DR/Diplomna/device_firmware/sensor_node/ot_cli/build",

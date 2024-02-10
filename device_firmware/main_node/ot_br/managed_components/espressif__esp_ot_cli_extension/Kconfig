@@ -1,0 +1,20 @@
+menu "OpenThread Extension CLI"
+
+    menuconfig OPENTHREAD_CLI_ESP_EXTENSION
+        depends on OPENTHREAD_FTD || OPENTHREAD_MTD
+        bool "Enable Espressif's extended features"
+        default y
+        help
+            Enable Espressif's extended features.
+
+    config OPENTHREAD_CLI_WIFI
+        bool "Enable wifi connection command"
+        depends on OPENTHREAD_CLI_ESP_EXTENSION && OPENTHREAD_BORDER_ROUTER
+        default y
+
+    config OPENTHREAD_CLI_OTA
+        bool "Enable OTA command"
+        depends on OPENTHREAD_CLI_ESP_EXTENSION && OPENTHREAD_BORDER_ROUTER
+        default n
+
+endmenu

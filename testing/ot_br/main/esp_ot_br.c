@@ -43,8 +43,10 @@
 #include "openthread/error.h"
 #include "openthread/logging.h"
 #include "openthread/tasklet.h"
-
+#include "driver/gpio.h"
 #define TAG "esp_ot_br"
+
+#define LED 7
 
 #if CONFIG_EXTERNAL_COEX_ENABLE
 static void ot_br_external_coexist_init(void)
@@ -149,4 +151,9 @@ void app_main(void)
     ESP_ERROR_CHECK(mdns_init());
     ESP_ERROR_CHECK(mdns_hostname_set("esp-ot-br"));
     xTaskCreate(ot_task_worker, "ot_br_main", 20480, xTaskGetCurrentTaskHandle(), 5, NULL);
+    //restartirat se konfiguracii na pina
+    gpio_reset_pin(LED);
+    //zadavane na pina kato output
+    gpio_set_direction(LED, GPIO_MODE_OUTPUT);
+    gpio_set_level(LED, 1);
 }

@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/Niki/Desktop/sensorlelel/ot_br/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/nikiy/Desktop/DR/Diplomna/testing/ot_br/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

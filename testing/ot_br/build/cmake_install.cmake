@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Niki/Desktop/sensorlelel/ot_br
+# Install script for directory: C:/Users/nikiy/Desktop/DR/Diplomna/testing/ot_br
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,12 +34,12 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/Niki/.rustup/toolchains/esp/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Niki/Desktop/sensorlelel/ot_br/build/esp-idf/cmake_install.cmake")
+  include("C:/Users/nikiy/Desktop/DR/Diplomna/testing/ot_br/build/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Niki/Desktop/sensorlelel/ot_br/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/nikiy/Desktop/DR/Diplomna/testing/ot_br/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

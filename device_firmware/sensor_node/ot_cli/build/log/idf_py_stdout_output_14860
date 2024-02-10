@@ -1,0 +1,1147 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (23) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Feb  1 2024 03:08:04[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00120000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=420d0020 size=2e4a8h (189608) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=0003e4d0 vaddr=40800000 size=01b48h (  6984) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=cceb8h (839352) map[0m
+[0;32mI (310) esp_image: segment 3: paddr=0010cee0 vaddr=40801b48 size=0e430h ( 58416) load[0m
+[0;32mI (325) esp_image: segment 4: paddr=0011b318 vaddr=4080ff80 size=01fe4h (  8164) load[0m
+[0;32mI (331) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (331) boot: Disabling RNG early entropy source...[0m
+[0;32mI (345) cpu_start: Unicore app[0m
+[0;32mI (345) cpu_start: Pro cpu up.[0m
+[0;33mW (354) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (361) cpu_start: Pro cpu start user code[0m
+[0;32mI (361) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (361) cpu_start: Application information:[0m
+[0;32mI (364) cpu_start: Project name:     esp_ot_cli[0m
+[0;32mI (369) cpu_start: App version:      6fcc207-dirty[0m
+[0;32mI (374) cpu_start: Compile time:     Feb  9 2024 01:19:42[0m
+[0;32mI (380) cpu_start: ELF file SHA256:  2a1ff4e2197db942...[0m
+[0;32mI (386) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (392) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (396) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (401) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (406) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (413) heap_init: At 4081E360 len 0005E2B0 (376 KiB): D/IRAM[0m
+[0;32mI (420) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (426) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (433) spi_flash: detected chip: generic[0m
+[0;32mI (437) spi_flash: flash io: dio[0m
+[0;33mW (441) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (455) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (461) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (468) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (474) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (479) app_start: Starting scheduler on CPU0[0m
+[0;32mI (484) main_task: Startez�[0;32mI (494) phy_init: phy_version 230,c773401,Oct 30 2023,15:07:16[0m
+[0;32mI (524) phy: libbtbb version: 7243671, Oct 30 2023, 15:07:30[0m
+[0;32mI(534) OPENTHREAD:[I] ChildSupervsn-: Timeout: 0 -> 190[0m
+[0;32mI(544) OPENTHREAD:[I] Settings------: Read NetworkInfo {rloc:0x7c00, extaddr:1ee1220c292083b6, role:leader, mode:0x0f, version:4, keyseq:0x0, ...[0m
+[0;32mI(554) OPENTHREAD:[I] Settings------: ... pid:0x9cf0214, mlecntr:0x3ee46, maccntr:0x3eddc, mliid:99e5a038bcfbd6ec}[0m
+> cuckwoBH1750 Sensor: 15 Lux
+[0;32mI (564) OPENTHREAD: OpenThread attached to netif[0m
+mmm[0;32mI(574) OPENTHREAD:[N] Mle-----------: Role disabled -> detached[0m
+[5n[0;32mI (584) OT_STATE: netif up[0m
+
+Brownout detector was triggered
+
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0xc (SW_CPU),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4001975a
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (26) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb  1 2024 03:08:04[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00120000[0m
+[0;32mI (83) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=420d0020 size=2e4a8h (189608) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=0003e4d0 vaddr=40800000 size=01b48h (  6984) load[0m
+[0;32mI (178) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=cceb8h (839352) map[0m
+[0;32mI (521) esp_image: segment 3: paddr=0010cee0 vaddr=40801b48 size=0e430h ( 58416) load[0m
+[0;32mI (549) esp_image: segment 4: paddr=0011b318 vaddr=4080ff80 size=01fe4h (  8164) load[0m
+[0;32mI (561) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (562) boot: Disabling RNG early entropy source...[0m
+[0;32mI (573) cpu_start: Unicore app[0m
+[0;32mI (574) cpu_start: Pro cpu up.[0m
+[0;33mW (583) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (590) cpu_start: Pro cpu start user code[0m
+[0;32mI (590) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (590) cpu_start: Application information:[0m
+[0;32mI (593) cpu_start: Project name:     esp_ot_cli[0m
+[0;32mI (598) cpu_start: App version:      6fcc207-dirty[0m
+[0;32mI (603) cpu_start: Compile time:     Feb  9 2024 01:19:42[0m
+[0;32mI (609) cpu_start: ELF file SHA256:  2a1ff4e2197db942...[0m
+[0;32mI (615) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (621) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (625) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (630) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (635) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (642) heap_init: At 4081E360 len 0005E2B0 (376 KiB): D/IRAM[0m
+[0;32mI (649) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (655) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (662) spi_flash: detected chip: generic[0m
+[0;32mI (666) spi_flash: flash io: dio[0m
+[0;33mW (670) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (684) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (690) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (697) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (703) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (708) app_start: Starting scheduler on CPU0[0m
+[0;32mI (713) main_task: Startez�[0;32mI (723) phy_init: phy_version 230,c773401,Oct 30 2023,15:07:16[0m
+[0;32mI (733) phy: error: chgp_cal no done!!![0m
+error: pll_cal exceeds 2ms!!!
+error: pll_cal exceeds 2ms!!!
+[0;32mI (813) phy: libbtbb version: 7243671, Oct 30 2023, 15:07:30[0m
+[0;32mI(823) OPENTHREAD:[I] ChildSupervsn-: Timeout: 0 -> 190[0m
+[0;32mI(833) OPENTHREAD:[I] Settings------: Read NetworkInfo {rloc:0x7c00, extaddr:1ee1220c292083b6, role:leader, mode:0x0f, version:4, keyseq:0x0, ...[0m
+[0;32mI(843) OPENTHREAD:[I] Settings------: ... pid:0x9cf0214, mlecntr:0x3f22f, maccntr:0x3f1c4, mliid:99e5a038bcfbd6ec}[0m
+> cuckwoBH1750 Sensor: 14 Lux
+[0;32mI (853) OPENTHREAD: OpenThread attached to netif[0m
+mmm[0;32mI(863) OPENTHREAD:[N] Mle-----------: Role disabled -> detached[0m
+[5n[0;32mI (873) OT_STATE: netif up[0m
+[6n [999C [6n [119D[6n > [6n [0;33mW (1843) bme680: Heater is not stable[0m
+BME680 Sensor: 26.54 °C, 48.13 %, 939.64 hPa, 0.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.54 °C, 48.09 %, 939.64 hPa, 8284.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.55 °C, 48.06 %, 939.68 hPa, 7829.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.57 °C, 47.99 %, 939.66 hPa, 7743.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.59 °C, 47.94 %, 939.64 hPa, 7715.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.61 °C, 47.86 %, 939.64 hPa, 7698.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.62 °C, 47.78 %, 939.64 hPa, 7665.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.64 °C, 47.71 %, 939.64 hPa, 7654.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.66 °C, 47.64 %, 939.64 hPa, 7659.00 KOhm
+BH1750 Sensor: 13 Lux
+[0;32mI (10843) gpio: GPIO[6]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+BME680 Sensor: 26.68 °C, 47.58 %, 939.64 hPa, 7681.00 KOhm
+[0;32mI (10843) sensor-node: Configured IPV6 Multicast address FF02::1[0m
+BH1750 Sensor: 13 Lux
+[0;32mI (10853) sensor-node: Socket set IPV6-only[0m
+[0;32mI (10843) main_task: Returned from app_main()[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.69 °C, 47.52 %, 939.62 hPa, 7681.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.71 °C, 47.47 %, 939.62 hPa, 7670.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.72 °C, 47.42 %, 939.62 hPa, 7681.00 KOhm
+[0;32mI (13873) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.73 °C, 47.36 %, 939.60 hPa, 7704.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.75 °C, 47.32 %, 939.62 hPa, 7749.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.76 °C, 47.28 %, 939.64 hPa, 7738.00 KOhm
+[0;32mI (16883) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.77 °C, 47.26 %, 939.64 hPa, 7749.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.78 °C, 47.21 %, 939.64 hPa, 7766.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.79 °C, 47.19 %, 939.62 hPa, 7795.00 KOhm
+[0;32mI (19893) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.80 °C, 47.14 %, 939.64 hPa, 7800.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.81 °C, 47.12 %, 939.62 hPa, 7812.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.81 °C, 47.08 %, 939.60 hPa, 7824.00 KOhm
+[0;32mI (22903) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 15 Lux
+BME680 Sensor: 26.82 °C, 47.06 %, 939.62 hPa, 7841.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.83 °C, 47.03 %, 939.62 hPa, 7864.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.83 °C, 47.01 %, 939.60 hPa, 7882.00 KOhm
+[0;32mI (25913) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.84 °C, 46.99 %, 939.62 hPa, 7888.00 KOhm
+[0;32mI(27483) OPENTHREAD:[N] Mle-----------: RLOC16 7c00 -> fffe[0m
+[0;32mI(27763) OPENTHREAD:[N] Mle-----------: Attach attempt 1, AnyPartition reattaching with Active Dataset[0m
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.84 °C, 46.97 %, 939.62 hPa, 7917.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.85 °C, 46.97 %, 939.62 hPa, 7906.00 KOhm
+[0;32mI (28923) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 15 Lux
+BME680 Sensor: 26.85 °C, 46.98 %, 939.60 hPa, 7941.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.86 °C, 46.97 %, 939.62 hPa, 7977.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.86 °C, 46.97 %, 939.62 hPa, 7983.00 KOhm
+[0;32mI (31933) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.87 °C, 46.96 %, 939.60 hPa, 7995.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.87 °C, 46.94 %, 939.60 hPa, 8026.00 KOhm
+[0;32mI(34323) OPENTHREAD:[N] RouterTable---: Allocate router id 31[0m
+[0;32mI(34323) OPENTHREAD:[N] Mle-----------: RLOC16 fffe -> 7c00[0m
+[0;32mI(34323) OPENTHREAD:[N] Mle-----------: Role detached -> leader[0m
+[0;32mI(34333) OPENTHREAD:[N] Mle-----------: Partition ID 0x1342f35a[0m
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.87 °C, 46.93 %, 939.60 hPa, 8026.00 KOhm
+[0;32mI (34943) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 15 Lux
+BME680 Sensor: 26.88 °C, 46.90 %, 939.62 hPa, 8062.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.88 °C, 46.92 %, 939.62 hPa, 8056.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.88 °C, 46.91 %, 939.60 hPa, 8081.00 KOhm
+[0;32mI (37953) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.88 °C, 46.88 %, 939.60 hPa, 8093.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.89 °C, 46.87 %, 939.60 hPa, 8118.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.89 °C, 46.85 %, 939.60 hPa, 8131.00 KOhm
+[0;32mI (40963) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 15 Lux
+BME680 Sensor: 26.89 °C, 46.85 %, 939.60 hPa, 8150.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.89 °C, 46.85 %, 939.60 hPa, 8162.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.89 °C, 46.83 %, 939.62 hPa, 8187.00 KOhm
+[0;32mI (43973) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.89 °C, 46.81 %, 939.62 hPa, 8187.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.89 °C, 46.81 %, 939.62 hPa, 8213.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.90 °C, 46.81 %, 939.62 hPa, 8251.00 KOhm
+[0;32mI (46983) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.90 °C, 46.79 %, 939.60 hPa, 8251.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.90 °C, 46.81 %, 939.60 hPa, 8271.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.90 °C, 46.79 %, 939.60 hPa, 8277.00 KOhm
+[0;32mI (49993) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.90 °C, 46.78 %, 939.60 hPa, 8323.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.91 °C, 46.78 %, 939.60 hPa, 8310.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.91 °C, 46.78 %, 939.60 hPa, 8316.00 KOhm
+[0;32mI (53003) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 15 Lux
+BME680 Sensor: 26.91 °C, 46.79 %, 939.60 hPa, 8329.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.91 °C, 46.77 %, 939.60 hPa, 8349.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.91 °C, 46.77 %, 939.60 hPa, 8376.00 KOhm
+[0;32mI (56013) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.91 °C, 46.78 %, 939.60 hPa, 8389.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.92 °C, 46.78 %, 939.62 hPa, 8422.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.92 °C, 46.77 %, 939.62 hPa, 8436.00 KOhm
+[0;32mI (59023) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 15 Lux
+BME680 Sensor: 26.92 °C, 46.78 %, 939.60 hPa, 8422.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.92 °C, 46.77 %, 939.60 hPa, 8449.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.92 °C, 46.77 %, 939.60 hPa, 8476.00 KOhm
+[0;32mI (62033) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 46.76 %, 939.60 hPa, 8483.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.93 °C, 46.75 %, 939.60 hPa, 8497.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 46.74 %, 939.60 hPa, 8511.00 KOhm
+[0;32mI (65043) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 15 Lux
+BME680 Sensor: 26.93 °C, 46.73 %, 939.60 hPa, 8524.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 46.71 %, 939.60 hPa, 8545.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 46.69 %, 939.60 hPa, 8559.00 KOhm
+[0;32mI (68053) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 46.68 %, 939.60 hPa, 8552.00 KOhm
+BH1750 Sensor: 12 Lux
+BME680 Sensor: 26.93 °C, 46.65 %, 939.60 hPa, 8594.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.93 °C, 46.65 %, 939.60 hPa, 8601.00 KOhm
+[0;32mI (71063) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.93 °C, 46.63 %, 939.60 hPa, 8608.00 KOhm
+ ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (23) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Feb  1 2024 03:08:04[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00120000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=420d0020 size=2e4a8h (189608) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=0003e4d0 vaddr=40800000 size=01b48h (  6984) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=cceb8h (839352) map[0m
+[0;32mI (310) esp_image: segment 3: paddr=0010cee0 vaddr=40801b48 size=0e430h ( 58416) load[0m
+[0;32mI (325) esp_image: segment 4: paddr=0011b318 vaddr=4080ff80 size=01fe4h (  8164) load[0m
+[0;32mI (331) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (331) boot: Disabling RNG early entropy source...[0m
+[0;32mI (345) cpu_start: Unicore app[0m
+[0;32mI (345) cpu_start: Pro cpu up.[0m
+[0;33mW (354) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (361) cpu_start: Pro cpu start user code[0m
+[0;32mI (361) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (361) cpu_start: Application information:[0m
+[0;32mI (364) cpu_start: Project name:     esp_ot_cli[0m
+[0;32mI (369) cpu_start: App version:      6fcc207-dirty[0m
+[0;32mI (374) cpu_start: Compile time:     Feb  9 2024 01:19:42[0m
+[0;32mI (380) cpu_start: ELF file SHA256:  2a1ff4e2197db942...[0m
+[0;32mI (386) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (392) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (396) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (401) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (406) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (413) heap_init: At 4081E360 len 0005E2B0 (376 KiB): D/IRAM[0m
+[0;32mI (420) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (426) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (433) spi_flash: detected chip: generic[0m
+[0;32mI (437) spi_flash: flash io: dio[0m
+[0;33mW (441) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (455) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (461) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (468) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (474) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (479) app_start: Starting scheduler on CPU0[0m
+[0;32mI (484) main_task: Startez�[0;32mI (494) phy_init: phy_version 230,c773401,Oct 30 2023,15:07:16[0m
+[0;32mI (524) phy: libbtbb version: 7243671, Oct 30 2023, 15:07:30[0m
+[0;32mI(534) OPENTHREAD:[I] ChildSupervsn-: Timeout: 0 -> 190[0m
+[0;32mI(544) OPENTHREAD:[I] Settings------: Read NetworkInfo {rloc:0x7c00, extaddr:1ee1220c292083b6, role:leader, mode:0x0f, version:4, keyseq:0x0, ...[0m
+[0;32mI(554) OPENTHREAD:[I] Settings------: ... pid:0x1342f35a, mlecntr:0x3f624, maccntr:0x3f5ba, mliid:99e5a038bcfbd6ec}[0m
+> cuckwoBH1750 Sensor: 5 Lux
+[0;32mI (564) OPENTHREAD: OpenThread attached to netif[0m
+mmm[0;32mI(574) OPENTHREAD:[N] Mle-----------: Role disabled -> detached[0m
+[5n[0;32mI (584) OT_STATE: netif up[0m
+
+Brownout detector was triggered
+
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0xc (SW_CPU),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4001975a
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (26) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb  1 2024 03:08:04[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00120000[0m
+[0;32mI (83) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=420d0020 size=2e4a8h (189608) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=0003e4d0 vaddr=40800000 size=01b48h (  6984) load[0m
+[0;32mI (178) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=cceb8h (839352) map[0m
+[0;32mI (521) esp_image: segment 3: paddr=0010cee0 vaddr=40801b48 size=0e430h ( 58416) load[0m
+[0;32mI (549) esp_image: segment 4: paddr=0011b318 vaddr=4080ff80 size=01fe4h (  8164) load[0m
+[0;32mI (561) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (562) boot: Disabling RNG early entropy source...[0m
+[0;32mI (573) cpu_start: Unicore app[0m
+[0;32mI (574) cpu_start: Pro cpu up.[0m
+[0;33mW (583) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (590) cpu_start: Pro cpu start user code[0m
+[0;32mI (590) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (590) cpu_start: Application information:[0m
+[0;32mI (593) cpu_start: Project name:     esp_ot_cli[0m
+[0;32mI (598) cpu_start: App version:      6fcc207-dirty[0m
+[0;32mI (603) cpu_start: Compile time:     Feb  9 2024 01:19:42[0m
+[0;32mI (609) cpu_start: ELF file SHA256:  2a1ff4e2197db942...[0m
+[0;32mI (615) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (621) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (625) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (630) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (635) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (642) heap_init: At 4081E360 len 0005E2B0 (376 KiB): D/IRAM[0m
+[0;32mI (649) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (655) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (663) spi_flash: detected chip: generic[0m
+[0;32mI (666) spi_flash: flash io: dio[0m
+[0;33mW (670) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (684) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (690) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (697) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (703) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (708) app_start: Starting scheduler on CPU0[0m
+[0;32mI (713) main_task: Startez�[0;32mI (723) phy_init: phy_version 230,c773401,Oct 30 2023,15:07:16[0m
+[0;32mI (733) phy: error: chgp_cal no done!!![0m
+error: pll_cal exceeds 2ms!!!
+error: pll_cal exceeds 2ms!!!
+[0;32mI (813) phy: libbtbb version: 7243671, Oct 30 2023, 15:07:30[0m
+[0;32mI(823) OPENTHREAD:[I] ChildSupervsn-: Timeout: 0 -> 190[0m
+[0;32mI(833) OPENTHREAD:[I] Settings------: Read NetworkInfo {rloc:0x7c00, extaddr:1ee1220c292083b6, role:leader, mode:0x0f, version:4, keyseq:0x0, ...[0m
+[0;32mI(843) OPENTHREAD:[I] Settings------: ... pid:0x1342f35a, mlecntr:0x3fa0d, maccntr:0x3f9a2, mliid:99e5a038bcfbd6ec}[0m
+> cuckwoBH1750 Sensor: 5 Lux
+[0;32mI (853) OPENTHREAD: OpenThread attached to netif[0m
+mmm[0;32mI(863) OPENTHREAD:[N] Mle-----------: Role disabled -> detached[0m
+[5n[0;32mI (873) OT_STATE: netif up[0m
+[6n [999C [6n [119D[6n > [6n [0;33mW (1843) bme680: Heater is not stable[0m
+BME680 Sensor: 26.43 °C, 48.47 %, 939.64 hPa, 0.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.43 °C, 48.43 %, 939.64 hPa, 8958.00 KOhm
+BH1750 Sensor: 5 Lux
+BME680 Sensor: 26.45 °C, 48.37 %, 939.66 hPa, 8422.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.46 °C, 48.30 %, 939.66 hPa, 8316.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.47 °C, 48.18 %, 939.64 hPa, 8251.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.49 °C, 48.08 %, 939.64 hPa, 8213.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.51 °C, 47.99 %, 939.64 hPa, 8187.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.53 °C, 47.89 %, 939.62 hPa, 8181.00 KOhm
+BH1750 Sensor: 5 Lux
+BME680 Sensor: 26.54 °C, 47.80 %, 939.62 hPa, 8168.00 KOhm
+BH1750 Sensor: 7 Lux
+[0;32mI (10843) gpio: GPIO[6]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+BME680 Sensor: 26.56 °C, 47.72 %, 939.66 hPa, 8175.00 KOhm
+[0;32mI (10843) sensor-node: Configured IPV6 Multicast address FF02::1[0m
+BH1750 Sensor: 7 Lux
+[0;32mI (10853) sensor-node: Socket set IPV6-only[0m
+[0;32mI (10843) main_task: Returned from app_main()[0m
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.57 °C, 47.65 %, 939.64 hPa, 8143.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.59 °C, 47.59 %, 939.64 hPa, 8168.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.60 °C, 47.55 %, 939.64 hPa, 8175.00 KOhm
+[0;32mI (13873) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 5 Lux
+BME680 Sensor: 26.61 °C, 47.50 %, 939.62 hPa, 8181.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.62 °C, 47.45 %, 939.64 hPa, 8200.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.63 °C, 47.41 %, 939.62 hPa, 8206.00 KOhm
+[0;32mI (16883) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.64 °C, 47.36 %, 939.64 hPa, 8232.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.65 °C, 47.34 %, 939.60 hPa, 8251.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.66 °C, 47.30 %, 939.62 hPa, 8251.00 KOhm
+[0;32mI (19893) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.67 °C, 47.26 %, 939.60 hPa, 8245.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.68 °C, 47.24 %, 939.60 hPa, 8297.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.69 °C, 47.22 %, 939.58 hPa, 8310.00 KOhm
+[0;32mI (22903) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.70 °C, 47.19 %, 939.60 hPa, 8297.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.71 °C, 47.15 %, 939.58 hPa, 8369.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.72 °C, 47.14 %, 939.60 hPa, 8349.00 KOhm
+[0;32mI (25913) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.73 °C, 47.09 %, 939.58 hPa, 8362.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.73 °C, 47.08 %, 939.58 hPa, 8362.00 KOhm
+[0;32mI(28243) OPENTHREAD:[N] Mle-----------: RLOC16 7c00 -> fffe[0m
+[0;32mI(28683) OPENTHREAD:[N] Mle-----------: Attach attempt 1, AnyPartition reattaching with Active Dataset[0m
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.74 °C, 47.04 %, 939.58 hPa, 8382.00 KOhm
+[0;32mI (28923) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.75 °C, 47.02 %, 939.56 hPa, 8389.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.76 °C, 47.01 %, 939.62 hPa, 8422.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.76 °C, 46.99 %, 939.60 hPa, 8436.00 KOhm
+[0;32mI (31933) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 5 Lux
+BME680 Sensor: 26.77 °C, 46.97 %, 939.60 hPa, 8449.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.77 °C, 46.95 %, 939.58 hPa, 8470.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.77 °C, 46.94 %, 939.58 hPa, 8497.00 KOhm
+[0;32mI (34943) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+[0;32mI(35243) OPENTHREAD:[N] RouterTable---: Allocate router id 31[0m
+[0;32mI(35243) OPENTHREAD:[N] Mle-----------: RLOC16 fffe -> 7c00[0m
+[0;32mI(35243) OPENTHREAD:[N] Mle-----------: Role detached -> leader[0m
+[0;32mI(35253) OPENTHREAD:[N] Mle-----------: Partition ID 0x587dd5e4[0m
+BH1750 Sensor: 12 Lux
+BME680 Sensor: 26.78 °C, 46.93 %, 939.60 hPa, 8511.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.91 °C, 46.97 %, 939.54 hPa, 8860.00 KOhm
+[0;32mI (62033) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 5 Lux
+BME680 Sensor: 26.91 °C, 46.94 %, 939.54 hPa, 8875.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.91 °C, 46.91 %, 939.54 hPa, 8905.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.92 °C, 46.91 %, 939.56 hPa, 8890.00 KOhm
+[0;32mI (65043) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.92 °C, 46.88 %, 939.56 hPa, 8943.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.92 °C, 46.87 %, 939.54 hPa, 8943.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.92 °C, 46.86 %, 939.54 hPa, 8973.00 KOhm
+[0;32mI (68053) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 5 Lux
+BME680 Sensor: 26.92 °C, 46.85 %, 939.54 hPa, 8981.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.93 °C, 46.83 %, 939.54 hPa, 8996.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.93 °C, 46.82 %, 939.53 hPa, 9027.00 KOhm
+[0;32mI (71063) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.93 °C, 46.81 %, 939.53 hPa, 9019.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.93 °C, 46.81 %, 939.53 hPa, 9012.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.93 °C, 46.78 %, 939.51 hPa, 9050.00 KOhm
+[0;32mI (74073) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 5 Lux
+BME680 Sensor: 26.93 °C, 46.77 %, 939.51 hPa, 9050.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.93 °C, 46.76 %, 939.51 hPa, 9073.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.93 °C, 46.74 %, 939.53 hPa, 9081.00 KOhm
+[0;32mI (77083) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.93 °C, 46.74 %, 939.53 hPa, 9105.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.93 °C, 46.73 %, 939.53 hPa, 9121.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.93 °C, 46.71 %, 939.51 hPa, 9105.00 KOhm
+[0;32mI (80093) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 5 Lux
+BME680 Sensor: 26.93 °C, 46.71 %, 939.51 hPa, 9144.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.93 °C, 46.71 %, 939.51 hPa, 9121.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.93 °C, 46.69 %, 939.51 hPa, 9160.00 KOhm
+[0;32mI (83103) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.93 °C, 46.68 %, 939.51 hPa, 9192.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.93 °C, 46.68 %, 939.51 hPa, 9200.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.92 °C, 46.66 %, 939.53 hPa, 9208.00 KOhm
+[0;32mI (86113) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 5 Lux
+BME680 Sensor: 26.92 °C, 46.65 %, 939.53 hPa, 9208.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.92 °C, 46.65 %, 939.53 hPa, 9256.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.92 °C, 46.64 %, 939.53 hPa, 9240.00 KOhm
+[0;32mI (89123) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.92 °C, 46.64 %, 939.53 hPa, 9273.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.92 °C, 46.62 %, 939.53 hPa, 9289.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.92 °C, 46.62 %, 939.53 hPa, 9305.00 KOhm
+[0;32mI (92133) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 9 Lux
+BME680 Sensor: 26.92 °C, 46.62 %, 939.53 hPa, 9305.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.92 °C, 46.62 %, 939.53 hPa, 9305.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.92 °C, 46.63 %, 939.53 hPa, 9305.00 KOhm
+[0;32mI (95143) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.92 °C, 46.63 %, 939.53 hPa, 9346.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.92 °C, 46.63 %, 939.53 hPa, 9346.00 KOhm
+BH1750 Sensor: 11 Lux
+BME680 Sensor: 26.92 °C, 46.65 %, 939.53 hPa, 9363.00 KOhm
+[0;32mI (98153) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 10 Lux
+BME680 Sensor: 26.92 °C, 46.65 %, 939.53 hPa, 9388.00 KOhm
+BH1750 Sensor: 12 Lux
+BME680 Sensor: 26.92 °C, 46.66 %, 939.53 hPa, 9371.00 KOhm
+BH1750 Sensor: 10 Lux
+BME680 Sensor: 26.92 °C, 46.66 %, 939.53 hPa, 9388.00 KOhm
+[0;32mI (101163) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 8 Lux
+BME680 Sensor: 26.92 °C, 46.65 %, 939.53 hPa, 9421.00 KOhm
+BH1750 Sensor: 8 Lux
+BME680 Sensor: 26.92 °C, 46.66 %, 939.53 hPa, 9413.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.92 °C, 46.68 %, 939.53 hPa, 9430.00 KOhm
+[0;32mI (104173) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.92 °C, 46.65 %, 939.53 hPa, 9438.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.92 °C, 46.65 %, 939.53 hPa, 9455.00 KOhm
+BH1750 Sensor: 8 Lux
+BME680 Sensor: 26.92 °C, 46.67 %, 939.53 hPa, 9455.00 KOhm
+[0;32mI (107183) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.92 °C, 46.66 %, 939.53 hPa, 9455.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.92 °C, 46.66 %, 939.53 hPa, 9481.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.91 °C, 46.65 %, 939.51 hPa, 9464.00 KOhm
+[0;32mI (110193) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 5 Lux
+BME680 Sensor: 26.91 °C, 46.64 %, 939.51 hPa, 9515.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.91 °C, 46.66 %, 939.51 hPa, 9515.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.91 °C, 46.65 %, 939.51 hPa, 9506.00 KOhm
+[0;32mI (113203) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.91 °C, 46.67 %, 939.53 hPa, 9541.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.91 °C, 46.65 %, 939.51 hPa, 9549.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.91 °C, 46.68 %, 939.51 hPa, 9558.00 KOhm
+[0;32mI (116213) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 5 Lux
+BME680 Sensor: 26.91 °C, 46.67 %, 939.53 hPa, 9601.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.91 °C, 46.65 %, 939.53 hPa, 9575.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.91 °C, 46.65 %, 939.53 hPa, 9575.00 KOhm
+[0;32mI (119223) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.91 °C, 46.67 %, 939.53 hPa, 9575.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.91 °C, 46.67 %, 939.53 hPa, 9636.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.91 °C, 46.67 %, 939.53 hPa, 9593.00 KOhm
+[0;32mI (122233) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 5 Lux
+BME680 Sensor: 26.91 °C, 46.70 %, 939.53 hPa, 9636.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.91 °C, 46.76 %, 939.53 hPa, 9654.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.91 °C, 46.81 %, 939.53 hPa, 9636.00 KOhm
+[0;32mI (125243) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 10 Lux
+BME680 Sensor: 26.91 °C, 46.85 %, 939.51 hPa, 9663.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.92 °C, 46.91 %, 939.54 hPa, 9654.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.92 °C, 46.97 %, 939.54 hPa, 9689.00 KOhm
+[0;32mI (128253) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 12 Lux
+BME680 Sensor: 26.92 °C, 47.00 %, 939.54 hPa, 9698.00 KOhm
+BH1750 Sensor: 10 Lux
+BME680 Sensor: 26.93 °C, 47.01 %, 939.53 hPa, 9672.00 KOhm
+ ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x1c (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (23) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Feb  1 2024 03:08:04[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00120000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=420d0020 size=2e4a8h (189608) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=0003e4d0 vaddr=40800000 size=01b48h (  6984) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=cceb8h (839352) map[0m
+[0;32mI (311) esp_image: segment 3: paddr=0010cee0 vaddr=40801b48 size=0e430h ( 58416) load[0m
+[0;32mI (325) esp_image: segment 4: paddr=0011b318 vaddr=4080ff80 size=01fe4h (  8164) load[0m
+[0;32mI (331) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (331) boot: Disabling RNG early entropy source...[0m
+[0;32mI (345) cpu_start: Unicore app[0m
+[0;32mI (345) cpu_start: Pro cpu up.[0m
+[0;33mW (354) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (361) cpu_start: Pro cpu start user code[0m
+[0;32mI (361) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (361) cpu_start: Application information:[0m
+[0;32mI (364) cpu_start: Project name:     esp_ot_cli[0m
+[0;32mI (369) cpu_start: App version:      6fcc207-dirty[0m
+[0;32mI (374) cpu_start: Compile time:     Feb  9 2024 01:19:42[0m
+[0;32mI (380) cpu_start: ELF file SHA256:  2a1ff4e2197db942...[0m
+[0;32mI (386) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (392) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (397) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (401) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (406) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (413) heap_init: At 4081E360 len 0005E2B0 (376 E�ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (23) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Feb  1 2024 03:08:04[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00120000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=420d0020 size=2e4a8h (189608) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=0003e4d0 vaddr=40800000 size=01b48h (  6984) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=cceb8h (839352) map[0m
+ESP-RO�ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (23) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Feb  1 2024 03:08:04[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00120000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=420d0020 size=2e4a8h (189608) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=0003e4d0 vaddr=40800000 size=01b48h (  6984) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=cceb8h (839352) map[0m
+[0;32mI (310) esp_image: segment 3: paddr=0010cee0 vaddr=40801b48 size=0e430h ( 58416) load[0m
+[0;32mI (325) esp_image: segment 4: paddr=0011b318 vaddr=4080ff80 size=01fe4h (  8164) load[0m
+[0;32mI (331) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (331) boot: Disabling RNG early entropy source...[0m
+[0;32mI (345) cpu_start: Unicore app[0m
+[0;32mI (345) cpu_start: Pro cpu up.[0m
+[0;33mW (354) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (361) cpu_start: Pro cpu start user code[0m
+[0;32mI (361) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (361) cpu_start: Application information:[0m
+[0;32mI (364) cpu_start: Project name:     esp_ot_cli[0m
+[0;32mI (369) cpu_start: App version:      6fcc207-dirty[0m
+[0;32mI (374) cpu_start: Compile time:     Feb  9 2024 01:19:42[0m
+[0;32mI (380) cpu_start: ELF file SHA256:  2a1ff4e2197db942...[0m
+[0;32mI (386) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (392) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (396) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (401) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (406) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (413) heap_init: At 4081E360 len 0005E2B0 (376 KiB): D/IRAM[0m
+[0;32mI (420) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (426) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (433) spi_flash: detected chip: generic[0m
+[0;32mI (437) spi_flash: flash io: dio[0m
+[0;33mW (441) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (455) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (461) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (468) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (474) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (479) app_start: Starting scheduler on CPU0[0m
+[0;32mI (484) main_task: Startez�[0;32mI (494) phy_init: phy_version 230,c773401,Oct 30 2023,15:07:16[0m
+[0;32mI (524) phy: libbtbb version: 7243671, Oct 30 2023, 15:07:30[0m
+[0;32mI(534) OPENTHREAD:[I] ChildSupervsn-: Timeout: 0 -> 190[0m
+[0;32mI(544) OPENTHREAD:[I] Settings------: Read NetworkInfo {rloc:0x7c00, extaddr:1ee1220c292083b6, role:leader, mode:0x0f, version:4, keyseq:0x0, ...[0m
+[0;32mI(554) OPENTHREAD:[I] Settings------: ... pid:0x587dd5e4, mlecntr:0x3fe02, maccntr:0x3fd9a, mliid:99e5a038bcfbd6ec}[0m
+> cuckwoBH1750 Sensor: 0 Lux
+[0;32mI (564) OPENTHREAD: OpenThread attached to netif[0m
+mmm[0;32mI(574) OPENTHREAD:[N] Mle-----------: Role disabled -> detached[0m
+[5n[0;32mI (584) OT_STATE: netif up[0m
+
+Brownout detector was triggered
+
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0xc (SW_CPU),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4001975a
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x4086c410,len:0xd4c
+load:0x4086e610,len:0x2dd4
+load:0x40875728,len:0x17d8
+entry 0x4086c410
+[0;32mI (26) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb  1 2024 03:08:04[0m
+[0;32mI (28) boot: chip revision: v0.0[0m
+[0;32mI (30) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00120000[0m
+[0;32mI (83) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=420d0020 size=2e4a8h (189608) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=0003e4d0 vaddr=40800000 size=01b48h (  6984) load[0m
+[0;32mI (178) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=cceb8h (839352) map[0m
+[0;32mI (521) esp_image: segment 3: paddr=0010cee0 vaddr=40801b48 size=0e430h ( 58416) load[0m
+[0;32mI (549) esp_image: segment 4: paddr=0011b318 vaddr=4080ff80 size=01fe4h (  8164) load[0m
+[0;32mI (561) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (562) boot: Disabling RNG early entropy source...[0m
+[0;32mI (573) cpu_start: Unicore app[0m
+[0;32mI (574) cpu_start: Pro cpu up.[0m
+[0;33mW (583) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (590) cpu_start: Pro cpu start user code[0m
+[0;32mI (590) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (590) cpu_start: Application information:[0m
+[0;32mI (593) cpu_start: Project name:     esp_ot_cli[0m
+[0;32mI (598) cpu_start: App version:      6fcc207-dirty[0m
+[0;32mI (603) cpu_start: Compile time:     Feb  9 2024 01:19:42[0m
+[0;32mI (609) cpu_start: ELF file SHA256:  2a1ff4e2197db942...[0m
+[0;32mI (615) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (621) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (626) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (630) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (635) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (642) heap_init: At 4081E360 len 0005E2B0 (376 KiB): D/IRAM[0m
+[0;32mI (649) heap_init: At 4087C610 len 00002F54 (11 KiB): STACK/DIRAM[0m
+[0;32mI (655) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (663) spi_flash: detected chip: generic[0m
+[0;32mI (667) spi_flash: flash io: dio[0m
+[0;33mW (670) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (684) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (690) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (697) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (703) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (708) app_start: Starting scheduler on CPU0[0m
+[0;32mI (713) main_task: Startez�[0;32mI (723) phy_init: phy_version 230,c773401,Oct 30 2023,15:07:16[0m
+[0;32mI (733) phy: error: chgp_cal no done!!![0m
+error: pll_cal exceeds 2ms!!!
+error: pll_cal exceeds 2ms!!!
+[0;32mI (813) phy: libbtbb version: 7243671, Oct 30 2023, 15:07:30[0m
+[0;32mI(823) OPENTHREAD:[I] ChildSupervsn-: Timeout: 0 -> 190[0m
+[0;32mI(833) OPENTHREAD:[I] Settings------: Read NetworkInfo {rloc:0x7c00, extaddr:1ee1220c292083b6, role:leader, mode:0x0f, version:4, keyseq:0x0, ...[0m
+[0;32mI(843) OPENTHREAD:[I] Settings------: ... pid:0x587dd5e4, mlecntr:0x401eb, maccntr:0x40182, mliid:99e5a038bcfbd6ec}[0m
+> cuckwoBH1750 Sensor: 7 Lux
+[0;32mI (853) OPENTHREAD: OpenThread attached to netif[0m
+mmm[0;32mI(863) OPENTHREAD:[N] Mle-----------: Role disabled -> detached[0m
+[5n[0;32mI (873) OT_STATE: netif up[0m
+[6n [999C [6n [119D[6n > [6n [0;33mW (1843) bme680: Heater is not stable[0m
+BME680 Sensor: 26.57 °C, 49.17 %, 939.70 hPa, 0.00 KOhm
+BH1750 Sensor: 12 Lux
+BME680 Sensor: 26.57 °C, 49.09 %, 939.68 hPa, 9654.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.58 °C, 48.98 %, 939.70 hPa, 8950.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.60 °C, 48.87 %, 939.70 hPa, 8750.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.61 °C, 48.74 %, 939.68 hPa, 8664.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.63 °C, 48.60 %, 939.66 hPa, 8566.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.65 °C, 48.51 %, 939.66 hPa, 8538.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.67 °C, 48.39 %, 939.66 hPa, 8483.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.68 °C, 48.29 %, 939.66 hPa, 8436.00 KOhm
+BH1750 Sensor: 14 Lux
+[0;32mI (10843) gpio: GPIO[6]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+BME680 Sensor: 26.70 °C, 48.19 %, 939.66 hPa, 8443.00 KOhm
+[0;32mI (10843) sensor-node: Configured IPV6 Multicast address FF02::1[0m
+BH1750 Sensor: 13 Lux
+[0;32mI (10853) sensor-node: Socket set IPV6-only[0m
+[0;32mI (10843) main_task: Returned from app_main()[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.72 °C, 48.09 %, 939.64 hPa, 8422.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.74 °C, 48.01 %, 939.64 hPa, 8422.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.75 °C, 47.93 %, 939.62 hPa, 8402.00 KOhm
+[0;32mI (13873) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.77 °C, 47.85 %, 939.64 hPa, 8402.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.78 °C, 47.79 %, 939.66 hPa, 8396.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.79 °C, 47.72 %, 939.64 hPa, 8422.00 KOhm
+[0;32mI (16883) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.80 °C, 47.65 %, 939.64 hPa, 8443.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.81 °C, 47.59 %, 939.62 hPa, 8436.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.82 °C, 47.53 %, 939.64 hPa, 8436.00 KOhm
+[0;32mI (19893) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.83 °C, 47.48 %, 939.62 hPa, 8456.00 KOhm
+[0K> s[3CBH1750 Sensor: 14 Lux
+BME680 Sensor: 26.84 °C, 47.44 %, 939.62 hPa, 8436.00 KOhm
+[0K> st[4C[0K> sta[5C[0K> stat[6CBH1750 Sensor: 13 Lux
+BME680 Sensor: 26.85 °C, 47.40 %, 939.62 hPa, 8443.00 KOhm
+[0;32mI (22903) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+[0K> state[7C[0K> state [8C[0K> state c[9C[0K> state ch[10C[0K> state chi[11CBH1750 Sensor: 14 Lux
+BME680 Sensor: 26.85 °C, 47.37 %, 939.62 hPa, 8476.00 KOhm
+[0K> state chil[12C[0K> state child[13C
+
+Done
+[6n [999C [6n [119D[6n [0;32mI(24613) OPENTHREAD:[N] Mle-----------: Attach attempt 1, AnyPartition reattaching with Active Dataset[0m
+> [6n BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.86 °C, 47.33 %, 939.62 hPa, 8490.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.87 °C, 47.30 %, 939.60 hPa, 8490.00 KOhm
+[0;32mI (25913) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.87 °C, 47.28 %, 939.62 hPa, 8517.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.88 °C, 47.26 %, 939.60 hPa, 8531.00 KOhm
+[0;32mI(27903) OPENTHREAD:[N] Mle-----------: RLOC16 7c00 -> fffe[0m
+[0;32mI(27903) OPENTHREAD:[N] Mle-----------: Attach attempt 1 unsuccessful, will try again in 0.264 seconds[0m
+[0;32mI(28193) OPENTHREAD:[N] Mle-----------: Attach attempt 2, AnyPartition reattaching with Active Dataset[0m
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.88 °C, 47.24 %, 939.60 hPa, 8531.00 KOhm
+[0;32mI (28923) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.89 °C, 47.22 %, 939.60 hPa, 8552.00 KOhm
+[0;32mI(30213) OPENTHREAD:[N] RouterTable---: Allocate router id 31[0m
+[0;32mI(30213) OPENTHREAD:[N] Mle-----------: RLOC16 fffe -> 7c00[0m
+[0;32mI(30213) OPENTHREAD:[N] Mle-----------: Role detached -> leader[0m
+[0;32mI(30223) OPENTHREAD:[N] Mle-----------: Partition ID 0x55b8dff6[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.89 °C, 47.21 %, 939.62 hPa, 8580.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.90 °C, 47.21 %, 939.60 hPa, 8566.00 KOhm
+[0;32mI (31933) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.90 °C, 47.19 %, 939.60 hPa, 8587.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.91 °C, 47.17 %, 939.60 hPa, 8608.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.91 °C, 47.17 %, 939.58 hPa, 8622.00 KOhm
+[0;32mI (34943) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.91 °C, 47.16 %, 939.58 hPa, 8615.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.92 °C, 47.16 %, 939.58 hPa, 8643.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.92 °C, 47.14 %, 939.58 hPa, 8671.00 KOhm
+[0;32mI (37953) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+[0K> s[3C[0K> st[4C[0K> sta[5C[0K> stat[6C[0K> state[7CBH1750 Sensor: 14 Lux
+BME680 Sensor: 26.92 °C, 47.13 %, 939.58 hPa, 8664.00 KOhm
+
+
+leader
+Done
+[6n [999C [6n [119D[6n > [6n BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.92 °C, 47.11 %, 939.58 hPa, 8700.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.92 °C, 47.09 %, 939.58 hPa, 8721.00 KOhm
+[0;32mI (40963) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 47.06 %, 939.58 hPa, 8721.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 47.05 %, 939.58 hPa, 8736.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 47.02 %, 939.56 hPa, 8765.00 KOhm
+[0;32mI (43973) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 47.01 %, 939.56 hPa, 8779.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 46.99 %, 939.56 hPa, 8779.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.93 °C, 46.97 %, 939.56 hPa, 8794.00 KOhm
+[0;32mI (46983) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 46.97 %, 939.56 hPa, 8831.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 46.96 %, 939.56 hPa, 8816.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 46.94 %, 939.54 hPa, 8846.00 KOhm
+[0;32mI (49993) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 46.94 %, 939.56 hPa, 8853.00 KOhm
+[0K> s[3C[0K> st[4C[0K> sta[5C[0K> stat[6C[0K> state[7CBH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 46.91 %, 939.56 hPa, 8890.00 KOhm
+
+
+leader
+Done
+[6n [999C [6n BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.93 °C, 46.90 %, 939.56 hPa, 8898.00 KOhm
+[119D[6n [0;32mI (53003) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+> [6n BH1750 Sensor: 15 Lux
+BME680 Sensor: 26.93 °C, 46.89 %, 939.54 hPa, 8898.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 46.87 %, 939.54 hPa, 8928.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.93 °C, 46.87 %, 939.54 hPa, 8928.00 KOhm
+[0;32mI (56013) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+[0K> s[3C[0K> st[4C[0K> sta[5C[0K> stat[6C[0K> state[7C[0K> state [8C[0K> state c[9CBH1750 Sensor: 14 Lux
+BME680 Sensor: 26.94 °C, 46.86 %, 939.60 hPa, 8958.00 KOhm
+[0K> state ch[10C[0K> state chi[11C[0K> state chil[12C[0K> state child[13C
+
+Done
+[6n [0;32mI(57473) OPENTHREAD:[N] Mle-----------: Attach attempt 0, AnyPartition [0m
+[999C [6n [119D[6n BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.94 °C, 46.86 %, 939.58 hPa, 8973.00 KOhm
+> [6n BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.94 °C, 46.85 %, 939.58 hPa, 8981.00 KOhm
+[0;32mI (59023) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.94 °C, 46.85 %, 939.60 hPa, 9012.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.94 °C, 46.86 %, 939.60 hPa, 9004.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.94 °C, 46.83 %, 939.60 hPa, 9050.00 KOhm
+[0;32mI (62033) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.94 °C, 46.84 %, 939.58 hPa, 9042.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.94 °C, 46.83 %, 939.58 hPa, 9050.00 KOhm
+[0K> s[3C[0K> st[4CBH1750 Sensor: 13 Lux
+BME680 Sensor: 26.94 °C, 46.83 %, 939.58 hPa, 9073.00 KOhm
+[0K> sta[5C[0;32mI (65043) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+[0K> stat[6C[0K> state[7C
+
+leader
+Done
+[6n [999C [6n [119D[6n > [6n BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.94 °C, 46.81 %, 939.58 hPa, 9089.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.94 °C, 46.81 %, 939.58 hPa, 9097.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.94 °C, 46.79 %, 939.58 hPa, 9105.00 KOhm
+[0;32mI (68053) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.94 °C, 46.78 %, 939.60 hPa, 9152.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.94 °C, 46.76 %, 939.58 hPa, 9168.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.95 °C, 46.78 %, 939.58 hPa, 9176.00 KOhm
+[0;32mI (71063) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.95 °C, 46.75 %, 939.58 hPa, 9168.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.95 °C, 46.74 %, 939.58 hPa, 9176.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.95 °C, 46.75 %, 939.58 hPa, 9208.00 KOhm
+[0;32mI (74073) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.95 °C, 46.73 %, 939.58 hPa, 9224.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.95 °C, 46.73 %, 939.58 hPa, 9224.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 26.95 °C, 46.73 %, 939.58 hPa, 9248.00 KOhm
+[0;32mI (77083) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.95 °C, 46.73 %, 939.58 hPa, 9256.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.95 °C, 46.75 %, 939.58 hPa, 9264.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.96 °C, 46.91 %, 939.58 hPa, 9355.00 KOhm
+[0;32mI (86113) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 11 Lux
+BME680 Sensor: 26.96 °C, 46.90 %, 939.58 hPa, 9380.00 KOhm
+BH1750 Sensor: 7 Lux
+BME680 Sensor: 26.97 °C, 46.91 %, 939.58 hPa, 9396.00 KOhm
+BH1750 Sensor: 12 Lux
+BME680 Sensor: 26.97 °C, 46.89 %, 939.58 hPa, 9396.00 KOhm
+[0;32mI (89123) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.97 °C, 46.90 %, 939.58 hPa, 9405.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.97 °C, 46.90 %, 939.58 hPa, 9413.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.98 °C, 46.92 %, 939.60 hPa, 9438.00 KOhm
+[0;32mI (92133) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.98 °C, 46.92 %, 939.60 hPa, 9455.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.98 °C, 46.90 %, 939.60 hPa, 9455.00 KOhm
+BH1750 Sensor: 12 Lux
+BME680 Sensor: 26.99 °C, 46.90 %, 939.60 hPa, 9464.00 KOhm
+[0;32mI (95143) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.99 °C, 46.88 %, 939.60 hPa, 9489.00 KOhm
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 26.99 °C, 46.87 %, 939.58 hPa, 9472.00 KOhm
+BH1750 Sensor: 13 Lux
+BME680 Sensor: 26.99 °C, 46.87 %, 939.58 hPa, 9515.00 KOhm
+[0;32mI (98153) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+BH1750 Sensor: 14 Lux
+BME680 Sensor: 27.00 °C, 46.85 %, 939.60 hPa, 9532.00 KOhm
+BH1750 Sensor: 6 Lux
+BME680 Sensor: 27.00 °C, 46.84 %, 939.60 hPa, 9541.00 KOhm
+BH1750 Sensor: 5 Lux
+BME680 Sensor: 27.00 °C, 46.84 %, 939.60 hPa, 9532.00 KOhm
+[0;32mI (101163) sensor-node: Sending to IPV6 multicast address FF02::1 port 53535...[0m
+
+Brow 

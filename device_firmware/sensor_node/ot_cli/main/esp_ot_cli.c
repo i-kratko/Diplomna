@@ -89,6 +89,7 @@ static const char *V6TAG = "mcast-ipv6";
 #define CONFIG_I2C_MASTER_SDA 21
 #define CONFIG_I2C_MASTER_SCL 22
 #define PIR_GPIO 7
+#define LED 6
 
 #ifndef APP_CPU_NUM
 #define APP_CPU_NUM PRO_CPU_NUM
@@ -313,6 +314,10 @@ err:
 
 static void mcast_example_task(void *pvParameters)
 {
+    gpio_reset_pin(LED);
+    //zadavane na pina kato output
+    gpio_set_direction(LED, GPIO_MODE_OUTPUT);
+    
     while (1) {
         int sock;
 
@@ -377,11 +382,15 @@ static void mcast_example_task(void *pvParameters)
             }
             else { // s == 0
                 // Timeout passed with no incoming data, so send something!
+                //restartirat se konfiguracii na pina
                 static int send_count;
                 const char sendfmt[] = "{\"sensor_id\": %d, \"temperature\": %.2f, \"humidity\": %.2f, \"pressure\": %.1f, \"voc_gas\": %.2f, \"light\": %d, \"movement_counter\": %d}";
                 char sendbuf[200];
                 char addrbuf[32] = { 0 };
                 int len = snprintf(sendbuf, sizeof(sendbuf), sendfmt, SENSOR_ID, gtemperature, ghumidity, gpressure, gvoc, glux, gmc);
+                gpio_set_level(LED, 1);
+                vTaskDelay(1000 / portTICK_PERIOD_MS);
+                gpio_set_level(LED, 0);
                 if (len > sizeof(sendbuf)) {
                     ESP_LOGE(TAG, "Overflowed multicast sendfmt buffer!!");
                     send_count = 0;
@@ -601,4 +610,5 @@ void app_main(void)
 
     vTaskDelay(10000 / portTICK_PERIOD_MS);
     xTaskCreate(&mcast_example_task, "mcast_task", 4096, NULL, 5, NULL);
+    
 }

@@ -1,0 +1,26 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.3.3 on \\.\COM4 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4004c622: uart_rx_readbuff in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x4202dcf4: udp_bind_netif at C:/Espressif/frameworks/esp-idf-v5.1.2/components/lwip/lwip/src/core/udp.c:1062
+[0m
+[0;33m0x420a675e: udp_bind_netif_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/openthread/src/port/esp_openthread_udp.c:260
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40383602: mutex_unlock_wrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_wifi/esp32c3/esp_adapter.c:197
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[1;31mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\nikiy\\Desktop\\DR\\Diplomna\\testing\\ot_br\\build\\esp_ot_br.elf', '-ex', 'target remote | "C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m "esp_idf_panic_decoder" --target esp32c3 "C:\\Users\\nikiy\\AppData\\Local\\Temp\\tmph95nnm0q"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| C:\\Espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\nikiy\\AppData\\Local\\Temp\\tmph95nnm0q': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m
